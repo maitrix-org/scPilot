@@ -44,3 +44,7 @@ Task 3 results are in Task3_results folder.
 
 You can change the LLM usage in the config section.
 If you want to try different tissues, you can change PREDICT_CONTEXT to "Liver" or "Stomach" or "Kidney".
+
+
+# Current results
+We have put all results (including additional experiment, ablation study, etc) in the rebuttal stage, in to https://drive.google.com/file/d/1JmDV2zEK1Rw3QTFJP7WV39Ptp37KBpQB/view?usp=sharing. 
