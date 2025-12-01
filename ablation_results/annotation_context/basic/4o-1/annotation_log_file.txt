@@ -1,0 +1,93 @@
+In refining the hypothesis about the cell types represented by the given differentially expressed genes, we can infer specific cell type identities based on the known functions and expressions of these genes. Here's a breakdown by cluster:
+
+1. **Cluster 0:** Genes such as CD3D suggest the presence of T cells, particularly as CD3D is a marker of T cell lineage. The presence of ribosomal protein genes (RPS12, RPS25, RPS27) and LDHB suggests either a highly metabolic active state or some housekeeping role.
+
+2. **Cluster 1:** The expression of genes like CD74, HLA-DRA, HLA-DPB1, and CD79A is indicative of B cells or potentially antigen-presenting cells such as dendritic cells or B cell-derived plasma cells. These are major histocompatibility complex (MHC) class II molecules and related proteins, often involved in antigen processing and presentation.
+
+3. **Cluster 2:** The presence of AIF1, also known as IBA1, along with genes like FCER1G and LST1, suggests a cluster enriched for microglia or macrophage-related cells. AIF1 is involved in the immune response, particularly in inflammatory environments.
+
+4. **Cluster 3 and 4:** Genes such as NKG7, GNLY, CTSW, GZMB, and CCL5 point towards cytotoxic lymphocytes, likely NK cells or CD8+ T cells, involved in cell-mediated cytotoxic activity. IL32 further supports an immune-modulating function.
+
+5. **Cluster 5:** The presence of LYZ, TYROBP, and S100A9 is suggestive of monocytes or granulocytes like neutrophils, indicating innate immune responses. LYZ (Lysozyme) is a typical granule content in neutrophils and monocytes.
+
+6. **Cluster 6:** Similar to Cluster 1, the presence of CD74 and related HLA-DRA genes, alongside CST3, suggests antigen-presenting cells, probably dendritic cells or B cells focusing on MHC class II antigen presentation.
+
+7. **Cluster 7:** Genes like PF4, PPBP, and SDPR are typically expressed in platelets or megakaryocytes. This indicates a role in hemostasis or thrombocyte activity.
+
+Current Hypothesis: The clusters likely represent different immune cell types and activity states, with specific clusters corresponding to T cells, B cells or dendritic cells, microglia/macrophages, NK/cytotoxic T cells, monocytes/granulocytes, and platelet-related cells. The expression patterns highlight the diverse roles these cells play in immune surveillance, antigen presentation, and cytotoxic activity.
+1. List of cell types with their markers:
+
+   - [T Cells]: CD3D; CD3E; TRAC
+   - [B Cells]: CD19; CD20; MS4A1 
+   - [Plasma Cells]: CD138; MZB1; XBP1
+   - [Dendritic Cells]: CD74; HLA-DRA; CD86
+   - [Macrophages]: AIF1; CD68; FCER1G
+   - [Neutrophils]: LYZ; S100A8; S100A9
+   - [Monocytes]: CD14; ITGAM; LYZ
+   - [NK Cells]: NKG7; GNLY; GZMB
+   - [CD8+ T Cells]: CD8A; GZMB; NKG7
+   - [Microglia]: AIF1; P2RY12; TMEM119
+   - [Megakaryocytes]: PF4; GP1BA; ITGA2B
+   - [Platelets]: PPBP; SDPR; ITGA2B
+   - [Eosinophils]: CCR3; IL5RA; PRG2
+   - [Basophils]: CD203C; MS4A2; KIT
+   - [Mast Cells]: KIT; FCER1A; TPSAB1
+   - [Basophil Precursors]: IL3RA; CD123; KIT
+   - [Helper T Cells]: CD4; IL2RA; CD40LG
+   - [Regulatory T Cells]: FOXP3; CD25; CTLA4
+
+2. Python list of all marker genes:
+
+
+MARKER_GENES = [
+    'CD3D', 'CD3E', 'TRAC', 'CD19', 'CD20', 'MS4A1', 'CD138', 'MZB1', 'XBP1',
+    'CD74', 'HLA-DRA', 'CD86', 'AIF1', 'CD68', 'FCER1G', 'LYZ', 'S100A8', 
+    'S100A9', 'CD14', 'ITGAM', 'NKG7', 'GNLY', 'GZMB', 'CD8A', 'P2RY12', 
+    'TMEM119', 'PF4', 'GP1BA', 'ITGA2B', 'PPBP', 'SDPR', 'CCR3', 'IL5RA', 
+    'PRG2', 'CD203C', 'MS4A2', 'KIT', 'FCER1A', 'TPSAB1', 'IL3RA', 'CD123', 
+    'CD4', 'IL2RA', 'CD40LG', 'FOXP3', 'CD25', 'CTLA4'
+]
+
+
+This setup accounts for potential overlaps, such as overlaps between neutrophils and monocytes with genes like LYZ, or between T cells and NK cells in cytotoxic markers like NKG7 and GZMB.
+12.21380615234375 seconds
+```json
+{
+  "1": {
+    "1a": "Highly expressed genes in specific clusters include:\n- Cluster 0: CD3D, CD3E (potential T Cells)\n- Cluster 1: HLA-DRA, CD74, MS4A1 (potential Dendritic Cells or B Cells)\n- Cluster 2: FCER1G, AIF1, CD68 (potential Macrophages)\n- Cluster 3: NKG7, XBP1, GZMB, GNLY (potential NK Cells or CD8+ T Cells)\n- Cluster 4: CD3D, CD3E, NKG7 (potential CD8+ T Cells or T Cells)\n- Cluster 5: S100A8, LYZ, FCER1G, S100A9, AIF1, CD14, CD68 (potential Neutrophils or Monocytes)\n- Cluster 6: LYZ, HLA-DRA, FCER1A, CD74 (potential Neutrophils or Dendritic Cells)\n- Cluster 7: ITGA2B, SDPR, PF4, PPBP, GP1BA (potential Megakaryocytes or Platelets)",
+    "1b": "Genes showing differential expression across clusters include:\n- NKG7 is differentially expressed between Clusters 0 vs 4 and 3 vs 4.\n- S100A8 is differentially expressed between Clusters 2 vs 5.\n- FCER1A is differentially expressed between Clusters 2 vs 6.\n- GZMB and GNLY are differentially expressed between Clusters 3 vs 4.",
+    "1c": "All provided genes are informative for cell type annotation as none are listed as failed to express across all clusters."
+  },
+  "2": {
+    "2a": "No clusters lack high expression of any marker gene. All clusters show high expression of at least one marker gene."
+  },
+  "3": {
+    "3a": "Yes, there are distinct clusters that potentially represent different cell types based on unique combinations of marker genes across clusters.",
+    "3b": {
+      "0": "T Cells",
+      "1": "Dendritic Cells",
+      "2": "Macrophages",
+      "3": "NK Cells",
+      "4": "CD8+ T Cells",
+      "5": "Neutrophils",
+      "6": "Dendritic Cells",
+      "7": "Megakaryocytes"
+    },
+    "3c": "No additional cell types recommended beyond those listed, as marker genes provided are exhaustive for annotation.",
+    "3d": "Cluster 3 may benefit from subgrouping due to shared markers with both NK Cells and CD8+ T Cells, reflective of heterogeneity."
+  },
+  "4": {
+    "4a": {
+      "0": 0.55,
+      "1": 0.60,
+      "2": 0.65,
+      "3": 0.45,
+      "4": 0.50,
+      "5": 0.70,
+      "6": 0.60,
+      "7": 0.75
+    },
+    "4b": "Clusters 2, 5, 6, and 7 have the highest confidence in their annotation and should be stabilized."
+  }
+}
+```

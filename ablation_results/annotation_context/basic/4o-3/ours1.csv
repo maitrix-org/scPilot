@@ -1,0 +1,9 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+t lymphocytes,t lymphocytes,T cell,CL:0000084,0.5,CL:0000492
+b lymphocytes,b lymphocytes,B-1 B cell,CL:0000819,0.5,CL:0000236
+monocyte,monocyte,monocyte,CL:0000576,0.5,CL:0000875
+natural killer (nk) cell,natural killer (nk) cell,natural killer cell,CL:0000623,1.0,CL:0000623
+activated t cell,activated t cell,activated type II NK T cell,CL:0000931,0.0,CL:4052021
+monocyte,monocyte,monocyte,CL:0000576,0.5,CL:0000860
+dendritic cell,dendritic cell,dendritic cell,CL:0000451,1.0,CL:0000451
+platelet,platelet,platelet,CL:0000233,0.0,CL:0000556

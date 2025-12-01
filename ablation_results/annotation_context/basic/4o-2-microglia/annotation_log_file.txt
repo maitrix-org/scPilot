@@ -1,0 +1,140 @@
+Based on the differentially expressed genes provided, here is a refined hypothesis regarding the cell types that might be present in each cluster:
+
+Current Hypothesis:
+
+1. **Cluster 0:** Enriched with genes such as LDHB, RPS12, RPS25, RPS27, and CD3D, which are often found in rapidly proliferating cells and T-cells (presence of CD3D indicates T-cell lineage). Hypothesis: This cluster potentially represents a rapidly proliferating T-cell population.
+
+2. **Cluster 1:** Highly expresses genes such as CD74, HLA-DRA, HLA-DPB1, CD79A, and HLA-DRB1. These genes are commonly associated with antigen-presenting cells, particularly B cells due to the presence of CD79A. Hypothesis: This cluster likely represents B cells or dendritic cells with antigen-presentation function.
+
+3. **Cluster 2:** Enriched with AIF1, FTL, FCER1G, FTH1, and LST1, which are indicative of myeloid lineage, particularly microglia or monocyte/macrophage populations. Hypothesis: This cluster might correspond to microglial cells or a subset of macrophages.
+
+4. **Cluster 3:** Contains genes like NKG7, B2M, GNLY, CTSW, and GZMB, which are characteristic of cytotoxic cells such as natural killer (NK) cells or cytotoxic T lymphocytes. Hypothesis: This cluster likely identifies cytotoxic NK cells or CD8+ T-cells.
+
+5. **Cluster 4:** Expresses CCL5, NKG7, B2M, CST7, and IL32, suggesting a similar cytotoxic profile but perhaps different from cluster 3 due to the presence of CCL5 and IL32, which may indicate activated T-cells or NK cells involvement. Hypothesis: Activated NK cells or CD8+ T-cells.
+
+6. **Cluster 5:** Shows high levels of LYZ, FTL, TYROBP, CST3, and S100A9, which are typical of monocytes or macrophages involved in phagocytosis and inflammation. Hypothesis: This cluster likely represents monocytes or macrophages.
+
+7. **Cluster 6:** Expresses CD74, HLA-DRA, CST3, HLA-DPA1, and HLA-DPB1. Similar to Cluster 1 but retains certain markers that may suggest a slightly varied antigen-presenting cell function. Hypothesis: This cluster might also represent dendritic cells or specialized macrophages with an emphasis on antigen presentation.
+
+8. **Cluster 7:** High expression of GPX1, PF4, PPBP, CALM3, and SDPR, which are typically associated with platelets or megakaryocytes. Hypothesis: This cluster represents platelet or megakaryocyte lineage cells.
+
+The refined hypothesis considers the expression patterns of the differentially expressed genes in relation to well-known biological functions and cell types. Further validation would require integrating additional datasets or experiments.
+Based on the refined hypothesis and typical cellular annotations within liver tissue, the following list specifies likely cell types and their corresponding marker genes:
+
+1. **T Cells**
+   - [T Cell, Proliferative]: LDHB; RPS12; CD3D
+
+2. **B Cells**
+   - [B Cell, Antigen-presenting]: CD79A; HLA-DRA; CD74
+
+3. **Dendritic Cells**
+   - [Dendritic Cell, Classical]: HLA-DPB1; CD74; HLA-DRB1
+
+4. **Macrophages**
+   - [Macrophages, Phagocytic]: LYZ; S100A9; FTL
+
+5. **Monocytes**
+   - [Monocytes, Inflammatory]: FTH1; TYROBP; FCER1G
+
+6. **Microglia**
+   - [Microglia-like, Liver Resident]: AIF1; FCER1G; LST1
+
+7. **NK Cells**
+   - [NK Cells, Cytotoxic]: GNLY; GZMB; NKG7
+
+8. **Cytotoxic T Cells**
+   - [CD8+ T Cells, Cytotoxic]: GNLY; B2M; CTSW
+
+9. **Activated T Cells**
+   - [Activated T Cells]: CCL5; IL32; CST7
+
+10. **Platelets**
+    - [Platelets]: PF4; SDPR; GPX1
+
+11. **Megakaryocytes**
+    - [Megakaryocytes]: PPBP; CALM3; GPX1
+
+12. **Specialized Dendritic Cells**
+    - [Dendritic Cells, Special Antigen Presentation]: CST3; HLA-DPA1; HLA-DPB1
+
+Considering overlaps in markers:
+- CD3D for T Cells.
+- CD74 and HLA genes for antigen-presenting cells (B Cells, Dendritic Cells).
+- FTH1 and FCER1G for myeloid lineage (Macrophages, Monocytes, Microglia).
+- GNLY and NKG7 for cytotoxic cells (NK Cells, Cytotoxic T Cells).
+- Overlap between T Cell and NK Cell markers such as NKG7 and cytotoxic granule markers like GZMB.
+
+### Python List of All Marker Genes
+
+
+MARKER_GENES = [
+    'LDHB', 'RPS12', 'CD3D',
+    'CD79A', 'HLA-DRA', 'CD74',
+    'HLA-DPB1', 'HLA-DRB1', 
+    'LYZ', 'S100A9', 'FTL',
+    'FTH1', 'TYROBP', 'FCER1G',
+    'AIF1', 'LST1',
+    'GNLY', 'GZMB', 'NKG7',
+    'B2M', 'CTSW', 
+    'CCL5', 'IL32', 'CST7',
+    'PF4', 'SDPR', 'GPX1',
+    'PPBP', 'CALM3',
+    'CST3', 'HLA-DPA1'
+]
+
+
+This detailed annotation provides a structured hypothesis-driven approach to identifying and verifying each cell type in the context of liver tissue based on the differential gene expressions observed.
+12.882482051849365 seconds
+```json
+{
+  "1": {
+    "a": {
+      "Cluster 0": ["CD3D", "RPS12", "IL32"],
+      "Cluster 1": ["CD74", "CD79A", "RPS12"],
+      "Cluster 2": ["FTH1", "AIF1", "TYROBP", "FCER1G", "LST1", "CST3", "FTL"],
+      "Cluster 3": ["CCL5", "CST7", "CTSW", "GZMB", "NKG7", "GNLY", "B2M", "IL32"],
+      "Cluster 4": ["CCL5", "CD3D", "CST7", "CTSW", "NKG7", "B2M", "RPS12", "IL32"],
+      "Cluster 5": ["FTH1", "AIF1", "TYROBP", "FCER1G", "LST1", "LYZ", "CST3", "S100A9", "FTL"],
+      "Cluster 6": ["TYROBP", "CD74", "LYZ", "CST3"],
+      "Cluster 7": ["CALM3", "GPX1", "CCL5", "SDPR", "PF4", "PPBP"]
+    },
+    "b": {
+      "Cluster 0 vs 1": ["CD74", "CD79A"],
+      "Cluster 0 vs 4": ["CCL5", "NKG7"],
+      "Cluster 5 vs 6": ["S100A9"]
+    },
+    "c": []
+  },
+  "2": {
+    "a": []
+  },
+  "3": {
+    "a": true,
+    "b": {
+      "Cluster 0": "T Cells [T Cell, Proliferative]",
+      "Cluster 1": "B Cells [B Cell, Antigen-presenting]",
+      "Cluster 2": "Microglia [Microglia-like, Liver Resident]",
+      "Cluster 3": "Activated T Cells",
+      "Cluster 4": "Cytotoxic T Cells [CD8+ T Cells, Cytotoxic]",
+      "Cluster 5": "Macrophages [Macrophages, Phagocytic]",
+      "Cluster 6": "Monocytes [Monocytes, Inflammatory]",
+      "Cluster 7": "Megakaryocytes"
+    },
+    "c": ["Hepatocytes", "Liver Stellate Cells"],
+    "d": [2, 3] 
+  },
+  "4": {
+    "a": {
+      "Cluster 0": "High (0.75)",
+      "Cluster 1": "High (0.75)",
+      "Cluster 2": "Moderate (0.60)",
+      "Cluster 3": "High (0.75)",
+      "Cluster 4": "High (0.75)",
+      "Cluster 5": "High (0.65)",
+      "Cluster 6": "High (0.65)",
+      "Cluster 7": "Moderate (0.65)"
+    },
+    "b": ["Cluster 0", "Cluster 1", "Cluster 3", "Cluster 4"] 
+  }
+}
+```
