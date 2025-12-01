@@ -1,4 +1,4 @@
-# scPilot[README.md](https://github.com/user-attachments/files/23861168/README.md)
+# scPilot
 
 # Running Guide
 ## set-up
