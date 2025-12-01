@@ -1,0 +1,9 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+activated t cell,activated t cell,activated type II NK T cell,CL:0000931,0.0,CL:0000492
+professional antigen-presenting cell,professional antigen-presenting cell,professional antigen presenting cell,CL:0000145,0.0,CL:0000236
+activated macrophage,activated macrophage,alternatively activated macrophage,CL:0000890,0.0,CL:0000875
+natural killer cell,natural killer cell,natural killer cell,CL:0000623,1.0,CL:0000623
+cd8+ cd8 t cell,cd8+ cd8 t cell,granzyme K-associated CD8 T cell,CL:4052021,1.0,CL:4052021
+inflammatory macrophage,inflammatory macrophage,inflammatory macrophage,CL:0000863,0.0,CL:0000860
+professional antigen-presenting cell,professional antigen-presenting cell,professional antigen presenting cell,CL:0000145,0.5,CL:0000451
+platelet,platelet,platelet,CL:0000233,0.0,CL:0000556

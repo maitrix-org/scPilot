@@ -1,0 +1,9 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+cd4+ t cell,cd4+ t cell,CD4-positive helper T cell,CL:0000492,1.0,CL:0000492
+b cell,b cell,B cell,CL:0000236,1.0,CL:0000236
+macrophage,macrophage,macrophage,CL:0000235,0.0,CL:0000875
+cd8 t cell,cd8 t cell,granzyme K-associated CD8 T cell,CL:4052021,0.0,CL:0000623
+cd8 t cell,cd8 t cell,granzyme K-associated CD8 T cell,CL:4052021,1.0,CL:4052021
+monocyte,monocyte,monocyte,CL:0000576,0.5,CL:0000860
+dendritic cell,dendritic cell,dendritic cell,CL:0000451,1.0,CL:0000451
+memory b cell,memory b cell,memory B cell,CL:0000787,0.0,CL:0000556

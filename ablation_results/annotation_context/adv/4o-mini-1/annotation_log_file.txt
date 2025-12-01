@@ -1,0 +1,152 @@
+### List of Cell Types with Their Markers:
+
+1. **CD4+ T Cell**: CD3D; CD4; HLA-DRB1
+2. **Cytotoxic T Cell (CD8+ T Cell)**: CD8A; GZMA; NKG7
+3. **Regulatory T Cell (Treg)**: FOXP3; CD25; CTLA4
+4. **Naive T Cell**: CCR7; CD45RA; CD27
+5. **Effector Memory T Cell**: CD45RO; IL7R; CCL5
+6. **B Cell**: CD19; CD20; CD79A
+7. **Plasma Cell**: XBP1; IRF4; CD38
+8. **Monocyte**: CD14; LYZ; FCGR3A
+9. **Macrophage**: AIF1; LYZ; CD68
+10. **Dendritic Cell**: CD11C; HLA-DRA; CD86
+11. **Monocyte-derived Macrophage**: LYZ; FTL; CD36
+12. **M2 Macrophage**: CD206; IL10; ARG1
+13. **M1 Macrophage**: IL1B; TNF; CD80
+14. **Natural Killer (NK) Cell**: NKG7; GNLY; KLRD1
+15. **Mast Cell**: TPSB2; CMA1; KIT
+16. **Neutrophil**: CXCR2; MPO; S100A8
+17. **Eosinophil**: EPO; IL5RA; CCL11
+18. **Basophil**: CD123; FCERI; IL4R
+19. **Follicular Helper T Cell**: PD1; CXCR5; BCL6
+20. **Memory B Cell**: CD27; CXCR4; IgM
+21. **Tissue-resident Macrophage**: CD68; CSF1R; TREM2
+22. **Antigen Presenting Cell (APC)**: CD40; HLA-DRB1; CD80
+23. **Gamma Delta T Cell (γδ T Cell)**: TRDC; TRGC; Vδ2
+24. **Natural Killer T Cell (NKT)**: CD3; CD16; Vα24
+25. **Regulatory B Cell**: CD19; IL10; PD-L1
+26. **Spleen-derived Macrophage**: MARCO; MRC1; F4/80
+27. **CD4+ Memory T Cell**: CD44; CCR5; CD127
+28. **CD8+ Memory T Cell**: CD44; CD27; KLRG1
+29. **T Follicular Regulatory Cell (Tfr)**: FOXP3; PD1; IL21R
+30. **Tissue-resident Memory T Cell (Trm)**: CD69; CD103; CXCR6
+
+### Python List of All Marker Genes:
+
+MARKER_GENES = [
+    'CD3D', 'CD4', 'HLA-DRB1',
+    'CD8A', 'GZMA', 'NKG7',
+    'FOXP3', 'CD25', 'CTLA4',
+    'CCR7', 'CD45RA', 'CD27',
+    'CD45RO', 'IL7R', 'CCL5',
+    'CD19', 'CD20', 'CD79A',
+    'XBP1', 'IRF4', 'CD38',
+    'CD14', 'LYZ', 'FCGR3A',
+    'AIF1', 'CD68',
+    'CD11C', 'HLA-DRA', 'CD86',
+    'CD36', 'FLT', 'CD206', 'IL10', 'ARG1',
+    'IL1B', 'TNF', 'CD80',
+    'NKG7', 'GNLY', 'KLRD1',
+    'TPSB2', 'CMA1', 'KIT',
+    'CXCR2', 'MPO', 'S100A8',
+    'EPO', 'IL5RA', 'CCL11',
+    'CD123', 'FCERI', 'IL4R',
+    'PD1', 'CXCR5', 'BCL6',
+    'CD27', 'CXCR4', 'IgM',
+    'CD68', 'CSF1R', 'TREM2',
+    'CD40', 'HLA-DRB1', 'CD80',
+    'TRDC', 'TRGC', 'Vδ2',
+    'CD3', 'CD16', 'Vα24',
+    'CD19', 'IL10', 'PD-L1',
+    'MARCO', 'MRC1', 'F4/80',
+    'CD44', 'CCR5', 'CD127',
+    'CD44', 'CD27', 'KLRG1',
+    'FOXP3', 'PD1', 'IL21R',
+    'CD69', 'CD103', 'CXCR6'
+]
+14.805970191955566 seconds
+```json
+{
+    "1a": {
+        "highly_expressed_genes": {
+            "cluster_0": ["CD44", "IL7R", "CXCR4", "CD3D"],
+            "cluster_1": ["HLA-DRB1", "CD79A", "HLA-DRA", "CXCR4"],
+            "cluster_2": ["HLA-DRB1", "CD44", "FCGR3A", "CD68", "AIF1", "FTL"],
+            "cluster_3": ["CCL5", "FCGR3A", "GNLY", "XBP1", "NKG7", "KLRD1", "GZMA"],
+            "cluster_4": ["CCL5", "NKG7", "GZMA", "CXCR4", "CD3D"],
+            "cluster_5": ["S100A8", "LYZ", "CD68", "AIF1", "FTL", "CD14"],
+            "cluster_6": ["HLA-DRB1", "LYZ", "HLA-DRA", "IL1B"],
+            "cluster_7": ["CCL5"]
+        }
+    },
+    "1b": {
+        "differential_expressed_genes": {
+            "CCL5": ["0 vs 4", "0 vs 7"],
+            "NKG7": ["0 vs 4"],
+            "LYZ": ["1 vs 6"],
+            "CD79A": ["1 vs 6"],
+            "S100A8": ["2 vs 5", "5 vs 6"],
+            "FCGR3A": ["2 vs 5", "2 vs 6"],
+            "GNLY": ["3 vs 4"]
+        }
+    },
+    "1c": {
+        "non_informative_genes": []
+    },
+    "2a": {
+        "clusters_without_marker_expression": []
+    },
+    "3a": {
+        "distinct_clusters": {
+            "0": "Potentially CD4+ T Cell",
+            "1": "Potentially B Cell",
+            "2": "Potentially Macrophage",
+            "3": "Potentially Cytotoxic T Cell",
+            "4": "Potentially Cytotoxic T Cell or Naive T Cell",
+            "5": "Potentially Monocyte or Macrophage",
+            "6": "Potentially Dendritic Cell",
+            "7": "Potentially Memory B Cell"
+        }
+    },
+    "3b": {
+        "cell_type_annotations": {
+            "0": "CD4+ T Cell",
+            "1": "B Cell",
+            "2": "Macrophage",
+            "3": "Cytotoxic T Cell",
+            "4": "Cytotoxic T Cell",
+            "5": "Monocyte",
+            "6": "Dendritic Cell",
+            "7": "Memory B Cell"
+        }
+    },
+    "3c": {
+        "recommended_additional_types": [
+            "Natural Killer (NK) Cell",
+            "Plasma Cell",
+            "Regulatory T Cell (Treg)"
+        ]
+    },
+    "3d": {
+        "recommended_cluster_for_subgrouping": "Cluster 2 (potentially Macrophage)"
+    },
+    "4a": {
+        "confidence_levels": {
+            "CD4_T_Cells": 0.85,
+            "B_Cell": 0.80,
+            "Macrophage": 0.75,
+            "Cytotoxic_T_Cell": 0.85,
+            "Monocyte": 0.70,
+            "Dendritic_Cell": 0.65,
+            "Memory_B_Cell": 0.75
+        }
+    },
+    "4b": {
+        "stable_annotations": {
+            "CD4+ T Cell": 0.85,
+            "B Cell": 0.80,
+            "Cytotoxic T Cell": 0.85
+        }
+    }
+}
+```
