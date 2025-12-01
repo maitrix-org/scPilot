@@ -135,9 +135,11 @@ In your config, set `model_provider` (openai/google) and `model_name` (e.g., `gp
 If you use scPilot, please cite our NeurIPS 2025 paper:
 
 ```bibtex
-@inproceedings{gao2025scpilot,
-  title={SCPILOT: Large Language Model Reasoning Toward Automated Single-Cell Analysis and Discovery},
-  author={Gao, Yiming and Wang, Zhen and Chen, Jefferson and others},
-  booktitle={39th Conference on Neural Information Processing Systems (NeurIPS 2025)},
-  year={2025}
+@inproceedings{
+gao2025scpilot,
+title={scPilot: Large Language Model Reasoning Toward Automated Single-Cell Analysis and Discovery},
+author={Yiming Gao and Zhen Wang and Jefferson Chen and Mark Antkowiak and Mengzhou Hu and JungHo Kong and Dexter Pratt and Jieyuan Liu and Enze Ma and Zhiting Hu and Eric P. Xing},
+booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+year={2025},
+url={https://openreview.net/forum?id=Vzi96rTe4w}
 }
