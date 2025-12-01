@@ -1,9 +1,0 @@
-Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
-t cell,t cell,T cell,CL:0000084,0.5,CL:0000492
-b cell,b cell,B cell,CL:0000236,1.0,CL:0000236
-monocytes/macrophage,monocytes/macrophage,macrophage,CL:0000235,0.0,CL:0000875
-cd8 t cell/nk cell,cd8 t cell/nk cell,mature NK T cell,CL:0000814,0.0,CL:0000623
-activated t cell,activated t cell,activated type II NK T cell,CL:0000931,0.0,CL:4052021
-neutrophil,neutrophil,neutrophil,CL:0000775,0.0,CL:0000860
-dendritic cell,dendritic cell,dendritic cell,CL:0000451,1.0,CL:0000451
-platelets/megakaryocyte,platelets/megakaryocyte,megakaryocyte,CL:0000556,1.0,CL:0000556

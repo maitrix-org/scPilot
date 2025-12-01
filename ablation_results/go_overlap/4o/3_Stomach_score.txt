@@ -1,7 +1,0 @@
-Precision = 0.63
-Recall    = 1.00
-F1 score  = 0.77
-AUROC     = 0.72
-Confusion matrix:
- [[10 13]
- [ 0 22]]

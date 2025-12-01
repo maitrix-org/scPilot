@@ -1,9 +1,0 @@
-Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
-t lymphocytes,t lymphocytes,T cell,CL:0000084,0.5,CL:0000492
-b lymphocytes,b lymphocytes,B-1 B cell,CL:0000819,0.5,CL:0000236
-non-classical monocytes,non-classical monocytes,non-classical monocyte,CL:0000875,1.0,CL:0000875
-nk cell,nk cell,natural killer cell,CL:0000623,1.0,CL:0000623
-cd8 t cell,cd8 t cell,granzyme K-associated CD8 T cell,CL:4052021,1.0,CL:4052021
-classical monocytes,classical monocytes,classical monocyte,CL:0000860,1.0,CL:0000860
-dendritic cell,dendritic cell,dendritic cell,CL:0000451,1.0,CL:0000451
-platelet,platelet,platelet,CL:0000233,0.0,CL:0000556

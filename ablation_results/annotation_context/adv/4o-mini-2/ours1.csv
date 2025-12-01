@@ -1,9 +1,0 @@
-Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
-t cell,t cell,T cell,CL:0000084,0.5,CL:0000492
-b cell,b cell,B cell,CL:0000236,1.0,CL:0000236
-macrophage,macrophage,macrophage,CL:0000235,0.0,CL:0000875
-nk cell,nk cell,natural killer cell,CL:0000623,1.0,CL:0000623
-effector t cell,effector t cell,effector T cell,CL:0000911,0.0,CL:4052021
-monocyte,monocyte,monocyte,CL:0000576,0.5,CL:0000860
-myeloid-derived suppressor cell,myeloid-derived suppressor cell,myeloid suppressor cell,CL:0000889,0.0,CL:0000451
-7,7,type-7 epithelial cell of thymus,CL:0002300,0.0,CL:0000556
