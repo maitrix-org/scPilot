@@ -1,0 +1,20 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+on-bipolar cell,on-bipolar cell,ON-bipolar cell,CL:0000749,0.5,CL:4033035
+on-bipolar cell,on-bipolar cell,ON-bipolar cell,CL:0000749,0.5,CL:4033035
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+müller glia,müller glia,Mueller cell,CL:0000636,0.5,"CL:0000636, CL:0000561"
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+,,NA_character_,NA_character_,0.0,CL:0000636
+cone photoreceptors,cone photoreceptors,retinal cone cell,CL:0000573,1.0,CL:0000573
+rod,rod,retinal rod cell,CL:0000604,0.0,CL:0000740
+microglia,microglia,microglial cell,CL:0000129,0.5,"CL:0000129, CL:0000115"
+amacrine cell,amacrine cell,amacrine cell,CL:0000561,0.0,CL:0000745
+amacrine cell,amacrine cell,amacrine cell,CL:0000561,0.5,"CL:0000561, CL:4033035"
+,,NA_character_,NA_character_,0.0,"CL:0000561, CL:4033035"

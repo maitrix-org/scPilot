@@ -1,0 +1,9 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+cd4+ t cell,cd4+ t cell,CD4-positive helper T cell,CL:0000492,1.0,CL:0000492
+b cell,b cell,B cell,CL:0000236,1.0,CL:0000236
+monocytes (non-classical),monocytes (non-classical),non-classical monocyte,CL:0000875,1.0,CL:0000875
+nk cell,nk cell,natural killer cell,CL:0000623,1.0,CL:0000623
+cd8+ t cell (cytotoxic),cd8+ t cell (cytotoxic),"CD8-positive, alpha-beta cytotoxic T cell",CL:0000794,0.0,CL:4052021
+monocytes (classical),monocytes (classical),classical monocyte,CL:0000860,1.0,CL:0000860
+conventional dendritic cell (cdc2),conventional dendritic cell (cdc2),conventional dendritic cell,CL:0000990,0.5,CL:0000451
+platelet,platelet,platelet,CL:0000233,0.0,CL:0000556

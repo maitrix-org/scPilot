@@ -1,0 +1,20 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+bipolar cell,bipolar cell,giant bipolar cell,CL:4033035,1.0,CL:4033035
+bipolar cell,bipolar cell,giant bipolar cell,CL:4033035,1.0,CL:4033035
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+"müller glia, amacrine cell","amacrine cell, müller glia","amacrine cell, Mueller cell","CL:0000561, CL:0000636",1.0,"CL:0000561, CL:0000636"
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+cone,cone,retinal cone cell,CL:0000573,1.0,CL:0000573
+retinal ganglion cell,retinal ganglion cell,retinal ganglion cell,CL:0000740,1.0,CL:0000740
+"endothelial cell, microglia","endothelial cell, microglia","endothelial cell, microglial cell","CL:0000115, CL:0000129",1.0,"CL:0000115, CL:0000129"
+horizontal cell,horizontal cell,retina horizontal cell,CL:0000745,1.0,CL:0000745
+"amacrine cell, bipolar cell","bipolar cell, amacrine cell","giant bipolar cell, amacrine cell","CL:4033035, CL:0000561",1.0,"CL:4033035, CL:0000561"
+"bipolar cell, amacrine cell","bipolar cell, amacrine cell","giant bipolar cell, amacrine cell","CL:4033035, CL:0000561",1.0,"CL:4033035, CL:0000561"

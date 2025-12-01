@@ -1,0 +1,1748 @@
+Okay, let's refine the hypothesis based on the provided differentially expressed genes (DEGs) for the 28 clusters.
+
+**Analysis of DEGs by Cluster:**
+
+*   **Clusters 0, 7, 20:** Strong B cell markers (`Ighm`, `Cd79a`, `Cd79b`, `Vpreb3`, `Igkc`). `Vpreb3` suggests developing/immature B cells. High ribosomal proteins in C20 also common in B cells.
+*   **Clusters 1, 18, 23:** Markers associated with Liver Sinusoidal Endothelial Cells (LSECs) like `Igfbp7`, `Sepp1`, `Dnase1l3`, `Aqp1`, `Sparc`, `Fabp4`, `Egfl7`, `Gpihbp1`.
+*   **Clusters 2, 12, 13, 17, 26:** Strong myeloid markers, particularly Neutrophils (`S100a8`, `S100a9`, `Camp`, `Lyz2`, `Lcn2`, `Pglyrp1`, `Stfa1`, `Stfa2l1`, `Prtn3`). Some general myeloid markers present (`Tyrobp`).
+*   **Clusters 3, 10, 16, 21, 27:** Classic Hepatocyte markers involved in metabolism and protein secretion (`Mup` genes, `Serpina` genes, `Apoc` genes, `Rbp4`, `Alb`, `Ttr`, `Apoa1`, `Fabp1`, `Ahsg`). Cluster 16 with `H19`, `Alb`, `Ttr` might represent fetal/neonatal hepatocytes or Hepatoblasts.
+*   **Cluster 4:** Natural Killer (NK) cell / Cytotoxic T Lymphocyte (CTL) markers (`Ccl5`, `Nkg7`).
+*   **Cluster 5, 24:** High expression of thymosins (`Tmsb4x`, `Tmsb10`), ribosomal proteins (`Rps27`, `Rpl13a`), proliferation markers (`Hmgb2`, `Ptma`, `Tubb5`), and `Cd52` suggest active/proliferating immune cells, potentially lymphocytes (T or B cells).
+*   **Cluster 6:** Kupffer cell (liver resident macrophage) markers (`C1qa`, `C1qb`, `C1qc`, `Apoe`, `Cd5l`).
+*   **Clusters 8, 9, 11, 19:** Erythrocyte markers (Hemoglobin genes `Hba`, `Hbb`, `Slc4a1`, `Car2`). Cluster 19's high ribosomal proteins and `Ptma` might indicate Erythroblasts (developing erythrocytes).
+*   **Cluster 14:** Antigen-presenting cell markers (MHCII: `Cd74`, `H2-Aa`), possibly macrophages, dendritic cells, or B cells. `Cst3`, `Psap` lean slightly myeloid.
+*   **Cluster 15:** Myeloid markers (`Tyrobp`, `Fcer1g`, `Cst3`, `Lyz2`), potentially macrophages or dendritic cells.
+*   **Cluster 22:** Markers associated with Hepatic Stellate Cells (HSCs) or fibroblasts (Extracellular matrix: `Col1a2`, `Col3a1`, `Dcn`, `Sparc`).
+*   **Cluster 25:** Markers like `Apoe`, `Spp1`, `Clu` can be associated with stressed hepatocytes, cholangiocytes, or Kupffer cells. `Ttr`, `Ambp` are more hepatocyte/cholangiocyte-like. This cluster might represent Cholangiocytes (bile duct epithelial cells) or a specific state of hepatocytes/Kupffer cells.
+
+**Refined Hypothesis:**
+
+Based on the analysis of top differentially expressed genes across the 28 clusters from the neonatal and mature mouse liver scRNA-seq dataset, we hypothesize the presence of the following major cell lineages and specific subtypes:
+
+1.  **Hepatocytes:** Multiple clusters (3, 10, 16, 21, 27) show strong expression of canonical hepatocyte markers (e.g., `Alb`, `Ttr`, `Apoc` genes, `Mup` genes, `Serpina` genes). Cluster 16, with `H19` co-expression, likely represents **Hepatoblasts** or immature/neonatal hepatocytes, consistent with the developmental timepoints.
+2.  **Erythroid Lineage:** Several clusters (8, 9, 11, 19) are clearly identifiable as **Erythrocytes** based on high hemoglobin gene expression (`Hba`, `Hbb`). Cluster 19 may represent earlier **Erythroblasts** due to markers like `Ptma` and ribosomal proteins.
+3.  **Myeloid Cells:**
+    *   **Neutrophils:** Abundant evidence across multiple clusters (2, 12, 13, 17, 26) marked by `S100a8/a9`, `Camp`, `Lyz2`, `Lcn2`, `Prtn3`, `Stfa` genes.
+    *   **Kupffer Cells (Macrophages):** Cluster 6 is distinct with complement genes (`C1q`) and `Apoe`.
+    *   **Other Monocytes/Macrophages/DCs:** Clusters 14 and 15 express myeloid and antigen-presentation markers (`Tyrobp`, `Fcer1g`, `Cd74`, `H2-Aa`).
+4.  **Lymphoid Cells:**
+    *   **B Cells:** Clusters 0, 7, and 20 strongly express B cell markers (`Ighm`, `Cd79a/b`, `Igkc`). Markers like `Vpreb3` in C0/C7 suggest the presence of **developing B cells**.
+    *   **T Cells / NK Cells:** Cluster 4 expresses markers (`Ccl5`, `Nkg7`) characteristic of **NK cells** and/or **Cytotoxic T Lymphocytes (CTLs)**.
+    *   **Proliferating Lymphocytes:** Clusters 5 and 24 likely represent actively cycling lymphocytes (T or B cells) based on proliferation markers (`Hmgb2`, `Tubb5`) and thymosins.
+5.  **Liver Sinusoidal Endothelial Cells (LSECs):** Clusters 1, 18, and 23 show enrichment for endothelial markers such as `Igfbp7`, `Sepp1`, `Gpihbp1`, `Aqp1`, `Egfl7`.
+6.  **Hepatic Stellate Cells (HSCs) / Fibroblasts:** Cluster 22 is characterized by extracellular matrix genes (`Col1a2`, `Col3a1`, `Dcn`, `Sparc`).
+7.  **Potential Cholangiocytes:** Cluster 25 expresses markers like `Spp1`, `Clu`, `Apoe`, `Ttr`, `Ambp`, which could potentially represent **Cholangiocytes** (bile duct epithelium) or possibly stressed hepatocytes. Further investigation is needed for definitive assignment.
+
+This refined hypothesis incorporates specific cell subtypes suggested by the DEGs and acknowledges the likely presence of developmental intermediates (hepatoblasts, erythroblasts, developing B cells) expected in a dataset spanning neonatal to mature stages.
+Okay, here is a proposed list of cell types and marker genes based on the provided DEG analysis and refined hypothesis for the neonatal and mature mouse liver scRNA-seq dataset.
+
+**1. List of Cell Types and Marker Genes:**
+
+*   **[Hepatocyte]:** `Alb`; `Ttr`; `Apoc2`; `Serpina1a`; `Fabp1`
+*   **[Hepatoblast / Immature Hepatocyte]:** `H19`; `Afp`; `Alb`; `Ttr`; `Rbp4`
+*   **[Erythrocyte]:** `Hba-a1`; `Hbb-bt`; `Slc4a1`; `Car2`; `Alas2`
+*   **[Erythroblast]:** `Hba-a1`; `Hbb-bt`; `Ptma`; `Alas2`; `Gata1`
+*   **[Neutrophil]:** `S100a8`; `S100a9`; `Lcn2`; `Camp`; `Prtn3`
+*   **[Kupffer Cell]:** `C1qa`; `C1qb`; `Cd5l`; `Apoe`; `Clec4f`
+*   **[Monocyte / Macrophage]:** `Lyz2`; `Tyrobp`; `Adgre1` (F4/80); `Cst3`; `Cd68`
+*   **[Dendritic Cell]:** `Cd74`; `H2-Aa`; `Fcer1g`; `Itgax` (Cd11c); `Flt3`
+*   **[B Cell]:** `Cd79a`; `Cd79b`; `Ms4a1` (Cd20); `Ighm`; `Igkc`
+*   **[Developing B Cell]:** `Vpreb3`; `Igll1`; `Cd79a`; `Dntt`; `Rag1`
+*   **[NK Cell]:** `Nkg7`; `Gzma`; `Klrb1c` (Nkp46); `Ccl5`; `Prf1`
+*   **[Cytotoxic T Lymphocyte (CTL)]:** `Cd8a`; `Cd8b1`; `Gzmb`; `Nkg7`; `Ccl5`
+*   **[Helper T Cell]:** `Cd4`; `Cd3g`; `Il7r`; `Trbc2`; `Cd40lg`
+*   **[Proliferating Lymphocyte]:** `Hmgb2`; `Tubb5`; `Mki67`; `Top2a`; `Cd52`
+*   **[Liver Sinusoidal Endothelial Cell (LSEC)]:** `Gpihbp1`; `Stab2`; `Aqp1`; `Egfl7`; `Igfbp7`
+*   **[Hepatic Stellate Cell (HSC)]:** `Col1a2`; `Col3a1`; `Dcn`; `Sparc`; `Acta2`
+*   **[Cholangiocyte]:** `Krt19`; `Sox9`; `Epcam`; `Spp1`; `Clu`
+
+**2. Python List of All Marker Genes:**
+
+
+MARKER_GENES = [
+    # Hepatocyte
+    'Alb', 'Ttr', 'Apoc2', 'Serpina1a', 'Fabp1',
+    # Hepatoblast / Immature Hepatocyte
+    'H19', 'Afp', 'Rbp4', # Alb, Ttr already listed
+    # Erythrocyte
+    'Hba-a1', 'Hbb-bt', 'Slc4a1', 'Car2', 'Alas2',
+    # Erythroblast
+    'Ptma', 'Gata1', # Hba-a1, Hbb-bt, Alas2 already listed
+    # Neutrophil
+    'S100a8', 'S100a9', 'Lcn2', 'Camp', 'Prtn3',
+    # Kupffer Cell
+    'C1qa', 'C1qb', 'Cd5l', 'Apoe', 'Clec4f',
+    # Monocyte / Macrophage
+    'Lyz2', 'Tyrobp', 'Adgre1', 'Cst3', 'Cd68',
+    # Dendritic Cell
+    'Cd74', 'H2-Aa', 'Fcer1g', 'Itgax', 'Flt3',
+    # B Cell
+    'Cd79a', 'Cd79b', 'Ms4a1', 'Ighm', 'Igkc',
+    # Developing B Cell
+    'Vpreb3', 'Igll1', 'Dntt', 'Rag1', # Cd79a already listed
+    # NK Cell
+    'Nkg7', 'Gzma', 'Klrb1c', 'Ccl5', 'Prf1',
+    # Cytotoxic T Lymphocyte (CTL)
+    'Cd8a', 'Cd8b1', 'Gzmb', # Nkg7, Ccl5 already listed
+    # Helper T Cell
+    'Cd4', 'Cd3g', 'Il7r', 'Trbc2', 'Cd40lg',
+    # Proliferating Lymphocyte
+    'Hmgb2', 'Tubb5', 'Mki67', 'Top2a', 'Cd52',
+    # Liver Sinusoidal Endothelial Cell (LSEC)
+    'Gpihbp1', 'Stab2', 'Aqp1', 'Egfl7', 'Igfbp7',
+    # Hepatic Stellate Cell (HSC)
+    'Col1a2', 'Col3a1', 'Dcn', 'Sparc', 'Acta2',
+    # Cholangiocyte
+    'Krt19', 'Sox9', 'Epcam', 'Spp1', 'Clu'
+]
+
+# Optional: Create a set to get unique genes then convert back to list
+MARKER_GENES = sorted(list(set(MARKER_GENES)))
+
+
+This list includes 17 distinct cell types, incorporating developmental stages and major immune/stromal populations identified in the DEG analysis and hypothesis. The markers selected are based on the provided analysis and canonical knowledge, acknowledging potential overlaps between related cell types (e.g., Hepatocyte/Hepatoblast, Erythrocyte/Erythroblast, NK/CTL, B/Developing B, various myeloid subtypes).
+106.55919694900513 seconds
+```json
+{
+  "1a": {
+    "description": "Specific genes show high expression concentrated in certain clusters, strongly suggesting distinct cell populations. Key examples include:",
+    "gene_cluster_mapping": [
+      {
+        "gene": "Alb, Ttr, Serpina1a, Apoc2, Fabp1, Rbp4",
+        "clusters": [3, 10, 21, 27],
+        "cell_type": "Hepatocyte"
+      },
+      {
+        "gene": "H19, Afp",
+        "clusters": [16],
+        "cell_type": "Hepatoblast / Immature Hepatocyte"
+      },
+      {
+        "gene": "Slc4a1, Car2, Alas2",
+        "clusters": [8, 9, 11, 19, 26],
+        "cell_type": "Erythrocyte / Erythroblast"
+      },
+      {
+        "gene": "Ptma",
+        "clusters": [0, 7, 12, 14, 17, 19, 23, 24],
+        "cell_type": "Erythroblast / Proliferating Cells"
+      },
+      {
+        "gene": "S100a8, S100a9, Lcn2, Camp",
+        "clusters": [2, 12, 13, 17, 26],
+        "cell_type": "Neutrophil / Proliferating Myeloid"
+      },
+      {
+        "gene": "Prtn3",
+        "clusters": [17],
+        "cell_type": "Neutrophil"
+      },
+      {
+        "gene": "C1qa, C1qb, Cd5l, Clec4f",
+        "clusters": [6],
+        "cell_type": "Kupffer Cell"
+      },
+      {
+        "gene": "Lyz2, Cst3, Adgre1, Cd68",
+        "clusters": [2, 6, 12, 13, 14, 15, 22, 25, 26],
+        "cell_type": "Monocyte / Macrophage / Kupffer / Other Myeloid"
+      },
+      {
+        "gene": "Cd74",
+        "clusters": [0, 14, 20],
+        "cell_type": "B Cell / Dendritic Cell / Other Immune"
+      },
+      {
+        "gene": "Cd79a, Cd79b, Ighm, Igkc",
+        "clusters": [0, 7, 20],
+        "cell_type": "B Cell / Developing B Cell"
+      },
+      {
+        "gene": "Vpreb3",
+        "clusters": [0, 7],
+        "cell_type": "Developing B Cell"
+      },
+      {
+        "gene": "Nkg7, Gzma, Klrb1c, Ccl5, Gzmb",
+        "clusters": [4, 5, 24],
+        "cell_type": "NK Cell / CTL / Helper T Cell"
+      },
+      {
+        "gene": "Cd3g, Trbc2",
+        "clusters": [4, 5, 24],
+        "cell_type": "T Cell Lineage (CTL, Helper T)"
+      },
+      {
+        "gene": "Mki67, Top2a, Hmgb2, Tubb5",
+        "clusters": [7, 9, 11, 12, 19, 24, 26],
+        "cell_type": "Proliferating Lymphocyte / Other Proliferating"
+      },
+      {
+        "gene": "Gpihbp1, Stab2, Aqp1, Egfl7, Igfbp7",
+        "clusters": [1, 18, 23, 25],
+        "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)"
+      },
+      {
+        "gene": "Col1a2, Col3a1, Dcn, Sparc",
+        "clusters": [1, 18, 22, 23, 25],
+        "cell_type": "Hepatic Stellate Cell (HSC) / LSEC"
+      },
+      {
+        "gene": "Sox9, Epcam, Spp1, Clu",
+        "clusters": [3, 10, 25, 27],
+        "cell_type": "Cholangiocyte / Hepatocyte"
+      }
+    ]
+  },
+  "1b": {
+    "description": "Yes, many genes exhibit differential expression, being highly expressed in specific clusters while having lower or negligible expression in others. The genes listed in '1a' are primary examples of such differentially expressed markers. For instance, 'Alb' is high in Hepatocyte clusters (3, 10, 16, 21, 27) but low elsewhere. 'Cd79a'/'Cd79b' are high in B-lineage clusters (0, 7, 20) but low in others. 'Clec4f' is specific to Kupffer cluster 6. 'Col1a2'/'Col3a1' are specific to HSC cluster 22. 'H19'/'Afp' are specific to Hepatoblast cluster 16. Proliferation markers like 'Mki67' distinguish proliferating clusters (7, 9, 11, 12, 19, 24, 26) from their non-proliferating counterparts.",
+    "examples": [
+      "Alb", "H19", "S100a8", "Clec4f", "Cd79a", "Nkg7", "Mki67", "Gpihbp1", "Col1a2", "Sox9"
+    ]
+  },
+  "1c": {
+    "description": "Based on the provided list of top genes per cluster, some canonical marker genes from the initial list, while detected in the dataset ('Failed Genes' list is empty), do not appear among the *top* expressed genes for any single cluster. This suggests they might have lower or broader expression patterns, making them less informative for distinguishing these specific clusters based solely on the top gene lists. However, they might still be valuable when visualized across all cells (e.g., in a dotplot) or used in combination with other markers.",
+    "non_informative_genes": [
+      "Hba-a1", "Hbb-bt", # Erythrocyte markers, overshadowed by Slc4a1, Car2, Alas2?
+      "Ms4a1", # B cell marker, Cd79a/b, Ighm, Igkc seem stronger drivers here
+      "Igll1", "Dntt", "Rag1", # Developing B cell markers, Vpreb3 seems stronger driver here
+      "Cd8a", "Cd8b1", # CTL markers, Gzmb, Nkg7 seem stronger drivers here
+      "Cd4", "Il7r", "Cd40lg", # Helper T cell markers, Cd3g, Trbc2 present but Cd4 is weak/absent in top genes
+      "Prf1", # NK cell marker
+      "Itgax", "Flt3", # Dendritic cell markers, Cd74 seems more prominent in the identified potential DC cluster
+      "Acta2", # HSC marker, Collagen genes seem stronger drivers here
+      "Krt19", # Cholangiocyte marker, Sox9, Epcam, Spp1, Clu seem stronger drivers here
+      "Gata1" # Erythroblast marker, Ptma and proliferation genes seem stronger drivers here
+    ]
+  },
+  "2a": {
+    "description": "Based on the comparison between the top genes for each cluster and the provided `MARKER_GENES` list, all clusters (0-27) show high expression of at least one marker gene from the list within their respective top genes.",
+    "clusters_lacking_markers": []
+  },
+  "3a": {
+    "description": "Yes, the gene expression patterns reveal distinct clusters. Many clusters exhibit strong and specific expression of canonical marker genes associated with known liver cell types (e.g., Hepatocytes, Kupffer cells, LSECs, HSCs, various immune cells, erythroid cells). The presence of multiple clusters expressing markers for the same cell type (e.g., Hepatocytes, LSECs, Erythroblasts, Neutrophils) suggests potential biological heterogeneity (e.g., zonation, activation states, developmental stages) or technical variation.",
+    "assessment": true
+  },
+  "3b": {
+    "description": "Based on the top expressed genes and known markers, the following cell type identities are proposed for each cluster:",
+    "annotations": [
+      {"cluster": 0, "cell_type": "Developing B Cell"},
+      {"cluster": 1, "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)"},
+      {"cluster": 2, "cell_type": "Neutrophil"},
+      {"cluster": 3, "cell_type": "Hepatocyte"},
+      {"cluster": 4, "cell_type": "Cytotoxic T Lymphocyte (CTL)"},
+      {"cluster": 5, "cell_type": "Helper T Cell"},
+      {"cluster": 6, "cell_type": "Kupffer Cell"},
+      {"cluster": 7, "cell_type": "Proliferating Lymphocyte"}, # B-cell lineage
+      {"cluster": 8, "cell_type": "Erythrocyte"},
+      {"cluster": 9, "cell_type": "Erythroblast"},
+      {"cluster": 10, "cell_type": "Hepatocyte"},
+      {"cluster": 11, "cell_type": "Erythroblast"},
+      {"cluster": 12, "cell_type": "Proliferating Lymphocyte"}, # Neutrophil lineage
+      {"cluster": 13, "cell_type": "Neutrophil"},
+      {"cluster": 14, "cell_type": "Dendritic Cell"},
+      {"cluster": 15, "cell_type": "Monocyte / Macrophage"},
+      {"cluster": 16, "cell_type": "Hepatoblast / Immature Hepatocyte"},
+      {"cluster": 17, "cell_type": "Neutrophil"},
+      {"cluster": 18, "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)"},
+      {"cluster": 19, "cell_type": "Erythroblast"},
+      {"cluster": 20, "cell_type": "B Cell"},
+      {"cluster": 21, "cell_type": "Hepatocyte"},
+      {"cluster": 22, "cell_type": "Hepatic Stellate Cell (HSC)"},
+      {"cluster": 23, "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)"},
+      {"cluster": 24, "cell_type": "Proliferating Lymphocyte"}, # CTL/NK lineage
+      {"cluster": 25, "cell_type": "Cholangiocyte"},
+      {"cluster": 26, "cell_type": "Proliferating Lymphocyte"}, # Mixed Myeloid/Erythroid lineage
+      {"cluster": 27, "cell_type": "Hepatocyte"}
+    ]
+  },
+  "3c": {
+    "description": "To refine annotations, consider adding subtypes or related cell types:",
+    "recommendations": [
+      "Hepatocyte subtypes (Periportal vs. Pericentral based on zonation markers if available)",
+      "Macrophage subtypes (e.g., M1/M2 polarization markers, differentiating resident Kupffer cells from infiltrating monocytes/macrophages more definitively)",
+      "Dendritic Cell subtypes (e.g., cDC1: `Xcr1`, `Clec9a`; cDC2: `Sirpa`, `Cd1c`; pDC: `Siglech`, `Ly6c2`) - Especially relevant for refining Cluster 14.",
+      "T cell subtypes (e.g., Regulatory T cells: `Foxp3`, `Il2ra`; Gamma-delta T cells: `Trdc`) - Especially for refining Cluster 5.",
+      "NK Cell subtypes (e.g., based on maturation or activation state markers).",
+      "Finer Erythroid development stages beyond Erythrocyte/Erythroblast.",
+      "Consideration of potential Portal Fibroblasts if distinct from HSCs based on markers like `Fibin`."
+    ]
+  },
+  "3d": {
+    "description": "Certain clusters might benefit from subgrouping (subclustering) for finer resolution:",
+    "recommendations": [
+      {"cluster": [3, 10, 21, 27], "reason": "Multiple Hepatocyte clusters; could represent different metabolic zones or states. Subclustering might reveal zonation patterns."},
+      {"cluster": [1, 18, 23], "reason": "Multiple LSEC clusters; could represent different functional states or locations within the sinusoid."},
+      {"cluster": [7, 12, 24, 26], "reason": "Clusters assigned 'Proliferating Lymphocyte' but derived from different lineages (B, Neutrophil, T/NK, Mixed). Subclustering within these, or re-clustering all proliferating cells together, might better resolve distinct proliferating populations."},
+      {"cluster": [2, 13, 17], "reason": "Multiple Neutrophil clusters; could represent different activation or maturation states."},
+      {"cluster": [9, 11, 19], "reason": "Multiple Erythroblast clusters; could represent finer developmental stages."},
+      {"cluster": 14, "reason": "Low confidence Dendritic Cell annotation; subclustering might reveal heterogeneity or confirm identity."},
+      {"cluster": 26, "reason": "Mixed Myeloid/Erythroid proliferation signature; subclustering is needed to understand the heterogeneity, potential doublets, or progenitor status."}
+    ]
+  },
+  "4a": {
+    "description": "Confidence levels are assigned based on the strength and specificity of marker gene expression in the top genes for each cluster.",
+    "confidence_scores": [
+      {"cluster": 0, "cell_type": "Developing B Cell", "confidence": 0.85},
+      {"cluster": 1, "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)", "confidence": 0.90},
+      {"cluster": 2, "cell_type": "Neutrophil", "confidence": 0.80},
+      {"cluster": 3, "cell_type": "Hepatocyte", "confidence": 0.95},
+      {"cluster": 4, "cell_type": "Cytotoxic T Lymphocyte (CTL)", "confidence": 0.70},
+      {"cluster": 5, "cell_type": "Helper T Cell", "confidence": 0.55},
+      {"cluster": 6, "cell_type": "Kupffer Cell", "confidence": 0.95},
+      {"cluster": 7, "cell_type": "Proliferating Lymphocyte", "confidence": 0.65},
+      {"cluster": 8, "cell_type": "Erythrocyte", "confidence": 0.90},
+      {"cluster": 9, "cell_type": "Erythroblast", "confidence": 0.85},
+      {"cluster": 10, "cell_type": "Hepatocyte", "confidence": 0.95},
+      {"cluster": 11, "cell_type": "Erythroblast", "confidence": 0.85},
+      {"cluster": 12, "cell_type": "Proliferating Lymphocyte", "confidence": 0.40},
+      {"cluster": 13, "cell_type": "Neutrophil", "confidence": 0.75},
+      {"cluster": 14, "cell_type": "Dendritic Cell", "confidence": 0.30},
+      {"cluster": 15, "cell_type": "Monocyte / Macrophage", "confidence": 0.60},
+      {"cluster": 16, "cell_type": "Hepatoblast / Immature Hepatocyte", "confidence": 0.95},
+      {"cluster": 17, "cell_type": "Neutrophil", "confidence": 0.60},
+      {"cluster": 18, "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)", "confidence": 0.65},
+      {"cluster": 19, "cell_type": "Erythroblast", "confidence": 0.80},
+      {"cluster": 20, "cell_type": "B Cell", "confidence": 0.90},
+      {"cluster": 21, "cell_type": "Hepatocyte", "confidence": 0.95},
+      {"cluster": 22, "cell_type": "Hepatic Stellate Cell (HSC)", "confidence": 0.90},
+      {"cluster": 23, "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)", "confidence": 0.90},
+      {"cluster": 24, "cell_type": "Proliferating Lymphocyte", "confidence": 0.70},
+      {"cluster": 25, "cell_type": "Cholangiocyte", "confidence": 0.75},
+      {"cluster": 26, "cell_type": "Proliferating Lymphocyte", "confidence": 0.35},
+      {"cluster": 27, "cell_type": "Hepatocyte", "confidence": 0.95}
+    ]
+  },
+  "4b": {
+    "description": "Based on the confidence scores, the annotations for the top 2/3 (~19 clusters) most confident assignments should be stabilized. These are clusters with a confidence score of 0.75 or higher.",
+    "stabilized_annotations": [
+      {"cluster": 0, "cell_type": "Developing B Cell", "confidence": 0.85},
+      {"cluster": 1, "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)", "confidence": 0.90},
+      {"cluster": 2, "cell_type": "Neutrophil", "confidence": 0.80},
+      {"cluster": 3, "cell_type": "Hepatocyte", "confidence": 0.95},
+      {"cluster": 6, "cell_type": "Kupffer Cell", "confidence": 0.95},
+      {"cluster": 8, "cell_type": "Erythrocyte", "confidence": 0.90},
+      {"cluster": 9, "cell_type": "Erythroblast", "confidence": 0.85},
+      {"cluster": 10, "cell_type": "Hepatocyte", "confidence": 0.95},
+      {"cluster": 11, "cell_type": "Erythroblast", "confidence": 0.85},
+      {"cluster": 13, "cell_type": "Neutrophil", "confidence": 0.75},
+      {"cluster": 16, "cell_type": "Hepatoblast / Immature Hepatocyte", "confidence": 0.95},
+      {"cluster": 19, "cell_type": "Erythroblast", "confidence": 0.80},
+      {"cluster": 20, "cell_type": "B Cell", "confidence": 0.90},
+      {"cluster": 21, "cell_type": "Hepatocyte", "confidence": 0.95},
+      {"cluster": 22, "cell_type": "Hepatic Stellate Cell (HSC)", "confidence": 0.90},
+      {"cluster": 23, "cell_type": "Liver Sinusoidal Endothelial Cell (LSEC)", "confidence": 0.90},
+      {"cluster": 25, "cell_type": "Cholangiocyte", "confidence": 0.75},
+      {"cluster": 27, "cell_type": "Hepatocyte", "confidence": 0.95}
+    ],
+    "threshold_description": "Chosen threshold >= 0.75 (18 clusters), representing approximately top 2/3 high-confidence annotations."
+  }
+}
+```
+Okay, let's refine the hypothesis based on the provided DEG lists and previous (fragmented) annotations.
+
+**Analysis:**
+
+1.  **Hepatocytes:** Clusters 3, 10, 16, 21 show strong hepatocyte signatures (`Mup` genes, `Serpina` genes, `Apoc3`, `Rbp4`, `Alb`, `Ttr`, `Apoa1`, `Fabp1`). Cluster 16 with `H19` might represent neonatal hepatocytes or hepatoblasts. Cluster 25 (`Apoe`, `Spp1`, `Clu`, `Ttr`, `Ambp`) could also be hepatocytes or potentially cholangiocytes/bile duct cells (needs further investigation, but `Ttr` and `Ambp` lean towards hepatocytes).
+2.  **Endothelial Cells (likely LSECs):** Clusters 1, 18, 23 share key markers like `Igfbp7`, `Sepp1`, `Sparc`, `Fabp4`, `Gpihbp1`, `Aqp1`.
+3.  **Kupffer Cells/Macrophages:** Cluster 6 is clearly Kupffer cells (`C1qa`, `C1qb`, `C1qc`, `Apoe`). Cluster 15 (`Tyrobp`, `Fcer1g`, `Cst3`, `Lyz2`) likely represents macrophages or monocytes. Cluster 14 (`Cd74`, `H2-Aa`, `Cst3`) expresses APC markers and could be macrophages, dendritic cells, or possibly B cells (though less likely given other B cell clusters).
+4.  **Neutrophils/Granulocytes:** Clusters 13 and 17 show strong neutrophil markers (`Lcn2`, `Lyz2`, `S100a8`, `S100a9`, `Camp`, `Prtn3`). Clusters 12 and 26 (`Pglyrp1`, `Camp`, `Stfa1`, `BC100530`, `S100a8`) also strongly indicate neutrophils/granulocytes. The previous annotation for 26 ("Proliferating Lymphocyte") seems incorrect based on these top DEGs.
+5.  **Lymphocytes (T/NK):** Cluster 4 (`Ccl5`, `Nkg7`, `AW112010`) indicates NK cells or cytotoxic T cells.
+6.  **Lymphocytes (B cells):** Clusters 7 (`Ighm`, `Cd79a`) and 20 (`Cd74`, `Igkc`) are clearly B cells.
+7.  **Erythroid Lineage:** Clusters 8, 9, 11 (`Hbb` genes, `Hba` genes, `Slc4a1`, `Car2`) are mature erythrocytes. Cluster 19 (`Hba-a1`, `Car2`, high RPS genes) could also be erythrocytes or perhaps erythroblasts.
+8.  **Hepatic Stellate Cells/Fibroblasts:** Cluster 22 (`Col1a2`, `Col3a1`, `Dcn`, `Sparc`) strongly suggests HSCs or fibroblasts.
+9.  **Proliferating Cells:** Clusters 5 and 24 show high levels of `Tmsb10`, `Tmsb4x`, ribosomal proteins, `Ptma`, and proliferation markers (`Hmgb2`, `Tubb5` in C24). `Cd52` suggests a lymphoid origin. These likely represent proliferating lymphocytes (T, B, or NK). This aligns better with the previous annotation concept than cluster 26.
+
+**Refined Hypothesis:**
+
+This scRNA-seq dataset from neonatal and mature mouse liver likely contains the following major cell populations, identified by distinct gene expression profiles across clusters:
+
+1.  **Hepatocytes:** Represented by multiple clusters (3, 10, 16, 21, likely 25), characterized by high expression of albumin (`Alb`), transferrin (`Tf`), apolipoproteins (`Apoa1`, `Apoc3`, etc.), major urinary proteins (`Mup` genes), and serpins (`Serpina` genes). Cluster 16, with `H19`, may represent a neonatal/hepatoblast state.
+2.  **Liver Sinusoidal Endothelial Cells (LSECs):** Clusters 1, 18, 23, marked by `Igfbp7`, `Sepp1`, `Sparc`, `Fabp4`, `Gpihbp1`, `Aqp1`.
+3.  **Kupffer Cells / Macrophages:** Cluster 6 (expressing `C1q` genes, `Apoe`) and Cluster 15 (expressing `Tyrobp`, `Fcer1g`). Cluster 14 (expressing MHCII genes `H2-Aa`, `Cd74`) likely represents APCs, possibly macrophages or dendritic cells.
+4.  **Neutrophils/Granulocytes:** Clusters 12, 13, 17, 26, identified by strong expression of `S100a8`, `S100a9`, `Lcn2`, `Lyz2`, `Camp`, `Prtn3`, and `Stfa` genes.
+5.  **Erythroid Cells:** Clusters 8, 9, 11, 19, characterized by high hemoglobin gene expression (`Hbb` genes, `Hba` genes), `Slc4a1`, and `Car2`. Cluster 19 might contain earlier erythroblasts.
+6.  **B Lymphocytes:** Clusters 7 and 20, marked by B-cell receptor components (`Ighm`, `Cd79a`) and immunoglobulin light chains (`Igkc`).
+7.  **T / NK Lymphocytes:** Cluster 4, expressing markers like `Ccl5`, `Nkg7`, characteristic of NK cells or cytotoxic T cells.
+8.  **Hepatic Stellate Cells / Fibroblasts:** Cluster 22, identified by collagen genes (`Col1a2`, `Col3a1`), `Dcn`, and `Sparc`.
+9.  **Proliferating Lymphocytes:** Clusters 5 and 24, showing high expression of thymosins (`Tmsb4x`, `Tmsb10`), proliferation markers (`Hmgb2`, `Tubb5`), ribosomal proteins, and the lymphocyte marker `Cd52`.
+
+This refined hypothesis provides specific cluster assignments based on marker genes and addresses the expected cell types from the project description, while also identifying additional populations like HSCs and LSECs common in liver tissue. It also clarifies likely proliferating populations and corrects apparent inconsistencies from previous annotations (e.g., Cluster 26).
+1. List of cell types with their markers:
+
+- [Cholangiocytes (Bile Duct Cells)]: Krt19; Sox9; Epcam
+- [Fibroblasts]: Dcn; Col1a2; Col3a1
+- [Eosinophils]: Prg2; Ear1; Epx
+
+2. Python list of all marker genes:
+MARKER_GENES = ['Krt19', 'Sox9', 'Epcam', 'Dcn', 'Col1a2', 'Col3a1', 'Prg2', 'Ear1', 'Epx']
+32.58101415634155 seconds
+```json
+{
+  "1a": {
+    "description": "Specific genes show high expression in particular clusters based on the provided 'top genes' data:",
+    "details": [
+      "Cluster 22: Highly expresses 'Dcn', 'Col3a1', and 'Col1a2'. These are markers for Fibroblasts.",
+      "Cluster 25: Highly expresses 'Epcam' and 'Sox9'. These are markers for Cholangiocytes.",
+      "Other highly expressed genes ('Krt19', 'Ear1', 'Prg2', 'Epx') are present in the dataset ('Genes that are successfully (highly) expressed in some clusters') but are not listed as the top defining genes for clusters 22 or 25 based on the provided dictionary. They likely contribute to the identity of other clusters not explicitly annotated here or are secondary markers in clusters 22/25."
+    ]
+  },
+  "1b": {
+    "description": "Yes, several genes show differential expression across clusters:",
+    "details": [
+      "'Epcam' and 'Sox9' are significantly more highly expressed in cluster 25 compared to clusters 0-24, 26, and 27, as indicated by the differential expression analysis results.",
+      "'Dcn', 'Col3a1', and 'Col1a2' are highly expressed in cluster 22, implying they are differentially expressed compared to other clusters (like cluster 25) where they are not top genes.",
+      "The presence of 'Krt19', 'Ear1', 'Prg2', and 'Epx' in the 'highly expressed' list, despite not being top genes for clusters 22 or 25, suggests they are also differentially expressed, likely being high in some of the other clusters (0-21, 23, 24, 26, 27)."
+    ]
+  },
+  "1c": {
+    "description": "Based on the provided data, none of the marker genes appear completely uninformative.",
+    "details": [
+      "All genes in the `MARKER_GENES` list were found in the 'Genes that are successfully (highly) expressed in some clusters' list.",
+      "No genes were listed in 'Genes that are failed to express in any clusters'.",
+      "As described in 1b, all marker genes show evidence of being highly expressed in at least some clusters or are involved in differential expression between clusters."
+    ]
+  },
+  "2a": {
+    "description": "Yes, there are clusters that lack high expression of any marker gene based solely on the 'top genes' dictionary provided.",
+    "clusters": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 26, 27],
+    "note": "This indicates that for these clusters, none of the genes from the specific `MARKER_GENES` list ranked as the absolute top differentiating genes within the context of the analysis that generated the 'top genes' dictionary. They might still express some of these markers at lower levels or express other non-marker genes more highly."
+  },
+  "3a": {
+    "description": "Yes, based on the distinct gene expression patterns highlighted by the 'top genes' and differential expression data, there are clearly distinct clusters.",
+    "details": [
+      "Cluster 22 shows a strong signature for Fibroblast markers ('Dcn', 'Col3a1', 'Col1a2').",
+      "Cluster 25 shows a strong signature for Cholangiocyte markers ('Epcam', 'Sox9') and is significantly different from most other clusters based on these genes."
+    ]
+  },
+  "3b": {
+    "description": "Yes, specific cell type identities can be assigned to some clusters based on the provided marker genes:",
+    "annotations": [
+      {
+        "cluster": 22,
+        "cell_type": "Fibroblasts",
+        "markers": ["Dcn", "Col3a1", "Col1a2"],
+        "rationale": "Top genes for this cluster directly match the canonical markers provided for Fibroblasts."
+      },
+      {
+        "cluster": 25,
+        "cell_type": "Cholangiocytes",
+        "markers": ["Epcam", "Sox9"],
+        "rationale": "Top genes include two key markers ('Epcam', 'Sox9'). The third marker 'Krt19' is confirmed as highly expressed overall in the dataset, and differential expression strongly supports 'Epcam' and 'Sox9' enrichment in this cluster."
+      }
+    ],
+    "unannotated_clusters": "Clusters 0-21, 23, 24, 26, and 27 remain unannotated with the current marker set and analysis results."
+  },
+  "3c": {
+    "description": "To refine the annotation, especially for the currently unannotated clusters in this liver dataset, consider adding markers for these additional cell types:",
+    "recommendations": [
+        "Hepatocytes (e.g., Alb, Apoa1, Cyp P450 family members)",
+        "Liver Sinusoidal Endothelial Cells (LSECs) (e.g., Pecam1, Kdr, Stab1, Stab2)",
+        "Kupffer Cells (Resident Macrophages) (e.g., Cd68, Clec4f, Marco)",
+        "Hepatic Stellate Cells (Ito cells) (e.g., Acta2, Rgs5, Pdgfrb)",
+        "T cells (e.g., Cd3d, Cd3e, Cd3g, Cd4, Cd8a)",
+        "B cells (e.g., Cd79a, Cd79b, Ms4a1)",
+        "NK cells (e.g., Nkg7, Gzma/b)",
+        "Other potential immune cells (e.g., Dendritic cells, Neutrophils - depending on context/disease state)"
+        ]
+  },
+  "3d": {
+    "description": "Recommend performing subgrouping analysis on the following clusters:",
+    "recommendations": [
+      {
+        "clusters": "[0-21, 23, 24, 26, 27]",
+        "rationale": "This large group of currently unannotated clusters likely contains multiple distinct cell types or states (e.g., Hepatocytes, Endothelial cells, various Immune cells). Subclustering this group using a broader set of variable genes (not just the current markers) is highly recommended to resolve these populations."
+      },
+      {
+        "clusters": "[26, 27]",
+        "rationale": "These clusters were specifically compared to cluster 25 via DE, showing lower expression of Cholangiocyte markers, but they did not present their own top markers from the current list. Investigating them further, possibly via subclustering or examining their top genes irrespective of the marker list, could reveal their identity or relationship to cluster 25 (e.g., related cell state, low-quality cells, or a distinct type)."
+      }
+    ]
+  },
+    "4a": {
+        "description": "Confidence levels for the current annotations:",
+        "scores": [
+            {
+                "cluster": 22,
+                "annotation": "Fibroblasts",
+                "confidence_score": 0.85,
+                "rationale": "High confidence. All three specified markers ('Dcn', 'Col1a2', 'Col3a1') are listed as top genes for this cluster."
+            },
+            {
+                "cluster": 25,
+                "annotation": "Cholangiocytes",
+                "confidence_score": 0.90,
+                "rationale": "Very high confidence. Two key markers ('Epcam', 'Sox9') are top genes, the third ('Krt19') is highly expressed overall, and differential expression strongly supports this assignment against many other clusters."
+            }
+        ]
+    },
+    "4b": {
+        "description": "Based on the confidence levels, the following annotations should be considered stable for the next steps:",
+        "stabilized_annotations": [
+            {
+                "cluster": 22,
+                "annotation": "Fibroblasts"
+            },
+            {
+                "cluster": 25,
+                "annotation": "Cholangiocytes"
+            }
+        ],
+        "rationale": "Both assigned annotations have high confidence scores (0.85 and 0.90). As there are only two annotations currently, and both are strongly supported by the data, they can be considered stable."
+    }
+}
+```
+Okay, let's refine the hypothesis based on the new gene expression data for clusters 22 and 25.
+
+**Analysis:**
+
+1.  **Cluster 22 Markers:** `Sparc`, `Dcn`, `Col3a1`, `Col1a2`, `Igfbp7`. These genes are strongly associated with extracellular matrix production and remodeling. `Sparc`, `Dcn`, `Col3a1`, and `Col1a2` are classic markers for **Hepatic Stellate Cells (HSCs)**, especially in their activated state, or potentially fibroblasts. Given the liver context, HSCs are the most likely identity.
+2.  **Cluster 25 Markers:** `Apoe`, `Spp1`, `Clu`, `Ttr`, `Ambp`.
+    *   `Ttr` (Transthyretin) and `Ambp` are primarily produced by **Hepatocytes**.
+    *   `Apoe` and `Clu` are also highly expressed in hepatocytes, although `Apoe` can also be found in macrophages.
+    *   `Spp1` (Osteopontin) can be expressed by various liver cells, including hepatocytes, especially under certain conditions or developmental stages.
+    *   The combination, particularly the strong signal from `Ttr` and `Ambp`, strongly points towards **Hepatocytes**.
+
+**Refined Hypothesis:**
+
+You are a bioinformatics expert analyzing a mouse liver single-cell RNA sequencing dataset (~41k cells, ~2k genes) encompassing neonatal and mature timepoints. The project aims to identify key liver cell populations, including expected types like T cells, B cells, Monocytes, Hepatocytes, Hepatoblasts, Erythrocytes, and Neutrophils.
+
+Based on the latest differential gene expression analysis, we are focusing on refining the annotations for specific clusters:
+
+*   **Cluster 22:** Exhibits high expression of `Sparc`, `Dcn`, `Col3a1`, `Col1a2`, and `Igfbp7`. These genes are canonical markers for extracellular matrix production, strongly suggesting this cluster represents **Hepatic Stellate Cells (HSCs)**.
+*   **Cluster 25:** Shows high expression of `Apoe`, `Spp1`, `Clu`, `Ttr`, and `Ambp`. The presence of classic hepatocyte markers like `Ttr` and `Ambp`, along with `Apoe` and `Clu`, strongly indicates this cluster represents **Hepatocytes**. The co-expression of `Spp1` might indicate a specific functional state or developmental stage within this hepatocyte population.
+
+Annotations for other clusters ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 26, 27]) are considered finalized or are deferred for later analysis. Your task is to confirm these annotations for clusters 22 and 25 and integrate them into the overall cell type map.
+1. List of cell types with their markers:
+- Hepatic Stellate Cells (HSCs): Sparc; Col1a2; Dcn
+- Hepatocytes: Ttr; Ambp; Apoe
+- T Cells: Cd3d; Cd4; Cd8a
+- B Cells: Cd79a; Cd19; Ms4a1
+- Monocytes: Lyz2; Csf1r; Itgam
+- Neutrophils: S100a8; S100a9; Ngp
+- Erythrocytes: Hbb-b1; Hba-a1; Alas2
+- Macrophages: Cd68; F4/80 (Emr1); Itgax
+- Endothelial Cells: Pecam1 (Cd31); Tie1; Vwf
+
+2. Python list of all marker genes:
+MARKER_GENES = ['Sparc', 'Col1a2', 'Dcn', 'Ttr', 'Ambp', 'Apoe', 'Cd3d', 'Cd4', 'Cd8a', 'Cd79a', 'Cd19', 'Ms4a1', 'Lyz2', 'Csf1r', 'Itgam', 'S100a8', 'S100a9', 'Ngp', 'Hbb-b1', 'Hba-a1', 'Alas2', 'Cd68', 'Emr1', 'Itgax', 'Pecam1', 'Tie1', 'Vwf']
+68.39792394638062 seconds
+```json
+{
+  "1a": {
+    "description": "Specific gene expression patterns observed across clusters:",
+    "details": [
+      {
+        "gene": "Cd79a",
+        "clusters": [0, 7, 20],
+        "cell_type_association": "B Cells"
+      },
+      {
+        "gene": "Sparc",
+        "clusters": [1, 18, 22, 23, 25],
+        "cell_type_association": "Hepatic Stellate Cells (HSCs), also seen in Endothelial (18) and some Hepatocyte clusters (25)."
+      },
+      {
+        "gene": "Col1a2",
+        "clusters": [22],
+        "cell_type_association": "Hepatic Stellate Cells (HSCs)"
+      },
+      {
+        "gene": "Dcn",
+        "clusters": [22],
+        "cell_type_association": "Hepatic Stellate Cells (HSCs)"
+      },
+      {
+        "gene": "Ttr",
+        "clusters": [3, 10, 16, 21, 25, 27],
+        "cell_type_association": "Hepatocytes"
+      },
+      {
+        "gene": "Ambp",
+        "clusters": [3, 10, 16, 21, 25, 27],
+        "cell_type_association": "Hepatocytes"
+      },
+      {
+        "gene": "Apoe",
+        "clusters": [1, 3, 6, 10, 16, 18, 21, 23, 25, 27],
+        "cell_type_association": "Hepatocytes (strongest), but also present in HSCs, Monocyte/Macrophages, Endothelial Cells."
+      },
+      {
+        "gene": "Cd3d",
+        "clusters": [4, 5],
+        "cell_type_association": "T Cells"
+      },
+      {
+        "gene": "Lyz2",
+        "clusters": [2, 6, 12, 13, 15, 17, 26],
+        "cell_type_association": "Monocytes, Macrophages, Neutrophils"
+      },
+      {
+        "gene": "Csf1r",
+        "clusters": [6, 15],
+        "cell_type_association": "Monocytes, Macrophages"
+      },
+      {
+        "gene": "Itgam",
+        "clusters": [2, 12, 13, 26],
+        "cell_type_association": "Monocytes, Macrophages, Neutrophils"
+      },
+      {
+        "gene": "S100a8",
+        "clusters": [2, 8, 12, 13, 17, 26],
+        "cell_type_association": "Neutrophils, also seen in cluster 8 (mixed w/ Erythrocyte)"
+      },
+      {
+        "gene": "S100a9",
+        "clusters": [2, 8, 12, 13, 17, 26],
+        "cell_type_association": "Neutrophils, also seen in cluster 8 (mixed w/ Erythrocyte)"
+      },
+      {
+        "gene": "Ngp",
+        "clusters": [2, 12, 13, 17, 26],
+        "cell_type_association": "Neutrophils"
+      },
+      {
+        "gene": "Alas2",
+        "clusters": [8, 9, 11, 26],
+        "cell_type_association": "Erythrocytes, also seen in cluster 8 (mixed w/ Neutrophil) and 26 (mixed w/ Neutrophil/Monocyte)"
+      },
+      {
+        "gene": "Cd68",
+        "clusters": [6, 15],
+        "cell_type_association": "Macrophages, Monocytes"
+      },
+      {
+        "gene": "Pecam1",
+        "clusters": [18],
+        "cell_type_association": "Endothelial Cells"
+      },
+      {
+        "gene": "Tie1",
+        "clusters": [18],
+        "cell_type_association": "Endothelial Cells"
+      }
+    ]
+  },
+  "1b": {
+    "description": "Yes, most marker genes listed in 1a show differential expression, being highly expressed in specific clusters associated with certain cell types and lower or absent in others. For example, `Ttr` is high in Hepatocyte clusters (3, 10, 16, 21, 25, 27) but low elsewhere. `Cd3d` is high in T cell clusters (4, 5) but not others. The differential expression is further confirmed by the DE gene lists provided for cluster pairs (e.g., '0 vs 4': ['Cd79a', 'Cd3d'] shows Cd79a high in cluster 0 (B cell) and Cd3d high in cluster 4 (T cell)).",
+    "differentially_expressed_genes": [
+        "Sparc", "Col1a2", "Dcn", "Ttr", "Ambp", "Apoe", "Cd3d", "Cd79a", "Lyz2", "Csf1r", "Itgam", "S100a8", "S100a9", "Ngp", "Alas2", "Cd68", "Pecam1", "Tie1"
+        ]
+  },
+  "1c": {
+    "description": "Based on the provided list of highly expressed genes and top genes per cluster, most marker genes appear informative. However, comparing the initial `MARKER_GENES` list with the 'successfully expressed' list and top genes, we check for genes not providing clear separation:",
+    "details": [
+      {
+        "gene": "Hbb-b1",
+        "status": "Not listed as a top gene in any specific cluster, although Erythrocyte clusters (9, 11) were identified by `Alas2`. Might have lower or less specific expression than `Alas2`."
+      },
+      {
+        "gene": "Hba-a1",
+        "status": "Not listed as a top gene in any specific cluster, similar to `Hbb-b1`."
+      },
+      {
+        "gene": "Cd4",
+        "status": "Listed as successfully expressed overall but not a top gene in T cell clusters (4, 5), which are marked by `Cd3d`. May require deeper analysis or subclustering to assess its utility for distinguishing T cell subtypes."
+      },
+      {
+        "gene": "Cd8a",
+        "status": "Listed as successfully expressed overall but not a top gene in T cell clusters (4, 5). Similar situation to `Cd4`."
+      },
+      {
+        "gene": "Cd19",
+        "status": "Listed as successfully expressed overall but not a top gene in B cell clusters (0, 7, 20), which are marked by `Cd79a`. May be less abundant or specific than `Cd79a`."
+      },
+      {
+        "gene": "Ms4a1",
+        "status": "Listed as successfully expressed overall but not a top gene in B cell clusters (0, 7, 20). Similar situation to `Cd19`."
+      },
+      {
+        "gene": "Emr1 (F4/80)",
+        "status": "Not listed as a top gene in Monocyte/Macrophage clusters (6, 15), which are marked by `Lyz2`, `Csf1r`, `Cd68`. Its expression level might be lower than these markers."
+      },
+      {
+        "gene": "Itgax",
+        "status": "Listed as successfully expressed overall but not a top gene in Monocyte/Macrophage clusters (6, 15). May mark a specific subset not captured at this clustering resolution."
+      },
+      {
+        "gene": "Vwf",
+        "status": "Listed as successfully expressed overall but not a top gene in the Endothelial cluster (18), which is marked by `Pecam1` and `Tie1`."
+      }
+    ],
+    "conclusion": "While successfully detected in the dataset, the genes listed above were not among the top defining markers for the identified clusters at this stage. They might be useful for sub-clustering or require more sensitive analysis methods."
+  },
+  "2a": {
+    "description": "Yes, there are clusters that lack high expression of any of the provided marker genes based on the 'top genes' analysis.",
+    "clusters_lacking_markers": [14, 19, 24]
+  },
+  "3a": {
+    "description": "Yes, based on the distinct expression patterns of marker genes like `Ttr` (Hepatocytes), `Cd3d` (T Cells), `Cd79a` (B Cells), `Sparc`/`Col1a2` (HSCs), `S100a8`/`S100a9`/`Ngp` (Neutrophils), `Alas2` (Erythrocytes), `Pecam1`/`Tie1` (Endothelial Cells), and `Lyz2`/`Csf1r`/`Cd68` (Monocyte/Macrophages), there are clearly distinct clusters that likely represent different cell types. Many clusters show strong enrichment for markers of a single cell type."
+  },
+  "3b": {
+    "description": "Cell type annotations based on top marker gene expression:",
+    "annotations": [
+      {"cluster": 0, "cell_type": "B Cells"},
+      {"cluster": 1, "cell_type": "Hepatic Stellate Cells"},
+      {"cluster": 2, "cell_type": "Neutrophils"},
+      {"cluster": 3, "cell_type": "Hepatocytes"},
+      {"cluster": 4, "cell_type": "T Cells"},
+      {"cluster": 5, "cell_type": "T Cells"},
+      {"cluster": 6, "cell_type": "Monocytes"},
+      {"cluster": 7, "cell_type": "B Cells"},
+      {"cluster": 8, "cell_type": "Erythrocytes"},
+      {"cluster": 9, "cell_type": "Erythrocytes"},
+      {"cluster": 10, "cell_type": "Hepatocytes"},
+      {"cluster": 11, "cell_type": "Erythrocytes"},
+      {"cluster": 12, "cell_type": "Neutrophils"},
+      {"cluster": 13, "cell_type": "Neutrophils"},
+      {"cluster": 15, "cell_type": "Macrophages"},
+      {"cluster": 16, "cell_type": "Hepatocytes"},
+      {"cluster": 17, "cell_type": "Neutrophils"},
+      {"cluster": 18, "cell_type": "Endothelial Cells"},
+      {"cluster": 20, "cell_type": "B Cells"},
+      {"cluster": 21, "cell_type": "Hepatocytes"},
+      {"cluster": 22, "cell_type": "Hepatic Stellate Cells"},
+      {"cluster": 23, "cell_type": "Hepatic Stellate Cells"},
+      {"cluster": 25, "cell_type": "Hepatocytes"},
+      {"cluster": 26, "cell_type": "Neutrophils"},
+      {"cluster": 27, "cell_type": "Hepatocytes"}
+    ],
+    "unassigned": [14, 19, 24]
+  },
+  "3c": {
+    "description": "Possible additional cell types or subtypes to consider for refining annotation:",
+    "recommendations": [
+      "Macrophage subtypes: Distinguish resident Kupffer cells (e.g., using `Clec4f`, `Marco`) from infiltrating Monocyte-derived Macrophages. Clusters 6 and 15 could represent these different populations or states.",
+      "T Cell subtypes: Use `Cd4` and `Cd8a` expression to classify T cell clusters (4, 5) into CD4+ Helper T cells, CD8+ Cytotoxic T cells, or other subtypes (e.g., Regulatory T cells using `Foxp3`).",
+      "NK Cells: Natural Killer cells (Markers: `Nkg7`, `Gzma`/`b`, `Klrb1c`). Check if any unassigned clusters or parts of T cell/Monocyte clusters express NK markers.",
+      "Cholangiocytes: Bile duct epithelial cells (Markers: `Krt19`, `Krt7`, `Sox9`). Check unassigned clusters.",
+      "Activated vs. Quiescent HSCs: Clusters 1, 22, 23 could represent different activation states of HSCs, with Cluster 22 being potentially more typical/quiescent based on strong canonical markers, while 1 and 23 with `Apoe` might represent a different state.",
+      "Endothelial Cell subtypes: Liver sinusoidal endothelial cells (LSECs) vs other endothelial cells (Markers like `Stab2`, `Lyve1` for LSECs)."
+    ]
+  },
+  "3d": {
+    "description": "Clusters recommended for subgrouping analysis:",
+    "recommendations": [
+      {
+        "clusters": [3, 10, 16, 21, 25, 27],
+        "cell_type": "Hepatocytes",
+        "reason": "High number of clusters annotated as Hepatocytes. Subgrouping could reveal metabolic zonation (periportal vs pericentral) or different functional states. Cluster 25 notably co-expresses `Sparc`."
+      },
+      {
+        "clusters": [4, 5],
+        "cell_type": "T Cells",
+        "reason": "Potential T cell subtypes (CD4+, CD8+, etc.) need resolution using specific markers."
+      },
+      {
+        "clusters": [2, 12, 13, 17, 26],
+        "cell_type": "Neutrophils",
+        "reason": "Show some heterogeneity. Cluster 26 has Erythrocyte marker `Alas2`. Cluster 17 lacks `Itgam` as a top gene compared to 2, 12, 13. Subgrouping may reveal maturation or activation states."
+      },
+      {
+        "clusters": [6, 15],
+        "cell_type": "Monocytes/Macrophages",
+        "reason": "These likely represent related but potentially distinct populations (e.g., Monocytes vs Macrophages, resident vs infiltrating). Cluster 6 has `Apoe`, cluster 15 doesn't. DE analysis showed differences in `Csf1r`/`Cd68` vs other clusters."
+      },
+      {
+        "clusters": [1, 22, 23],
+        "cell_type": "Hepatic Stellate Cells",
+        "reason": "Cluster 22 shows canonical HSC markers strongly. Clusters 1 and 23 show mixed markers (`Sparc`, `Apoe`), suggesting different states (e.g., activated) or potential ambiguity requiring refinement."
+      },
+      {
+        "clusters": [0, 7, 20],
+        "cell_type": "B Cells",
+        "reason": "Multiple clusters identified; check for potential subtypes or states."
+      },
+      {
+        "clusters": [8, 9, 11],
+        "cell_type": "Erythrocytes",
+        "reason": "Cluster 8 has mixed markers (`S100a8/9`). Clusters 9 and 11 seem cleaner."
+      }
+    ]
+  },
+    "4a": {
+        "description": "Confidence assessment of cell type annotations:",
+        "confidence_scores": [
+            {"cluster": 0, "cell_type": "B Cells", "confidence": 0.65},
+            {"cluster": 1, "cell_type": "Hepatic Stellate Cells", "confidence": 0.25},
+            {"cluster": 2, "cell_type": "Neutrophils", "confidence": 0.75},
+            {"cluster": 3, "cell_type": "Hepatocytes", "confidence": 0.90},
+            {"cluster": 4, "cell_type": "T Cells", "confidence": 0.80},
+            {"cluster": 5, "cell_type": "T Cells", "confidence": 0.80},
+            {"cluster": 6, "cell_type": "Monocytes", "confidence": 0.35},
+            {"cluster": 7, "cell_type": "B Cells", "confidence": 0.65},
+            {"cluster": 8, "cell_type": "Erythrocytes", "confidence": 0.20},
+            {"cluster": 9, "cell_type": "Erythrocytes", "confidence": 0.85},
+            {"cluster": 10, "cell_type": "Hepatocytes", "confidence": 0.90},
+            {"cluster": 11, "cell_type": "Erythrocytes", "confidence": 0.85},
+            {"cluster": 12, "cell_type": "Neutrophils", "confidence": 0.75},
+            {"cluster": 13, "cell_type": "Neutrophils", "confidence": 0.75},
+            {"cluster": 15, "cell_type": "Macrophages", "confidence": 0.60},
+            {"cluster": 16, "cell_type": "Hepatocytes", "confidence": 0.90},
+            {"cluster": 17, "cell_type": "Neutrophils", "confidence": 0.70},
+            {"cluster": 18, "cell_type": "Endothelial Cells", "confidence": 0.85},
+            {"cluster": 20, "cell_type": "B Cells", "confidence": 0.65},
+            {"cluster": 21, "cell_type": "Hepatocytes", "confidence": 0.90},
+            {"cluster": 22, "cell_type": "Hepatic Stellate Cells", "confidence": 0.95},
+            {"cluster": 23, "cell_type": "Hepatic Stellate Cells", "confidence": 0.30},
+            {"cluster": 25, "cell_type": "Hepatocytes", "confidence": 0.55},
+            {"cluster": 26, "cell_type": "Neutrophils", "confidence": 0.15},
+            {"cluster": 27, "cell_type": "Hepatocytes", "confidence": 0.90}
+        ]
+    },
+    "4b": {
+        "description": "Annotations to stabilize based on confidence (top ~1/3 highest confidence scores for iteration 1):",
+        "stabilized_annotations": [
+             {"cluster": 22, "cell_type": "Hepatic Stellate Cells", "confidence": 0.95},
+             {"cluster": 3, "cell_type": "Hepatocytes", "confidence": 0.90},
+             {"cluster": 10, "cell_type": "Hepatocytes", "confidence": 0.90},
+             {"cluster": 16, "cell_type": "Hepatocytes", "confidence": 0.90},
+             {"cluster": 21, "cell_type": "Hepatocytes", "confidence": 0.90},
+             {"cluster": 27, "cell_type": "Hepatocytes", "confidence": 0.90},
+             {"cluster": 9, "cell_type": "Erythrocytes", "confidence": 0.85},
+             {"cluster": 11, "cell_type": "Erythrocytes", "confidence": 0.85},
+             {"cluster": 18, "cell_type": "Endothelial Cells", "confidence": 0.85}
+        ]
+    }
+}
+```
+Okay, let's refine the hypothesis based on the provided top differentially expressed genes (DEGs) for each cluster.
+
+**Analysis of DEGs by Cluster Groupings:**
+
+1.  **Hepatocytes (Clusters 3, 10, 16, 21, 25, 27):** These clusters show strong expression of classic hepatocyte markers like `Alb`, `Ttr`, `Apoc1/3/4`, `Apoa1/2/e`, `Fabp1`, `Serpina` family genes, `Mup` genes, `Rbp4`, `Ahsg`, `Ambp`. The presence of multiple clusters suggests heterogeneity, potentially due to zonation (periportal vs. pericentral), metabolic states, or developmental stage (e.g., `H19` in C16 often high in neonatal/fetal liver). `Spp1` and `Clu` in C25 can also be expressed by hepatocytes.
+2.  **Erythroid Lineage (Clusters 8, 9, 11, 19):** Clear erythroid signature with high expression of hemoglobin genes (`Hbb-bt`, `Hba-a1`, `Hba-a2`, `Hbb-bs`), `Slc4a1` (Band 3), and associated enzymes (`Gpx1`, `Car2`, `Prdx2`). Multiple clusters could represent maturation stages (e.g., reticulocytes vs mature erythrocytes).
+3.  **B Cells (Clusters 0, 7, 20):** Clusters 0 and 7 express canonical B cell markers `Ighm`, `Cd79a`, `Cd79b`, `Vpreb3` (suggesting potentially developing B cells). Cluster 20 expresses `Cd74`, `H2-Aa` (MHCII), and `Igkc`, also indicating B cells, possibly a different subset or state (e.g., more mature or antigen-presenting).
+4.  **Neutrophils (Clusters 2, 12, 13, 17, 26):** Strong neutrophil markers like `S100a8`, `S100a9`, `Lyz2`, `Camp`, `Pglyrp1`, `Prtn3`, `Stfa` genes are prominent. `Tyrobp` and `Fcer1g` are also associated with myeloid cells. The multiple clusters likely represent different activation or maturation states.
+5.  **Kupffer Cells / Macrophages (Cluster 6, 15):** Cluster 6 clearly points to Kupffer cells with `C1qa/b/c` and high `Apoe`, `Cd5l`. Cluster 15 shows myeloid markers `Tyrobp`, `Fcer1g`, `Lyz2`, `Cst3`, suggesting monocytes, macrophages (distinct from C6), or possibly dendritic cells.
+6.  **Endothelial Cells (Clusters 1, 18, 23):** Markers like `Igfbp7`, `Sepp1`, `Fabp4`, `Sparc`, `Egfl7`, `Gpihbp1`, `Dnase1l3`, `Aqp1` strongly suggest endothelial cells, likely including liver sinusoidal endothelial cells (LSECs) given the context and markers like `Sepp1` and `Gpihbp1`. Heterogeneity might reflect different functional states or types.
+7.  **T Cells / NK Cells (Cluster 4):** `Ccl5` and `Nkg7` are characteristic of NK cells and cytotoxic T lymphocytes (CTLs).
+8.  **Antigen Presenting Cells (Cluster 14):** High `Cd74` and `H2-Aa` (MHCII) suggest APCs. Could be macrophages, dendritic cells, or B cells based on these markers alone. Requires cross-referencing.
+9.  **Hepatic Stellate Cells / Fibroblasts (Cluster 22):** Expression of `Col1a2`, `Col3a1`, `Dcn`, along with `Sparc` and `Igfbp7`, points towards hepatic stellate cells (HSCs) or other liver fibroblasts, likely involved in extracellular matrix production.
+10. **Proliferating Cells (Cluster 24):** Markers like `Hmgb2`, `Tubb5`, `Ptma` are associated with cell division. The identity of these proliferating cells needs further investigation (could be any progenitor or activated cell type).
+11. **Ambiguous/General (Cluster 5):** Dominated by broadly expressed genes (`Tmsb10`, `Tmsb4x`, `Cd52`) and ribosomal proteins (`Rps27`, `Rpl13a`). Needs more specific markers for clear identification.
+
+**Refined Hypothesis:**
+
+Based on the analysis of top differentially expressed genes across the 28 clusters from the neonatal and mature mouse liver scRNA-seq dataset, we refine the initial hypothesis. The data strongly suggests the presence and significant heterogeneity within several expected and additional liver cell populations:
+
+1.  **Hepatocytes:** Multiple distinct clusters (e.g., 3, 10, 16, 21, 25, 27) are identifiable by canonical markers (`Alb`, `Ttr`, Apolipoproteins, `Serpina`s). This heterogeneity likely reflects metabolic zonation, differing maturation states between neonatal and mature samples (indicated by markers like `H19`, `Ahsg`), and potentially distinct functional subsets. Hepatoblasts may be present within these or related clusters, especially given the neonatal timepoint.
+2.  **Erythroid Cells:** Several clusters (e.g., 8, 9, 11, 19) exhibit strong erythroid signatures (`Hba`, `Hbb` genes, `Slc4a1`), likely representing different stages of erythrocyte maturation.
+3.  **B Lymphocytes:** Clear evidence for B cells (e.g., Clusters 0, 7, 20) marked by `Ighm`, `Cd79a/b`, `Vpreb3`, and `Igkc`. Subsets may include developing B cells and more mature/antigen-presenting B cells (expressing `Cd74`, `H2-Aa`).
+4.  **Myeloid Cells:**
+    *   **Neutrophils:** Multiple clusters (e.g., 2, 12, 13, 17, 26) are characterized by potent neutrophil markers (`S100a8/a9`, `Lyz2`, `Camp`, `Prtn3`), suggesting diverse neutrophil states.
+    *   **Kupffer Cells:** A distinct cluster (e.g., 6) expresses classic Kupffer cell markers (`C1qa/b/c`, `Apoe`).
+    *   **Other Monocytes/Macrophages/DCs:** At least one cluster (e.g., 15) shows general myeloid markers (`Tyrobp`, `Fcer1g`, `Lyz2`), potentially representing infiltrating monocytes, non-Kupffer macrophages, or dendritic cells. Cluster 14 (high MHCII) also likely contains myeloid APCs.
+5.  **T / NK Lymphocytes:** At least one cluster (e.g., 4) displays markers (`Nkg7`, `Ccl5`) indicative of NK cells or cytotoxic T cells.
+6.  **Endothelial Cells:** Several clusters (e.g., 1, 18, 23) strongly express markers associated with liver sinusoidal endothelial cells (LSECs) and potentially other endothelial subtypes (`Igfbp7`, `Sepp1`, `Gpihbp1`, `Fabp4`).
+7.  **Hepatic Stellate Cells / Fibroblasts:** A distinct cluster (e.g., 22) expresses markers (`Col1a2`, `Col3a1`, `Dcn`) characteristic of HSCs or fibroblasts.
+8.  **Proliferating Cells:** One cluster (e.g., 24) shows enrichment for proliferation markers (`Hmgb2`, `Tubb5`), representing actively dividing cells from one or more lineages.
+
+This refined hypothesis incorporates cell types beyond the initial list (Endothelial cells, HSCs/Fibroblasts) and highlights the heterogeneity within major populations (Hepatocytes, Myeloid cells, B cells, Endothelial cells, Erythrocytes) suggested by the DEG analysis across multiple clusters. Further analysis should focus on resolving the identity of ambiguous clusters (e.g., 5) and characterizing the specific subtypes and states within these broader categories.
+Okay, based on the refined hypothesis and the provided DEG analysis from neonatal and mature mouse liver scRNA-seq, here is a proposed list of cell types and marker genes for annotation. This list incorporates the heterogeneity observed and includes canonical markers.
+
+**1. List of Cell Types and Marker Genes:**
+
+*   **[Periportal Hepatocyte]:** `Alb`; `Ass1`; `Cps1`; `Pc`; `Arg1`
+*   **[Pericentral Hepatocyte]:** `Glul`; `Cyp2e1`; `Oat`; `Axin2`; `Alb`
+*   **[Hepatoblast/Immature Hepatocyte]:** `Afp`; `H19`; `Krt19`; `Epcam`; `Alb`
+*   **[Erythroblast/Reticulocyte]:** `Hba-a1`; `Hbb-bt`; `Alas2`; `Tfrc`; `Gata1`
+*   **[Mature Erythrocyte]:** `Hba-a1`; `Hbb-bs`; `Slc4a1`; `Car2`; `Gypa`
+*   **[Developing B Cell]:** `Vpreb3`; `Igll1`; `Cd79a`; `Cd79b`; `Ebf1`
+*   **[Mature B Cell]:** `Ighm`; `Igkc`; `Cd19`; `Ms4a1`; `Cd74`; `H2-Aa`
+*   **[Plasma Cell]:** `Sdc1` (Cd138); `Xbp1`; `Jchain`; `Igha` (or other Ig constant regions)
+*   **[Neutrophil]:** `S100a8`; `S100a9`; `Lyz2`; `Elane`; `Mpo`; `Camp`
+*   **[Kupffer Cell]:** `Clec4f`; `C1qa`; `C1qb`; `Cd163`; `Marco`; `Apoe`
+*   **[Monocyte/Macrophage (Non-Kupffer)]:** `Ly6c2`; `Ccr2`; `Fn1`; `Cd68`; `Itgam` (Cd11b)
+*   **[Conventional Dendritic Cell (cDC)]:** `Itgax` (Cd11c); `H2-Aa`; `Cd74`; `Flt3`; `Clec9a` (cDC1) or `Sirpa` (cDC2)
+*   **[Plasmacytoid Dendritic Cell (pDC)]:** `Siglech`; `Bst2`; `Tcf4` (E2-2); `Irf7`; `Ly6d`
+*   **[T Cell (General)]:** `Cd3g`; `Cd3e`; `Trac`; `Cd4`; `Cd8a`
+*   **[Natural Killer (NK) Cell]:** `Nkg7`; `Klrb1c`; `Gzma`; `Gzmb`; `Ccl5`
+*   **[Innate Lymphoid Cell (ILC)]:** `Id2`; `Il7r`; `Rora` (ILC2); `Gata3` (ILC2); `Tbx21` (ILC1)
+*   **[Liver Sinusoidal Endothelial Cell (LSEC)]:** `Stab2`; `Clec4g`; `Lyve1`; `Gpihbp1`; `Sepp1`; `Fabp4`
+*   **[Portal/Central Vein Endothelial Cell]:** `Pecam1`; `Cdh5`; `Vwf`; `Eng`; `Icam1`
+*   **[Hepatic Stellate Cell (HSC) - Quiescent]:** `Reln`; `Lrat`; `Dcn`; `Col1a1`; `Pdgfrb`
+*   **[Hepatic Stellate Cell (HSC) - Activated]:** `Acta2`; `Col1a1`; `Col1a2`; `Tagln`; `Pdgfrb`
+*   **[Cholangiocyte (Bile Duct Epithelial)]:** `Krt19`; `Krt7`; `Epcam`; `Sox9`; `Slc4a2`
+*   **[Proliferating Cells (General Marker Set)]:** `Mki67`; `Top2a`; `Pcna`; `Hmgb2`; `Cenpf`
+
+*Note: Some markers show overlap (e.g., `Alb` in Hepatocytes, `Krt19`/`Epcam` in Hepatoblasts/Cholangiocytes, MHCII (`H2-Aa`/`Cd74`) in B cells/Macrophages/DCs, `Pdgfrb`/`Col1a1` in HSCs). Annotation relies on the combination of multiple markers.*
+
+**2. Python List of All Marker Genes:**
+
+
+MARKER_GENES = [
+    'Alb', 'Ass1', 'Cps1', 'Pc', 'Arg1',                 # Periportal Hepatocyte
+    'Glul', 'Cyp2e1', 'Oat', 'Axin2',                     # Pericentral Hepatocyte (Alb already listed)
+    'Afp', 'H19', 'Krt19', 'Epcam',                       # Hepatoblast (Alb, Krt19, Epcam potentially overlap)
+    'Hba-a1', 'Hbb-bt', 'Alas2', 'Tfrc', 'Gata1',         # Erythroblast/Reticulocyte
+    'Hbb-bs', 'Slc4a1', 'Car2', 'Gypa',                   # Mature Erythrocyte (Hba-a1 already listed)
+    'Vpreb3', 'Igll1', 'Cd79a', 'Cd79b', 'Ebf1',         # Developing B Cell
+    'Ighm', 'Igkc', 'Cd19', 'Ms4a1', 'Cd74', 'H2-Aa',     # Mature B Cell
+    'Sdc1', 'Xbp1', 'Jchain', 'Igha',                    # Plasma Cell
+    'S100a8', 'S100a9', 'Lyz2', 'Elane', 'Mpo', 'Camp',  # Neutrophil
+    'Clec4f', 'C1qa', 'C1qb', 'Cd163', 'Marco', 'Apoe',  # Kupffer Cell
+    'Ly6c2', 'Ccr2', 'Fn1', 'Cd68', 'Itgam',             # Monocyte/Macrophage (Non-Kupffer)
+    'Itgax', 'Flt3', 'Clec9a', 'Sirpa',                   # cDC (H2-Aa, Cd74 already listed)
+    'Siglech', 'Bst2', 'Tcf4', 'Irf7', 'Ly6d',           # pDC
+    'Cd3g', 'Cd3e', 'Trac', 'Cd4', 'Cd8a',               # T Cell (General)
+    'Nkg7', 'Klrb1c', 'Gzma', 'Gzmb', 'Ccl5',            # NK Cell
+    'Id2', 'Il7r', 'Rora', 'Gata3', 'Tbx21',             # ILC
+    'Stab2', 'Clec4g', 'Lyve1', 'Gpihbp1', 'Sepp1', 'Fabp4', # LSEC
+    'Pecam1', 'Cdh5', 'Vwf', 'Eng', 'Icam1',             # Portal/Central Vein Endothelial Cell
+    'Reln', 'Lrat', 'Dcn', 'Col1a1', 'Pdgfrb',           # HSC - Quiescent
+    'Acta2', 'Col1a2', 'Tagln',                           # HSC - Activated (Col1a1, Pdgfrb already listed)
+    'Krt7', 'Sox9', 'Slc4a2',                             # Cholangiocyte (Krt19, Epcam already listed)
+    'Mki67', 'Top2a', 'Pcna', 'Hmgb2', 'Cenpf'            # Proliferating Cells
+]
+
+# Remove duplicates just in case any were accidentally added across lines
+MARKER_GENES = sorted(list(set(MARKER_GENES)))
+
+# print(f"Total unique marker genes: {len(MARKER_GENES)}")
+# print(MARKER_GENES)
+Okay, analyzing the top differentially expressed genes for each cluster allows for a more specific refinement of the initial hypothesis.
+
+**Analysis based on DEGs:**
+
+*   **Hepatocytes:** Clearly present and likely heterogeneous. Clusters 3, 10, 16, 21, 27 show strong hepatocyte signatures (e.g., `Alb`, `Ttr`, `Apoc` genes, `Mup` genes, `Serpina` genes, `Fabp1`, `Rbp4`). Cluster 16 markers (`Alb`, `Ttr`, `Ahsg`) might represent mature hepatocytes. Other clusters could represent different functional states or zones.
+*   **B cells:** Present. Clusters 0 and 7 show `Ighm`, `Cd79a/b`, `Vpreb3`, indicating B cell lineage, possibly including developing B cells (presence of `Vpreb3`, `Ptma`, `Stmn1` in Cluster 7). Cluster 20 (`Igkc`, `Cd74`) confirms B cells, likely mature/plasma cells.
+*   **Erythroid Cells:** Present. Clusters 8, 9, 11, 19 are dominated by hemoglobin genes (`Hbb-*`, `Hba-*`) and other markers like `Slc4a1` and `Car2`, indicating erythroid lineage cells at potentially different maturation stages (e.g., Cluster 19 has proliferation markers).
+*   **Myeloid Cells (Neutrophils):** Present. Clusters 12, 13, 17 show strong neutrophil markers (`S100a8`, `S100a9`, `Lcn2`, `Lyz2`, `Camp`, `Prtn3`). Cluster 17 might represent immature/developing neutrophils (`Ptma`).
+*   **Myeloid Cells (Macrophages/Monocytes/DCs):** Present. Cluster 6 is clearly Kupffer Cells (resident macrophages) based on `C1qa/b/c`, `Apoe`, `Cd5l`. Clusters 2 and 15 (`S100a8/a9`, `Tyrobp`, `Fcer1g`, `Lyz2`, `Cst3`) represent other myeloid populations, likely monocytes, macrophages, or dendritic cells. Cluster 14 (`Cd74`, `H2-Aa`) represents Antigen-Presenting Cells, overlapping with B cells and macrophages/DCs. Cluster 26 (`S100a8`) is also myeloid.
+*   **T cells / NK cells:** Present. Cluster 4 markers `Ccl5`, `Nkg7`, `AW112010` are characteristic of NK cells and cytotoxic T lymphocytes (CTLs).
+*   **Endothelial Cells:** Present. Clusters 1, 18, 23 show markers like `Igfbp7`, `Sepp1`, `Dnase1l3`, `Sparc`, `Gpihbp1`, `Fabp4`, consistent with liver sinusoidal endothelial cells (LSECs).
+*   **Hepatic Stellate Cells:** Present. Cluster 22 shows strong markers `Sparc`, `Dcn`, `Col3a1`, `Col1a2`.
+*   **Proliferating Cells:** Clusters 5 and 24 show markers associated with proliferation (`Tmsb10`, `Tmsb4x`, `Hmgb2`, `Ptma`, `Tubb5`) and general immune cell markers (`Cd52`), suggesting proliferating populations, likely lymphoid or myeloid.
+*   **Ambiguous/Other:** Cluster 25 (`Apoe`, `Spp1`, `Clu`, `Ttr`) has markers seen in Kupffer cells, stressed hepatocytes, or potentially cholangiocytes. `Spp1` often marks activated Kupffer cells.
+
+**Refined Hypothesis:**
+
+Based on the analysis of top differentially expressed genes across 28 clusters from the neonatal and mature mouse liver scRNA-seq dataset, the cell population consists of:
+
+1.  **Hepatocytes:** Multiple distinct clusters (3, 10, 16, 21, 27) indicate significant hepatocyte populations, likely representing different functional states, metabolic zonation, or maturation stages (e.g., Cluster 16 expressing high `Alb`, `Ttr`).
+2.  **B Lymphocytes:** Clear evidence for B cells (Clusters 0, 20) and potentially developing B cells (Cluster 7) based on immunoglobulin components (`Ighm`, `Igkc`) and B-cell receptor signaling molecules (`Cd79a/b`, `Vpreb3`).
+3.  **Erythroid Lineage Cells:** Abundant erythroid cells (Clusters 8, 9, 11, 19) marked by high hemoglobin expression (`Hbb`, `Hba`), likely reflecting ongoing hematopoiesis in the neonatal liver and/or circulating mature erythrocytes. Some clusters may represent progenitor/proliferating stages (Cluster 19).
+4.  **Myeloid Cells:**
+    *   **Kupffer Cells (Macrophages):** A distinct population (Cluster 6) identified by complement components (`C1q`) and `Apoe`.
+    *   **Neutrophils:** Present in multiple clusters (12, 13, 17), identified by `S100a8/a9`, `Lyz2`, `Camp`, and potentially including immature forms (Cluster 17).
+    *   **Other Monocytes/Macrophages/DCs:** Additional myeloid clusters (2, 15, 26) marked by `S100a8/a9`, `Tyrobp`, `Fcer1g`, and APC markers (`Cd74`, `H2-Aa` in Cluster 14) likely represent circulating monocytes, dendritic cells, or other macrophage subsets.
+5.  **T cells / NK cells:** A population consistent with T cells (likely cytotoxic) and/or NK cells (Cluster 4) expressing `Ccl5` and `Nkg7`.
+6.  **Endothelial Cells:** Multiple clusters (1, 18, 23) consistent with liver sinusoidal endothelial cells (LSECs), expressing markers like `Igfbp7`, `Sepp1`, `Gpihbp1`.
+7.  **Hepatic Stellate Cells:** A distinct cluster (22) identified by extracellular matrix genes (`Col1a2`, `Col3a1`) and markers like `Sparc` and `Dcn`.
+8.  **Proliferating Cells:** Clusters (5, 24) enriched for cell cycle and proliferation markers (`Hmgb2`, `Tubb5`, `Ptma`), likely representing actively dividing cells within various identified lineages (lymphoid/myeloid).
+
+While the initial hypothesis mentioned Hepatoblasts, specific markers for this population were not dominant in the top 5 DEGs of any single cluster provided; further investigation using known markers (e.g., `Afp`) would be needed to confirm their presence and identity, although they may be present within the hepatocyte or proliferating clusters, particularly given the neonatal timepoint. Cluster 25 requires further investigation to resolve its identity among Kupffer cells, stressed hepatocytes, or cholangiocytes.
+Okay, here is a proposed cell type annotation list with markers based on the provided DEG analysis and refined hypothesis for the neonatal and mature mouse liver scRNA-seq dataset.
+
+**1. List of Cell Types and Markers:**
+
+*   **Hepatocytes (Mature/General):** Alb; Ttr; Apob; Fabp1; Serpina1a
+*   **Hepatocytes (Potential Subtype/Zonal):** Cyp2e1; Cyp2f2; Glul; Ass1 *(Markers based on common zonation patterns, requiring further validation)*
+*   **B Cells:** Cd79a; Cd79b; Ms4a1; Ighm
+*   **B Cells (Developing/Progenitor):** Vpreb3; Igll1; Ptma; Stmn1
+*   **Plasma Cells:** Sdc1; Xbp1; Igkc; Jchain
+*   **Erythroid Cells (Mature):** Hba-a1; Hbb-bt; Slc4a1; Alas2; Car1
+*   **Erythroid Cells (Progenitor/Immature):** Hba-x; Car2; Gata1; Klf1; Tfrc
+*   **Kupffer Cells (Resident Macrophages):** C1qa; C1qb; Apoe; Cd5l; Clec4f
+*   **Neutrophils:** S100a8; S100a9; Lyz2; Lcn2; Camp
+*   **Monocytes:** Ly6c2; Ccr2; Lyz2; S100a8; Fcer1g
+*   **Macrophages (Non-Kupffer/Infiltrating):** Cd68; Lyz2; Csf1r; Tyrobp; Adgre1 (F4/80)
+*   **Dendritic Cells (Conventional Type 1/cDC1):** Itgax; Clec9a; Xcr1; Irf8
+*   **Dendritic Cells (Conventional Type 2/cDC2):** H2-Aa; Cd74; Itgam; Sirpa; Clec10a
+*   **T Cells (Cytotoxic/CD8+):** Cd3d; Cd8a; Gzma; Gzmb; Ccl5
+*   **T Cells (Helper/CD4+):** Cd3d; Cd4; Il7r; Cd40lg
+*   **NK Cells:** Nkg7; Klrb1c; Gzma; Ccl5; Prf1
+*   **Liver Sinusoidal Endothelial Cells (LSECs):** Pecam1; Stab2; Gpihbp1; Sepp1; Igfbp7
+*   **Hepatic Stellate Cells (HSCs):** Col1a1; Col1a2; Acta2; Dcn; Sparc
+*   **Cholangiocytes (Biliary Epithelial Cells):** Krt19; Krt7; Epcam; Sox9
+*   **Hepatoblasts (Neonatal):** Afp; Epcam; Krt19; Alb; Dlk1 *(Likely present mainly in neonatal samples)*
+*   **Activated Kupffer Cells/Macrophages:** Spp1; Lgals3; Cd68; Trem2 *(Markers often upregulated during inflammation/activation, potentially overlapping with Cluster 25)*
+
+*Note:* There is known overlap in marker expression. For example:
+*   `S100a8`/`S100a9`/`Lyz2` are high in both Neutrophils and Monocytes/Macrophages.
+*   `Cd74`/`H2-Aa` are high in cDC2s, B cells, and some Macrophages (APCs).
+*   `Apoe` is high in Kupffer Cells but can also be expressed by stressed Hepatocytes (relevant to Cluster 25).
+*   `Sparc` is high in HSCs but also expressed by Endothelial Cells.
+*   `Epcam`/`Krt19`/`Alb` can mark Hepatoblasts, Cholangiocytes, and Hepatocytes depending on context and co-expression.
+*   `Ccl5`/`Gzma` are shared between CTLs and NK cells.
+*   Proliferation markers (`Ptma`, `Stmn1`, `Hmgb2`, `Tubb5`, `Mki67`) will be present across proliferating cells of various lineages (e.g., Developing B cells, Erythroid Progenitors, activated immune cells).
+
+**2. Python list of all marker genes:**
+
+
+MARKER_GENES = [
+    'Alb', 'Ttr', 'Apob', 'Fabp1', 'Serpina1a', # Hepatocytes (Mature/General)
+    'Cyp2e1', 'Cyp2f2', 'Glul', 'Ass1', # Hepatocytes (Potential Subtype/Zonal)
+    'Cd79a', 'Cd79b', 'Ms4a1', 'Ighm', # B Cells
+    'Vpreb3', 'Igll1', 'Ptma', 'Stmn1', # B Cells (Developing/Progenitor)
+    'Sdc1', 'Xbp1', 'Igkc', 'Jchain', # Plasma Cells
+    'Hba-a1', 'Hbb-bt', 'Slc4a1', 'Alas2', 'Car1', # Erythroid Cells (Mature)
+    'Hba-x', 'Car2', 'Gata1', 'Klf1', 'Tfrc', # Erythroid Cells (Progenitor/Immature)
+    'C1qa', 'C1qb', 'Apoe', 'Cd5l', 'Clec4f', # Kupffer Cells
+    'S100a8', 'S100a9', 'Lyz2', 'Lcn2', 'Camp', # Neutrophils
+    'Ly6c2', 'Ccr2', # Monocytes (Lyz2, S100a8 shared)
+    'Cd68', 'Csf1r', 'Tyrobp', 'Adgre1', # Macrophages (Non-Kupffer) (Lyz2 shared)
+    'Itgax', 'Clec9a', 'Xcr1', 'Irf8', # cDC1
+    'H2-Aa', 'Cd74', 'Itgam', 'Sirpa', 'Clec10a', # cDC2
+    'Cd3d', 'Cd8a', 'Gzma', 'Gzmb', 'Ccl5', # T Cells (Cytotoxic/CD8+)
+    'Cd4', 'Il7r', 'Cd40lg', # T Cells (Helper/CD4+) (Cd3d shared)
+    'Nkg7', 'Klrb1c', 'Prf1', # NK Cells (Gzma, Ccl5 shared)
+    'Pecam1', 'Stab2', 'Gpihbp1', 'Sepp1', 'Igfbp7', # LSECs
+    'Col1a1', 'Col1a2', 'Acta2', 'Dcn', 'Sparc', # HSCs
+    'Krt19', 'Krt7', 'Epcam', 'Sox9', # Cholangiocytes
+    'Afp', 'Dlk1', # Hepatoblasts (Epcam, Krt19, Alb shared)
+    'Spp1', 'Lgals3', 'Trem2' # Activated Kupffer Cells/Macrophages (Cd68 shared)
+]
+
+# Remove duplicates manually or using set() for final use
+MARKER_GENES = sorted(list(set(MARKER_GENES)))
+121.80216789245605 seconds
+```json
+{
+  "1a": {
+    "description": "Genes highly expressed in specific clusters based on Top DEGs:",
+    "details": [
+      {
+        "genes": ["Alb", "Ttr", "Apob", "Fabp1", "Serpina1a", "Cyp2e1", "Cyp2f2", "Ass1", "Apoe"],
+        "clusters": [3, 10, 21, 27],
+        "comment": "Strong expression indicative of Hepatocytes. Clusters 3, 10, 27 also show zonal markers (Cyp2e1, Cyp2f2, Ass1), while Cluster 21 seems more general. Apoe is also present."
+      },
+      {
+        "genes": ["Cd79a", "Cd79b", "Vpreb3", "Ptma", "Ighm", "Stmn1", "Igkc", "Cd74"],
+        "clusters": [0, 7, 20],
+        "comment": "Indicative of B cell lineage. Clusters 0 and 7 show markers of Developing B cells (Vpreb3, Ptma, Stmn1), with Cluster 7 potentially more proliferative (Stmn1 high). Cluster 20 shows markers of more Mature B cells (Igkc present, lower Vpreb3/Ptma/Stmn1)."
+      },
+      {
+        "genes": ["Stab2", "Gpihbp1", "Sepp1", "Igfbp7", "Pecam1", "Sparc", "Apoe", "Ptma"],
+        "clusters": [1, 18, 23],
+        "comment": "Strong expression indicative of Liver Sinusoidal Endothelial Cells (LSECs). Cluster 18 explicitly lists Pecam1. Cluster 23 shows proliferation marker Ptma."
+      },
+      {
+        "genes": ["S100a8", "S100a9", "Lyz2", "Camp", "Lcn2", "Itgam", "Ly6c2", "Ptma", "Stmn1"],
+        "clusters": [2, 12, 13],
+        "comment": "Strong expression indicative of Neutrophils (S100a8, S100a9, Camp, Lcn2). Cluster 12 also shows proliferation markers (Ptma, Stmn1)."
+      },
+      {
+        "genes": ["Klrb1c", "Cd3d", "Gzmb", "Ccl5", "Gzma", "Nkg7", "Ptma", "Stmn1"],
+        "clusters": [4, 5, 24],
+        "comment": "Indicative of T cells and/or NK cells (Cd3d, Nkg7, Klrb1c, Gzma, Gzmb, Ccl5). Cluster 4 has high Gzmb. Cluster 5 lacks high Gzmb. Cluster 24 shows proliferation markers (Ptma, Stmn1)."
+      },
+      {
+        "genes": ["C1qa", "C1qb", "Apoe", "Clec4f", "Cd5l", "Adgre1", "Cd68", "Csf1r", "Lyz2"],
+        "clusters": [6],
+        "comment": "Strong expression indicative of Kupffer Cells (C1qa, C1qb, Clec4f, Cd5l) and general Macrophages (Adgre1, Cd68, Csf1r)."
+      },
+      {
+        "genes": ["Alas2", "Car2", "Slc4a1", "Tfrc", "Klf1", "Stmn1", "Ptma"],
+        "clusters": [8, 9, 11, 19],
+        "comment": "Indicative of Erythroid Cells at various stages. Cluster 11 shows progenitor markers (Klf1, Tfrc, Stmn1). Cluster 19 also shows proliferation (Ptma, Stmn1). Clusters 8 and 9 seem more mature but lack Hba/Hbb in top DEGs."
+      },
+      {
+        "genes": ["Ly6c2", "Ccr2", "Lyz2", "Cd68", "Csf1r", "Lgals3"],
+        "clusters": [15],
+        "comment": "Indicative of Monocytes (Ly6c2, Ccr2) or derived Macrophages."
+      },
+      {
+        "genes": ["Afp", "Alb", "Ttr", "Fabp1", "Apoe"],
+        "clusters": [16],
+        "comment": "Strong expression of Afp indicates Hepatoblasts, alongside general Hepatocyte markers."
+      },
+      {
+        "genes": ["Col1a1", "Col1a2", "Dcn", "Sparc", "Dlk1"],
+        "clusters": [22],
+        "comment": "Strong expression indicative of Hepatic Stellate Cells (HSCs)."
+      },
+      {
+        "genes": ["Sox9", "Epcam"],
+        "clusters": [25],
+        "comment": "Indicative of Cholangiocytes or potentially bipotent progenitors, though other markers (Apoe, Spp1, Sparc, Alb, Ttr) are also present."
+      },
+      {
+        "genes": ["Irf8", "Cd74", "Ptma"],
+        "clusters": [14],
+        "comment": "Irf8 and Cd74 suggest Dendritic Cell lineage, possibly progenitor or pDC. Ptma indicates proliferation. Presence of Ighm is unusual."
+      },
+      {
+        "genes": ["Lyz2", "S100a8", "S100a9", "Ptma", "Stmn1", "Tyrobp"],
+        "clusters": [17],
+        "comment": "Myeloid markers with proliferation. Less specific than Neutrophils (lacks high Camp/Lcn2) or Monocytes (lacks Ly6c2/Ccr2). Potentially proliferating Macrophages or myeloid progenitors."
+      },
+      {
+        "genes": ["Lyz2", "Alas2", "Tfrc", "Car2", "Slc4a1", "Camp", "Lcn2", "Itgam", "S100a8", "S100a9", "Ly6c2", "Stmn1", "Tyrobp", "Lgals3"],
+        "clusters": [26],
+        "comment": "Shows strong markers for both Myeloid (Neutrophil/Monocyte like) and Erythroid lineages simultaneously. Highly indicative of technical artifact (doublet) or perhaps a rare progenitor state."
+      }
+    ]
+  },
+  "1b": {
+    "description": "Genes showing differential expression across clusters:",
+    "details": [
+      "Common myeloid markers like `Lyz2`, `S100a8`, `S100a9`, `Tyrobp`, `Lgals3` are high across Neutrophils (2, 12, 13), Monocytes (15), Kupffer Cells (6), and potentially other myeloid/proliferating clusters (17, 26). Specific markers like `Camp`/`Lcn2` distinguish Neutrophils, `Ccr2`/`Ly6c2` distinguish Monocytes, `C1qa`/`C1qb`/`Clec4f` distinguish Kupffer Cells.",
+      "Proliferation markers `Ptma` and `Stmn1` are high in specific clusters across different lineages: Developing B cells (0, 7), Proliferating Neutrophils (12), Progenitor Erythroid (11, 19), Proliferating T/NK (24), Proliferating LSECs (23), Proliferating Myeloid (17), and the ambiguous DC cluster (14).",
+      "Hepatocyte markers (`Alb`, `Ttr`, `Apob`, `Fabp1`) are high in multiple hepatocyte clusters (3, 10, 21, 27) and Hepatoblasts (16). Zonal markers (`Cyp2e1`, `Cyp2f2`, `Ass1`) differentiate subsets (3, 10, 27) from the more general Hepatocyte cluster (21). `Afp` specifically marks Hepatoblasts (16).",
+      "Lymphoid markers: `Cd3d` is present in T/NK clusters (4, 5, 24). `Gzma`, `Gzmb`, `Nkg7`, `Ccl5` are high in cytotoxic/NK populations (4, 24). `Cd79a`/`Cd79b` mark B cells (0, 7, 20). `Vpreb3` marks developing B cells (0, 7).",
+      "Endothelial/Stellate markers: `Sparc` is high in HSCs (22) and LSECs (1, 18, 23). `Igfbp7` is high in LSECs (1, 18, 23) and HSCs (22). LSECs are marked by `Stab2`, `Gpihbp1`, `Pecam1`. HSCs by `Col1a1`, `Col1a2`, `Dcn`.",
+      "`Apoe` is broadly expressed in Kupffer Cells (6), Hepatocytes (3, 10, 16, 21, 27), and LSECs (1, 18, 23), and Cluster 25.",
+      "`Cd74` is high in B cells (0, 20) and the potential DC cluster (14).",
+      "Differential genes between similar pairs highlight specific differences, e.g., `Stmn1` (proliferation in 7 vs 0, 12 vs 2, 24 vs 4), `Gzmb` (cytotoxicity in 4 vs 5), `Klf1` (progenitor status in 11 vs 8), `Irf8`/`Cd74` (DC marker in 14 vs 17)."
+    ]
+  },
+  "1c": {
+    "description": "Informative status of genes:",
+    "details": "Based on the provided 'Genes Successfully Expressed' list and the Top DEGs per cluster, all marker genes from the initial list (`MARKER_GENES`) were found to be highly expressed in at least one cluster's top DEG list. Therefore, based on this data, none of the provided marker genes are entirely uninformative across all clusters. However, some markers are less specific than others (e.g., `Tyrobp`, `Apoe`, `Lgals3`, `Sparc`) as they are highly expressed in multiple distinct cell types."
+  },
+  "2a": {
+    "description": "Clusters lacking high expression of any marker gene among their Top DEGs:",
+    "details": "Based on the provided Top DEGs for each cluster and the `MARKER_GENES` list, every cluster (0-27) has at least one gene from the marker list among its top DEGs. Therefore, no cluster completely lacks high expression of any marker gene based on this analysis. However, Clusters 14, 17, 25, and 26 exhibit either mixed marker signals or markers that are less definitive for a single, specific cell type compared to other clusters.",
+    "clusters": []
+  },
+  "3a": {
+    "description": "Potential for distinct cell types:",
+    "details": "Yes, the distinct gene expression patterns observed in the Top DEGs strongly suggest that the clusters represent different cell types and states found in the liver, including hepatocytes, various immune cell populations (Kupffer cells, other macrophages/monocytes, neutrophils, B cells, T cells, NK cells), endothelial cells (LSECs), stellate cells (HSCs), erythroid cells, hepatoblasts, and potentially cholangiocytes and dendritic cells."
+  },
+  "3b": {
+    "description": "Cell type annotations per cluster:",
+    "annotations": [
+      {"cluster": 0, "cell_type": "B Cells (Developing/Progenitor)"},
+      {"cluster": 1, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)"},
+      {"cluster": 2, "cell_type": "Neutrophils"},
+      {"cluster": 3, "cell_type": "Hepatocytes (Potential Subtype/Zonal)"},
+      {"cluster": 4, "cell_type": "NK Cells / T Cells (Cytotoxic/CD8+)"},
+      {"cluster": 5, "cell_type": "T Cells"},
+      {"cluster": 6, "cell_type": "Kupffer Cells (Resident Macrophages)"},
+      {"cluster": 7, "cell_type": "B Cells (Developing/Progenitor)"},
+      {"cluster": 8, "cell_type": "Erythroid Cells (Mature)"},
+      {"cluster": 9, "cell_type": "Erythroid Cells (Mature)"},
+      {"cluster": 10, "cell_type": "Hepatocytes (Potential Subtype/Zonal)"},
+      {"cluster": 11, "cell_type": "Erythroid Cells (Progenitor/Immature)"},
+      {"cluster": 12, "cell_type": "Neutrophils"},
+      {"cluster": 13, "cell_type": "Neutrophils"},
+      {"cluster": 14, "cell_type": "Dendritic Cells"},
+      {"cluster": 15, "cell_type": "Monocytes"},
+      {"cluster": 16, "cell_type": "Hepatoblasts (Neonatal)"},
+      {"cluster": 17, "cell_type": "Macrophages (Non-Kupffer/Infiltrating)"},
+      {"cluster": 18, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)"},
+      {"cluster": 19, "cell_type": "Erythroid Cells (Progenitor/Immature)"},
+      {"cluster": 20, "cell_type": "B Cells"},
+      {"cluster": 21, "cell_type": "Hepatocytes (Mature/General)"},
+      {"cluster": 22, "cell_type": "Hepatic Stellate Cells (HSCs)"},
+      {"cluster": 23, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)"},
+      {"cluster": 24, "cell_type": "NK Cells / T Cells (Cytotoxic/CD8+)"},
+      {"cluster": 25, "cell_type": "Cholangiocytes (Biliary Epithelial Cells)"},
+      {"cluster": 26, "cell_type": "Erythroid Cells (Progenitor/Immature)"},
+      {"cluster": 27, "cell_type": "Hepatocytes (Potential Subtype/Zonal)"}
+    ],
+    "comment": "Annotations are based on the strongest marker gene signals in the top DEGs. Cluster 4/24 likely NK/CTL, Cluster 5 T cells (subtype less clear). Clusters 8/9 are maturing Erythroid. Cluster 12/24/23 show proliferation markers. Cluster 14 is annotated as DC based on Irf8/Cd74 but requires confirmation. Cluster 17 annotated as Macrophages (Non-Kupffer) based on myeloid markers and lack of specificity for Neutrophils/Monocytes. Cluster 25 annotated as Cholangiocytes based on Sox9/Epcam despite mixed signals. Cluster 26 exhibits strong mixed myeloid and erythroid markers, likely representing doublets or a very specific progenitor state; it is tentatively assigned to the Erythroid lineage based on progenitor markers but with very low confidence, acknowledging the ambiguity as per instructions to assign one type."
+  },
+  "3c": {
+    "description": "Recommended additional cell types for refinement:",
+    "recommendations": [
+      "Plasma Cells (Check expression of Sdc1, Xbp1, Jchain in B cell clusters like C20).",
+      "cDC1 vs cDC2 (Investigate C14 further; check expression of Itgax, Clec9a, Xcr1 vs H2-Aa, Itgam, Sirpa, Clec10a).",
+      "pDCs (Plasmacytoid Dendritic Cells - potential identity for C14 given Irf8, need Siglech, Ly6d).",
+      "Activated HSCs (Check Acta2 expression in C22).",
+      "Activated Kupffer Cells/Macrophages (Check Spp1, Trem2, Lgals3 expression in C6, C15, C17).",
+      "Refined Hepatocyte Zonation (Periportal vs Pericentral - Analyze C3, C10, C21, C27 based on Glul, Cyp2e1, Ass1 etc.).",
+      "Refined T Cell Subtypes (CD4+ Helper vs CD8+ Cytotoxic vs Regulatory - Check Cd4, Cd8a, Foxp3 expression in C4, C5, C24)."
+    ]
+  },
+  "3d": {
+    "description": "Recommended clusters for subgrouping:",
+    "recommendations": [
+      {"cluster": [4, 5, 24], "reason": "Likely contain mixed T cell and NK cell subtypes. Subgrouping based on Cd4, Cd8a, Klrb1c, Nkg7, Gzma/b, Ccl5, and proliferation markers could resolve specific populations like CD4+ T, CD8+ T (CTL), NK cells, and their proliferative states."},
+      {"cluster": [3, 10, 21, 27], "reason": "Represent different Hepatocyte states. Subgrouping based on zonation markers (Glul, Cyp2e1, Ass1, etc.) can refine periportal/pericentral identity."},
+      {"cluster": [0, 7, 20], "reason": "Represent different B cell stages. Subgrouping could better separate developing, mature, and potentially early plasma cell stages."},
+      {"cluster": [8, 9, 11, 19, 26], "reason": "Represent different Erythroid stages and potentially doublets (C26). Subgrouping based on maturation (Hba/Hbb vs Klf1/Tfrc) and proliferation markers, along with doublet detection for C26, is needed."},
+      {"cluster": 14, "reason": "Ambiguous DC/progenitor signature with confusing Ighm marker. Needs further investigation and potential subgrouping based on canonical DC markers."},
+      {"cluster": 25, "reason": "Mixed signature (Cholangiocyte, Hepatoblast, Stress/Activation). Requires closer examination for potential subgrouping or doublet contamination."},
+      {"cluster": 26, "reason": "Strong mixed myeloid/erythroid signature. Requires doublet removal and/or careful subgrouping to identify any potential real biological state versus technical artifact."}
+    ]
+  },
+  "4a": {
+    "description": "Confidence levels for annotations:",
+    "confidence_scores": [
+      {"cluster": 0, "cell_type": "B Cells (Developing/Progenitor)", "confidence": 0.80},
+      {"cluster": 1, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)", "confidence": 0.90},
+      {"cluster": 2, "cell_type": "Neutrophils", "confidence": 0.90},
+      {"cluster": 3, "cell_type": "Hepatocytes (Potential Subtype/Zonal)", "confidence": 0.95},
+      {"cluster": 4, "cell_type": "NK Cells / T Cells (Cytotoxic/CD8+)", "confidence": 0.85},
+      {"cluster": 5, "cell_type": "T Cells", "confidence": 0.65},
+      {"cluster": 6, "cell_type": "Kupffer Cells (Resident Macrophages)", "confidence": 0.95},
+      {"cluster": 7, "cell_type": "B Cells (Developing/Progenitor)", "confidence": 0.80},
+      {"cluster": 8, "cell_type": "Erythroid Cells (Mature)", "confidence": 0.70},
+      {"cluster": 9, "cell_type": "Erythroid Cells (Mature)", "confidence": 0.65},
+      {"cluster": 10, "cell_type": "Hepatocytes (Potential Subtype/Zonal)", "confidence": 0.95},
+      {"cluster": 11, "cell_type": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.90},
+      {"cluster": 12, "cell_type": "Neutrophils", "confidence": 0.85},
+      {"cluster": 13, "cell_type": "Neutrophils", "confidence": 0.90},
+      {"cluster": 14, "cell_type": "Dendritic Cells", "confidence": 0.40},
+      {"cluster": 15, "cell_type": "Monocytes", "confidence": 0.85},
+      {"cluster": 16, "cell_type": "Hepatoblasts (Neonatal)", "confidence": 0.95},
+      {"cluster": 17, "cell_type": "Macrophages (Non-Kupffer/Infiltrating)", "confidence": 0.50},
+      {"cluster": 18, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)", "confidence": 0.90},
+      {"cluster": 19, "cell_type": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.80},
+      {"cluster": 20, "cell_type": "B Cells", "confidence": 0.85},
+      {"cluster": 21, "cell_type": "Hepatocytes (Mature/General)", "confidence": 0.90},
+      {"cluster": 22, "cell_type": "Hepatic Stellate Cells (HSCs)", "confidence": 0.95},
+      {"cluster": 23, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)", "confidence": 0.75},
+      {"cluster": 24, "cell_type": "NK Cells / T Cells (Cytotoxic/CD8+)", "confidence": 0.80},
+      {"cluster": 25, "cell_type": "Cholangiocytes (Biliary Epithelial Cells)", "confidence": 0.55},
+      {"cluster": 26, "cell_type": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.10},
+      {"cluster": 27, "cell_type": "Hepatocytes (Potential Subtype/Zonal)", "confidence": 0.95}
+    ]
+  },
+  "4b": {
+    "description": "Annotations to stabilize (Top 2/3 based on confidence score >= 0.75):",
+    "stabilized_annotations": [
+      {"cluster": 0, "cell_type": "B Cells (Developing/Progenitor)", "confidence": 0.80},
+      {"cluster": 1, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)", "confidence": 0.90},
+      {"cluster": 2, "cell_type": "Neutrophils", "confidence": 0.90},
+      {"cluster": 3, "cell_type": "Hepatocytes (Potential Subtype/Zonal)", "confidence": 0.95},
+      {"cluster": 4, "cell_type": "NK Cells / T Cells (Cytotoxic/CD8+)", "confidence": 0.85},
+      {"cluster": 6, "cell_type": "Kupffer Cells (Resident Macrophages)", "confidence": 0.95},
+      {"cluster": 7, "cell_type": "B Cells (Developing/Progenitor)", "confidence": 0.80},
+      {"cluster": 10, "cell_type": "Hepatocytes (Potential Subtype/Zonal)", "confidence": 0.95},
+      {"cluster": 11, "cell_type": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.90},
+      {"cluster": 12, "cell_type": "Neutrophils", "confidence": 0.85},
+      {"cluster": 13, "cell_type": "Neutrophils", "confidence": 0.90},
+      {"cluster": 15, "cell_type": "Monocytes", "confidence": 0.85},
+      {"cluster": 16, "cell_type": "Hepatoblasts (Neonatal)", "confidence": 0.95},
+      {"cluster": 18, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)", "confidence": 0.90},
+      {"cluster": 19, "cell_type": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.80},
+      {"cluster": 20, "cell_type": "B Cells", "confidence": 0.85},
+      {"cluster": 21, "cell_type": "Hepatocytes (Mature/General)", "confidence": 0.90},
+      {"cluster": 22, "cell_type": "Hepatic Stellate Cells (HSCs)", "confidence": 0.95},
+      {"cluster": 23, "cell_type": "Liver Sinusoidal Endothelial Cells (LSECs)", "confidence": 0.75},
+      {"cluster": 24, "cell_type": "NK Cells / T Cells (Cytotoxic/CD8+)", "confidence": 0.80},
+      {"cluster": 27, "cell_type": "Hepatocytes (Potential Subtype/Zonal)", "confidence": 0.95}
+    ],
+    "count": 21,
+    "threshold": 0.75
+  }
+}
+```
+Okay, research assistant bot, let's refine these annotations based on the new DEG information for the specified clusters.
+
+**Analysis and Refinement:**
+
+Here's a breakdown of the clusters to be focused on, comparing DEGs to the previous annotation and refining where necessary:
+
+1.  **Cluster 1 (LSECs):** DEGs (`Igfbp7`, `Dnase1l3`, `Sepp1`, `Aqp1`, `Ifitm2`) strongly support the LSEC identity. `Igfbp7`, `Sepp1`, and `Aqp1` are known endothelial/LSEC markers. `Dnase1l3` is also linked to LSECs. *Refinement: Confirming annotation.*
+3.  **Cluster 3 (Hepatocytes):** DEGs (`Serpina3k`, `Mup3`, `Mup20`, `Apoc3`, `Serpina1c`) include `Mup` genes and `Serpina` genes, characteristic of specific hepatocyte zones or metabolic states. `Apoc3` is also hepatic. *Refinement: Adding specificity based on markers.*
+4.  **Cluster 4 (NK/T Cells):** DEGs (`Ccl5`, `Nkg7`, `AW112010`, `Tmsb10`, `Cd52`). `Nkg7` and `Ccl5` are strong markers for NK cells and cytotoxic T cells. `Cd52` and `Tmsb10` are general lymphocyte markers. *Refinement: Using standard nomenclature.*
+5.  **Cluster 5 (T Cells):** DEGs (`Tmsb10`, `Tmsb4x`, `Rps27`, `Rpl13a`, `Cd52`). General lymphocyte markers (`Tmsb10`, `Tmsb4x`, `Cd52`) and ribosomal proteins. Lacks the strong cytotoxic markers of Cluster 4. *Refinement: Specifying non-cytotoxic nature relative to Cluster 4.*
+6.  **Cluster 6 (Kupffer Cells):** DEGs (`C1qc`, `C1qb`, `C1qa`, `Cd5l`, `Apoe`). High expression of complement components `C1q` (a, b, c) and `Cd5l` are definitive markers for Kupffer cells (resident liver macrophages). `Apoe` is also expressed. *Refinement: Confirming annotation.*
+7.  **Cluster 7 (B Cells Dev/Prog):** DEGs (`Ighm`, `Vpreb3`, `Cd79a`, `Ptma`, `Stmn1`). `Ighm`, `Cd79a` are B-cell lineage markers. `Vpreb3` is specific to pre-B cell receptor complex, strongly indicating developing B cells. `Stmn1` relates to proliferation. *Refinement: Adding specific developmental stages.*
+8.  **Cluster 8 (Erythroid Mature):** DEGs (`Hbb-bt`, `Hba-a2`, `Hba-a1`, `Hbb-bs`, `Gpx1`). High levels of adult hemoglobin alpha (`Hba`) and beta (`Hbb`) chains are characteristic of mature erythrocytes. `Gpx1` is also present. *Refinement: Specifying mature erythrocytes.*
+9.  **Cluster 9 (Erythroid Mature):** DEGs (`Hbb-bt`, `Hba-a1`, `Hba-a2`, `Hbb-bs`, `Slc4a1`). Similar to Cluster 8 with adult hemoglobin. `Slc4a1` (Band 3) is a key erythrocyte membrane protein. *Refinement: Specifying mature erythrocytes.*
+10. **Cluster 10 (Hepatocytes):** DEGs (`Serpina3k`, `Apoc3`, `Mup20`, `Rbp4`, `Serpina1c`). Similar hepatocyte markers to Cluster 3, but includes `Rbp4`. Suggests a different zonal or functional hepatocyte subtype. *Refinement: Adding specificity based on markers, distinguishing from Cluster 3.*
+11. **Cluster 11 (Erythroid Prog/Immature):** DEGs (`Car2`, `Prdx2`, `Hbb-bt`, `Slc4a1`, `Hba-a1`). Presence of hemoglobin (`Hbb`, `Hba`) and `Slc4a1` indicates erythroid lineage. `Car2` and `Prdx2` are higher in earlier stages than mature erythrocytes. *Refinement: Specifying developmental stage.*
+12. **Cluster 12 (Neutrophils):** DEGs (`BC100530`, `Pglyrp1`, `Stfa1`, `Gm5483`, `Camp`). `Camp` (Cathelicidin) and `Pglyrp1` are well-known neutrophil markers. `Stfa1` is also associated. *Refinement: Confirming annotation.*
+13. **Cluster 13 (Neutrophils):** DEGs (`Lcn2`, `Lyz2`, `S100a9`, `S100a8`, `Camp`). Classic neutrophil markers (`Lcn2`, `S100a8/a9`, `Lyz2`, `Camp`). *Refinement: Confirming annotation.*
+15. **Cluster 15 (Monocytes):** DEGs (`Tyrobp`, `Fcer1g`, `Cst3`, `Lyz2`, `Lst1`). Myeloid markers (`Tyrobp`, `Fcer1g`, `Lyz2`, `Cst3`). Differs from Kupffer (lacks high `C1q`) and Neutrophils (lacks high `S100a8/a9`, `Lcn2`). Fits Monocyte profile. *Refinement: Confirming annotation.*
+16. **Cluster 16 (Hepatoblasts):** DEGs (`Ahsg`, `H19`, `Ttr`, `Alb`, `Apoa1`). Hepatocyte function genes (`Alb`, `Ttr`, `Apoa1`, `Ahsg`) combined with high `H19` (marker of fetal/neonatal liver development) strongly indicates Hepatoblasts or Neonatal Hepatocytes. *Refinement: Adding developmental context.*
+18. **Cluster 18 (LSECs):** DEGs (`Igfbp7`, `Sparc`, `Sepp1`, `Fabp4`, `Egfl7`). More LSEC/endothelial markers (`Igfbp7`, `Sepp1`, `Egfl7`, `Fabp4`, `Sparc`). *Refinement: Confirming annotation, noting potential heterogeneity with C1/C23.*
+19. **Cluster 19 (Erythroid Prog/Immature):** DEGs (`Car2`, `Ptma`, `Hba-a1`, `Rpsa`, `Rps18`). Hemoglobin (`Hba-a1`) and `Car2` point to immature erythroid. `Ptma` suggests proliferation. Compared to C11, lacks `Slc4a1`/`Hbb` in top 5, potentially earlier stage. *Refinement: Specifying earlier developmental stage.*
+20. **Cluster 20 (B Cells):** DEGs (`Cd74`, `Igkc`, `Rps27`, `Rps29`, `Rpl18a`). `Cd74` (MHCII invariant chain) and `Igkc` (Immunoglobulin kappa constant) confirm B cell identity. Lacks developmental markers like `Vpreb3` (Cluster 7). *Refinement: Specifying mature/general B cells.*
+21. **Cluster 21 (Hepatocytes):** DEGs (`Apoc1`, `Apoa2`, `Apoc3`, `Ttr`, `Fabp1`). Classic markers for mature hepatocytes involved in lipoprotein metabolism (`Apoc1`, `Apoa2`, `Apoc3`, `Fabp1`) and transport (`Ttr`). *Refinement: Adding functional context.*
+22. **Cluster 22 (HSCs):** DEGs (`Sparc`, `Dcn`, `Col3a1`, `Col1a2`, `Igfbp7`). Strong expression of extracellular matrix genes (`Dcn`, `Col3a1`, `Col1a2`) and `Sparc` are characteristic of Hepatic Stellate Cells (especially activated). `Igfbp7` also expressed. *Refinement: Confirming HSC identity, potentially activated/fibroblastic.*
+23. **Cluster 23 (LSECs):** DEGs (`Sepp1`, `Igfbp7`, `Tmsb10`, `Gpihbp1`, `Fabp4`). More LSEC markers (`Sepp1`, `Igfbp7`, `Fabp1`, `Gpihbp1`). *Refinement: Confirming annotation, noting potential heterogeneity.*
+24. **Cluster 24 (NK/T Cells):** DEGs (`Tmsb10`, `Hmgb2`, `Ptma`, `Tubb5`, `Cd52`). General lymphocyte markers (`Tmsb10`, `Cd52`) and proliferation/activation markers (`Hmgb2`, `Ptma`, `Tubb5`). Lacks strong cytotoxic markers like Cluster 4. *Refinement: Adjusting towards proliferating/activated state.*
+
+**Refined Hypothesis (Annotations for Focused Clusters):**
+
+```json
+{
+    "1": {
+        "Previous Annotation": "Liver Sinusoidal Endothelial Cells (LSECs)",
+        "Refined Annotation": "Liver Sinusoidal Endothelial Cells (LSECs)",
+        "Reasoning": "DEGs (Igfbp7, Dnase1l3, Sepp1, Aqp1) strongly confirm LSEC identity."
+    },
+    "3": {
+        "Previous Annotation": "Hepatocytes (Potential Subtype/Zonal)",
+        "Refined Annotation": "Hepatocytes (Zonal - Mup/Serpina high)",
+        "Reasoning": "High expression of Mup and Serpina genes suggests specific zonal/functional subtype."
+    },
+    "4": {
+        "Previous Annotation": "NK Cells / T Cells (Cytotoxic/CD8+)",
+        "Refined Annotation": "NK Cells / Cytotoxic T Lymphocytes (CTLs)",
+        "Reasoning": "Strong cytotoxic markers (Nkg7, Ccl5) present. Using standard immune cell nomenclature."
+    },
+    "5": {
+        "Previous Annotation": "T Cells",
+        "Refined Annotation": "T Cells (General/Non-cytotoxic)",
+        "Reasoning": "General lymphocyte markers (Tmsb10, Cd52) without strong cytotoxic markers seen in Cluster 4."
+    },
+    "6": {
+        "Previous Annotation": "Kupffer Cells (Resident Macrophages)",
+        "Refined Annotation": "Kupffer Cells (Resident Macrophages)",
+        "Reasoning": "Canonical Kupffer markers (C1qa, C1qb, C1qc, Cd5l) highly expressed."
+    },
+    "7": {
+        "Previous Annotation": "B Cells (Developing/Progenitor)",
+        "Refined Annotation": "B Cells (Developing/Pro-B/Pre-B)",
+        "Reasoning": "Expression of Vpreb3 alongside Ighm and Cd79a indicates early B cell development stages."
+    },
+    "8": {
+        "Previous Annotation": "Erythroid Cells (Mature)",
+        "Refined Annotation": "Erythroid Cells (Mature Erythrocytes)",
+        "Reasoning": "High expression of adult hemoglobin chains (Hba, Hbb) confirms mature erythrocyte identity."
+    },
+    "9": {
+        "Previous Annotation": "Erythroid Cells (Mature)",
+        "Refined Annotation": "Erythroid Cells (Mature Erythrocytes)",
+        "Reasoning": "High expression of adult hemoglobin chains (Hba, Hbb) and Slc4a1 confirms mature erythrocyte identity."
+    },
+    "10": {
+        "Previous Annotation": "Hepatocytes (Potential Subtype/Zonal)",
+        "Refined Annotation": "Hepatocytes (Zonal - Rbp4/Serpina high)",
+        "Reasoning": "Hepatocyte markers including Rbp4, Serpina, Apoc3 suggest a distinct zonal/functional subtype from Cluster 3."
+    },
+    "11": {
+        "Previous Annotation": "Erythroid Cells (Progenitor/Immature)",
+        "Refined Annotation": "Erythroid Cells (Late Erythroblast / Reticulocyte)",
+        "Reasoning": "Co-expression of Hemoglobin (Hba, Hbb), Slc4a1 with Car2 and Prdx2 points to late-stage erythropoiesis."
+    },
+    "12": {
+        "Previous Annotation": "Neutrophils",
+        "Refined Annotation": "Neutrophils",
+        "Reasoning": "Neutrophil markers (Camp, Pglyrp1, Stfa1) are highly expressed."
+    },
+    "13": {
+        "Previous Annotation": "Neutrophils",
+        "Refined Annotation": "Neutrophils",
+        "Reasoning": "Canonical neutrophil markers (Lcn2, S100a8, S100a9, Lyz2, Camp) are highly expressed."
+    },
+    "15": {
+        "Previous Annotation": "Monocytes",
+        "Refined Annotation": "Monocytes",
+        "Reasoning": "Myeloid markers (Tyrobp, Fcer1g, Cst3, Lyz2) distinct from Kupffer and Neutrophil profiles support Monocyte identity."
+    },
+    "16": {
+        "Previous Annotation": "Hepatoblasts (Neonatal)",
+        "Refined Annotation": "Hepatoblasts / Neonatal Hepatocytes",
+        "Reasoning": "Co-expression of mature hepatocyte function genes (Alb, Ttr, Apoa1) with developmental marker H19 indicates neonatal origin."
+    },
+    "18": {
+        "Previous Annotation": "Liver Sinusoidal Endothelial Cells (LSECs)",
+        "Refined Annotation": "Liver Sinusoidal Endothelial Cells (LSECs)",
+        "Reasoning": "DEGs (Igfbp7, Sparc, Sepp1, Fabp4, Egfl7) confirm LSEC identity, possibly distinct state from C1/C23."
+    },
+    "19": {
+        "Previous Annotation": "Erythroid Cells (Progenitor/Immature)",
+        "Refined Annotation": "Erythroid Cells (Progenitor/Early Erythroblast)",
+        "Reasoning": "Presence of Hba-a1 and Car2 with proliferation markers (Ptma) but lacking some later markers seen in C11 suggests earlier erythroid stage."
+    },
+    "20": {
+        "Previous Annotation": "B Cells",
+        "Refined Annotation": "B Cells (Mature/General)",
+        "Reasoning": "B cell markers (Cd74, Igkc) without early developmental markers (like Vpreb3 in C7) suggest a more mature population."
+    },
+    "21": {
+        "Previous Annotation": "Hepatocytes (Mature/General)",
+        "Refined Annotation": "Hepatocytes (Mature - Lipid Metabolism)",
+        "Reasoning": "High expression of genes involved in lipid metabolism and transport (Apoc1, Apoa2, Apoc3, Ttr, Fabp1) indicates mature, metabolically active hepatocytes."
+    },
+    "22": {
+        "Previous Annotation": "Hepatic Stellate Cells (HSCs)",
+        "Refined Annotation": "Hepatic Stellate Cells (HSCs) / Fibroblasts",
+        "Reasoning": "Strong expression of ECM genes (Dcn, Col3a1, Col1a2) and Sparc are characteristic of HSCs, potentially activated."
+    },
+    "23": {
+        "Previous Annotation": "Liver Sinusoidal Endothelial Cells (LSECs)",
+        "Refined Annotation": "Liver Sinusoidal Endothelial Cells (LSECs)",
+        "Reasoning": "DEGs (Sepp1, Igfbp7, Gpihbp1, Fabp4) confirm LSEC identity, potentially distinct state from C1/C18."
+    },
+    "24": {
+        "Previous Annotation": "NK Cells / T Cells (Cytotoxic/CD8+)",
+        "Refined Annotation": "T Cells / NK cells (Proliferating/Activated)",
+        "Reasoning": "General lymphocyte markers (Tmsb10, Cd52) with proliferation/activation markers (Hmgb2, Ptma) but lacking strong cytotoxic markers seen in C4."
+    }
+}
+```
+1. List of cell types with their markers:
+- [Macrophages (Non-Kupffer/Infiltrating)]: Apoe; Adgre1; Itgam
+- [Dendritic Cells]: Xcr1; Itgax; Clec9a
+- [Cholangiocytes (Biliary Epithelial Cells)]: Krt19; Epcam; Sox9
+- [Erythroid Cells (Progenitor/Immature)]: Tfrc; Cd36; Car2
+- [B Cells (Developing/Progenitor)]: Vpreb3; Cd79a; Igll1
+
+2. Python list of all marker genes:
+MARKER_GENES = ['Apoe', 'Adgre1', 'Itgam', 'Xcr1', 'Itgax', 'Clec9a', 'Krt19', 'Epcam', 'Sox9', 'Tfrc', 'Cd36', 'Car2', 'Vpreb3', 'Cd79a', 'Igll1']
+66.2405891418457 seconds
+```json
+{
+  "1a": {
+    "description": "Analysis of genes highly expressed in specific clusters based on top gene lists:",
+    "gene_expression": {
+      "Cd79a": "Highly expressed in clusters 0, 7, 20. Also differentially expressed vs other clusters (e.g., 0 vs 4, 7 vs 14). Strong indicator for B Cells.",
+      "Vpreb3": "Highly expressed in clusters 0, 7. Also differentially expressed vs other clusters (e.g., 0 vs 4, 7 vs 14). Strong indicator for B Cells.",
+      "Apoe": "Highly expressed in clusters 1, 3, 6, 10, 16, 18, 21, 23, 25, 27. Appears as a top gene in many clusters, often differentially expressed against clusters lacking it (e.g., 1 vs 8, 3 vs 12). Indicator for Macrophages, but also present in cluster 25 (Cholangiocytes).",
+      "Adgre1": "Highly expressed in cluster 6 (along with Apoe). Differentially expressed in 6 vs others (e.g., 1 vs 6). Strong indicator for Macrophages.",
+      "Itgam": "Highly expressed in clusters 2, 12, 13, 26. Differentially expressed in these clusters vs others (e.g., 1 vs 2, 8 vs 12). Indicator for Macrophages/Myeloid cells. Also present in cluster 26 (Erythroid).",
+      "Epcam": "Highly expressed in cluster 25 (along with Sox9, Apoe). Differentially expressed in 25 vs others (e.g., 1 vs 25). Indicator for Cholangiocytes.",
+      "Sox9": "Highly expressed in cluster 25 (along with Epcam, Apoe). Differentially expressed in 25 vs others (e.g., 1 vs 25). Indicator for Cholangiocytes.",
+      "Tfrc": "Highly expressed in clusters 9, 11, 26. Often co-expressed with Car2. Differentially expressed in these clusters vs others (e.g., 4 vs 9, 11 vs 14). Indicator for Erythroid Cells.",
+      "Car2": "Highly expressed in clusters 8, 9, 11, 19, 26. Often co-expressed with Tfrc. Differentially expressed in these clusters vs others (e.g., 1 vs 8, 2 vs 19). Indicator for Erythroid Cells.",
+      "Cd36": "Highly expressed in cluster 18 (along with Apoe). Differentially expressed in 18 vs others (e.g., 2 vs 18). Marker for Erythroid Cells, but also expressed on some myeloid cells."
+    }
+  },
+  "1b": {
+    "description": "Genes showing differential expression across clusters (high in some, low in others):",
+    "differentially_expressed_genes": [
+      "Cd79a",
+      "Vpreb3",
+      "Apoe",
+      "Adgre1",
+      "Itgam",
+      "Epcam",
+      "Sox9",
+      "Tfrc",
+      "Car2",
+      "Cd36"
+    ],
+    "comment": "Based on the provided top gene lists and differential expression pairs, most of the marker genes analyzed show clear differential expression, being highly expressed in specific clusters or cluster groups and lower in others. The differential expression data strongly supports this."
+  },
+  "1c": {
+    "description": "Genes potentially less informative for cell type annotation across *these specific clusters* (low expression across all clusters or not appearing as top discriminatory markers):",
+    "non_informative_genes": [
+        "Xcr1",
+        "Itgax",
+        "Clec9a",
+        "Krt19",
+        "Igll1"
+    ],
+    "comment": "While the data indicates these genes ('Xcr1', 'Itgax', 'Clec9a' for DCs; 'Krt19' for Cholangiocytes; 'Igll1' for B Cells) were 'successfully expressed in some clusters', they did not appear as the top marker genes for *any* specific cluster in the provided list `top_genes`. This suggests they might either be expressed at lower levels, in smaller populations, or not be the *most* distinguishing feature for the detected clusters compared to the other listed markers. They are informative in principle for their respective cell types, but less so for discriminating the current set of clusters based *solely* on the 'top_genes' data. None of the marker genes completely failed to express."
+  },
+  "2a": {
+    "description": "Clusters lacking high expression of any marker gene based on the provided 'top_genes' dictionary:",
+    "clusters_lacking_markers": [
+      4,
+      5,
+      14,
+      15,
+      17,
+      22,
+      24
+    ],
+    "comment": "These clusters did not have any of the provided MARKER_GENES listed among their top expressed genes in the input data."
+  },
+  "3a": {
+    "description": "Assessment of cluster distinction based on gene expression patterns:",
+    "assessment": "Yes, there are distinct clusters that potentially represent different cell types. For example, clusters 0/7/20 strongly express B Cell markers (Cd79a, Vpreb3), clusters 8/9/11/19 strongly express Erythroid markers (Car2, Tfrc), cluster 6 expresses multiple Macrophage markers (Adgre1, Apoe), and cluster 25 expresses Cholangiocyte markers (Epcam, Sox9). Several other clusters show enrichment for single Macrophage markers like Apoe or Itgam. The differential expression data further supports the separation between these groups."
+  },
+  "3b": {
+    "description": "Cell type annotations for clusters based on marker gene expression (Assigning one primary cell type per cluster):",
+    "annotations": {
+      "0": "B Cells (Developing/Progenitor)",
+      "1": "Macrophages (Non-Kupffer/Infiltrating)",
+      "2": "Macrophages (Non-Kupffer/Infiltrating)",
+      "3": "Macrophages (Non-Kupffer/Infiltrating)",
+      "4": "Unassigned",
+      "5": "Unassigned",
+      "6": "Macrophages (Non-Kupffer/Infiltrating)",
+      "7": "B Cells (Developing/Progenitor)",
+      "8": "Erythroid Cells (Progenitor/Immature)",
+      "9": "Erythroid Cells (Progenitor/Immature)",
+      "10": "Macrophages (Non-Kupffer/Infiltrating)",
+      "11": "Erythroid Cells (Progenitor/Immature)",
+      "12": "Macrophages (Non-Kupffer/Infiltrating)",
+      "13": "Macrophages (Non-Kupffer/Infiltrating)",
+      "14": "Unassigned",
+      "15": "Unassigned",
+      "16": "Macrophages (Non-Kupffer/Infiltrating)",
+      "17": "Unassigned",
+      "18": "Macrophages (Non-Kupffer/Infiltrating)",
+      "19": "Erythroid Cells (Progenitor/Immature)",
+      "20": "B Cells (Developing/Progenitor)",
+      "21": "Macrophages (Non-Kupffer/Infiltrating)",
+      "22": "Unassigned",
+      "23": "Macrophages (Non-Kupffer/Infiltrating)",
+      "24": "Unassigned",
+      "25": "Cholangiocytes (Biliary Epithelial Cells)",
+      "26": "Erythroid Cells (Progenitor/Immature)",
+      "27": "Macrophages (Non-Kupffer/Infiltrating)"
+    },
+    "rationale": {
+        "B Cells (Developing/Progenitor)": "Clusters 0, 7, 20 show high expression of Cd79a and/or Vpreb3.",
+        "Macrophages (Non-Kupffer/Infiltrating)": "Cluster 6 shows Adgre1 and Apoe. Clusters 1, 3, 10, 16, 18, 21, 23, 27 show Apoe. Clusters 2, 12, 13 show Itgam. Assigned based on presence of at least one marker. Cluster 18 also expresses Cd36, assigned Macrophage due to Apoe.",
+        "Erythroid Cells (Progenitor/Immature)": "Clusters 9, 11, 26 show Tfrc and Car2. Clusters 8, 19 show Car2. Cluster 26 also expresses Itgam, assigned Erythroid due to Tfrc/Car2.",
+        "Cholangiocytes (Biliary Epithelial Cells)": "Cluster 25 shows Epcam and Sox9.",
+        "Unassigned": "Clusters 4, 5, 14, 15, 17, 22, 24 lack strong marker gene expression based on top genes.",
+        "Dendritic Cells": "No cluster strongly expressed the combination of DC markers (Xcr1, Itgax, Clec9a) as top genes."
+    }
+  },
+  "3c": {
+    "description": "Recommended additional cell types to consider for refinement:",
+    "recommendations": [
+      "Dendritic Cells: Markers (Xcr1, Itgax, Clec9a) were detected but didn't define a cluster based on top genes. Specific DC subtypes (cDC1, cDC2) should be investigated.",
+      "Kupffer Cells: The current Macrophage annotation specifies Non-Kupffer/Infiltrating. Check for canonical Kupffer cell markers (e.g., Clec4f, Timd4) to distinguish them.",
+      "Other Liver Cell Types: Depending on the context (e.g., disease model, developmental stage), consider markers for Hepatocytes (e.g., Alb, Apoa1), Hepatic Stellate Cells (e.g., Acta2, Col1a1), Liver Sinusoidal Endothelial Cells (LSECs) (e.g., Pecam1, Stab2), NK/NKT cells (e.g., Nkg7, Cd3d/e)."
+    ]
+  },
+  "3d": {
+    "description": "Recommended clusters for potential subgrouping/further investigation:",
+    "recommendations": [
+        "Macrophage Clusters (1, 2, 3, 6, 10, 12, 13, 16, 18, 21, 23, 27): This large group likely contains heterogeneity. Subclustering based on combinations of Apoe, Adgre1, Itgam, and potentially other myeloid markers could reveal distinct macrophage states or subtypes (e.g., Kupffer vs. Infiltrating, M1/M2 polarization). Clusters 18 (Apoe+, Cd36+) and 26 (Tfrc+, Car2+, Itgam+) might represent specific states or doublets and warrant scrutiny.",
+        "Erythroid Clusters (8, 9, 11, 19, 26): Subclustering could reveal different stages of erythroid development.",
+        "Unassigned Clusters (4, 5, 14, 15, 17, 22, 24): Need further investigation using broader marker sets or trajectory analysis to identify their nature.",
+        "Cluster 25 (Cholangiocytes): While expressing Epcam/Sox9, the co-expression of Apoe is unusual and might warrant investigation, although it could be biologically relevant depending on context.",
+        "Potential Dendritic Cell Clusters: Although no cluster was clearly annotated as DC, re-examining clusters with low-level or non-top expression of Xcr1, Itgax, Clec9a, or subclustering myeloid groups might reveal DC populations."
+    ]
+  },
+  "4a": {
+      "description": "Confidence levels and scores for cell type annotations:",
+      "confidence_assessment": {
+          "0": "B Cells (Developing/Progenitor) (0.85)",
+          "1": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "2": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "3": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "4": "Unassigned (0.05)",
+          "5": "Unassigned (0.05)",
+          "6": "Macrophages (Non-Kupffer/Infiltrating) (0.80)",
+          "7": "B Cells (Developing/Progenitor) (0.85)",
+          "8": "Erythroid Cells (Progenitor/Immature) (0.65)",
+          "9": "Erythroid Cells (Progenitor/Immature) (0.90)",
+          "10": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "11": "Erythroid Cells (Progenitor/Immature) (0.90)",
+          "12": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "13": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "14": "Unassigned (0.05)",
+          "15": "Unassigned (0.05)",
+          "16": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "17": "Unassigned (0.05)",
+          "18": "Macrophages (Non-Kupffer/Infiltrating) (0.30)",
+          "19": "Erythroid Cells (Progenitor/Immature) (0.65)",
+          "20": "B Cells (Developing/Progenitor) (0.75)",
+          "21": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "22": "Unassigned (0.05)",
+          "23": "Macrophages (Non-Kupffer/Infiltrating) (0.45)",
+          "24": "Unassigned (0.05)",
+          "25": "Cholangiocytes (Biliary Epithelial Cells) (0.70)",
+          "26": "Erythroid Cells (Progenitor/Immature) (0.40)",
+          "27": "Macrophages (Non-Kupffer/Infiltrating) (0.45)"
+      },
+      "rationale": "Scores reflect confidence based on marker specificity and number. High scores (>=0.75) for clusters with multiple strong markers (0, 6, 7, 9, 11, 20). Medium scores (0.50-0.74) for clusters with clear markers but potential minor ambiguities (8, 19, 25). Lower scores (0.25-0.49) for clusters defined by single markers or showing potentially mixed signals (1, 2, 3, 10, 12, 13, 16, 18, 21, 23, 26, 27). Very low scores (<0.10) for Unassigned clusters. Clusters 18 and 26 have particularly low scores due to co-expression of markers from different lineages, potentially indicating doublets/contamination or specific cell states not captured by the basic annotation."
+  },
+  "4b": {
+      "description": "Annotations to stabilize based on confidence levels:",
+      "stabilized_annotations": [
+          {"cluster": 0, "annotation": "B Cells (Developing/Progenitor)", "confidence": 0.85},
+          {"cluster": 6, "annotation": "Macrophages (Non-Kupffer/Infiltrating)", "confidence": 0.80},
+          {"cluster": 7, "annotation": "B Cells (Developing/Progenitor)", "confidence": 0.85},
+          {"cluster": 9, "annotation": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.90},
+          {"cluster": 11, "annotation": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.90},
+          {"cluster": 20, "annotation": "B Cells (Developing/Progenitor)", "confidence": 0.75},
+          {"cluster": 25, "annotation": "Cholangiocytes (Biliary Epithelial Cells)", "confidence": 0.70},
+          {"cluster": 8, "annotation": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.65},
+          {"cluster": 19, "annotation": "Erythroid Cells (Progenitor/Immature)", "confidence": 0.65}
+      ],
+      "rationale": "Selected the top ~1/3 of clusters based on confidence score (>= 0.65). These 9 clusters show relatively clear and strong expression of canonical markers for their assigned cell types, providing a robust starting point for further analysis. The overall confidence level has several ambiguities, justifying stabilizing only the most confident third for now."
+  }
+}
+```
+Okay, let's refine the hypothesis based on the new gene expression data and previous annotations, focusing on the clusters that require attention.
+
+**Analysis of Target Clusters:**
+
+1.  **Clusters previously labeled Macrophages:**
+    *   **C1, C18, C23:** DEGs (`Igfbp7`, `Sepp1`, `Fabp4`, `Gpihbp1`, `Aqp1`, `Sparc`, `Egfl7`) strongly suggest **Liver Sinusoidal Endothelial Cells (LSECs)** rather than Macrophages.
+    *   **C3, C10, C16, C21, C27:** DEGs (`Serpina*`, `Mup*`, `Apoc*`, `Rbp4`, `Ahsg`, `Ttr`, `Alb`, `Apoa1`, `Fabp1`) are characteristic of **Hepatocytes**. Cluster 16, with high `H19`, `Ahsg`, `Alb`, and `Ttr`, might represent **Neonatal Hepatocytes or Hepatoblasts**. Clusters 3, 10, 21, 27 express genes involved in protein secretion and lipid metabolism (`Serpina*`, `Mup*`, `Apo*`, `Fabp1`, `Rbp4`), typical of mature hepatocytes.
+    *   **C6:** DEGs (`C1qa`, `C1qb`, `C1qc`, `Cd5l`, `Apoe`) confirm the **Macrophage** identity, likely **Kupffer Cells**.
+    *   **C12, C13:** DEGs (`Lcn2`, `Lyz2`, `S100a8`, `S100a9`, `Camp`, `Pglyrp1`, `Stfa1`) strongly indicate **Neutrophils**.
+
+2.  **Clusters previously labeled Erythroid Cells:**
+    *   **C8, C9, C11:** DEGs (`Hbb*`, `Hba*`, `Slc4a1`, `Car2`) confirm **Erythroid Cells**.
+    *   **C19:** DEGs (`Hba-a1`, `Car2`) support **Erythroid Cells**, potentially an earlier or proliferating state given `Ptma` and ribosomal genes.
+    *   **C26:** DEGs (`S100a8`, `Stfa*`, `BC100530`) strongly point towards **Neutrophils**, inconsistent with the previous Erythroid label.
+
+3.  **Clusters previously labeled B Cells:**
+    *   **C0, C7, C20:** DEGs (`Ighm`, `Cd79a`, `Cd79b`, `Vpreb3`, `Igkc`, `Cd74`) confirm **B Cells**. C7 and C20 might represent proliferating/activated states due to `Ptma`, `Stmn1` and ribosomal genes.
+
+4.  **Cluster previously labeled Cholangiocytes:**
+    *   **C25:** DEGs (`Apoe`, `Spp1`, `Clu`, `Ttr`, `Ambp`) are somewhat ambiguous. While `Spp1` is associated with Cholangiocytes, other markers (`Ttr`, `Ambp`) can be Hepatocytes, and `Apoe`/`Clu` are less specific. The previous annotation of **Cholangiocytes** is plausible but requires further investigation with more specific markers (`Krt19`, `Epcam`).
+
+**Refined Hypothesis:**
+
+Based on the analysis of differentially expressed genes in key clusters, the initial cell type annotations require significant refinement. The project aims to accurately annotate cell types in a mouse liver dataset spanning neonatal and mature timepoints.
+
+*   **Re-Annotation Needed:** Several clusters previously annotated as 'Macrophages' are misidentified. Clusters **1, 18, and 23** strongly exhibit gene signatures of **Liver Sinusoidal Endothelial Cells (LSECs)** (`Igfbp7`, `Sepp1`, `Fabp4`, `Gpihbp1`). Clusters **3, 10, 21, and 27** clearly represent **Hepatocytes** based on markers like `Serpina*`, `Mup*`, `Apoc*`, `Fabp1`, and `Rbp4`. Cluster **16**, also previously 'Macrophages', appears to be **Hepatocytes**, potentially **Neonatal Hepatocytes or Hepatoblasts** given the expression of `H19`, `Ahsg`, `Alb`. Clusters **12 and 13** (previously 'Macrophages') and cluster **26** (previously 'Erythroid Cells') show definitive **Neutrophil** signatures (`S100a8/9`, `Lyz2`, `Camp`, `Stfa*`).
+*   **Confirmed Annotations:** The annotations for **B Cells** (Clusters **0, 7, 20**; markers: `Ighm`, `Cd79a/b`, `Igkc`), **Erythroid Cells** (Clusters **8, 9, 11, 19**; markers: `Hbb*`, `Hba*`, `Slc4a1`), and **Kupffer Cells/Macrophages** (Cluster **6**; markers: `C1q*`, `Cd5l`) appear consistent with the gene expression data.
+*   **Needs Further Review:** Cluster **25** (previously 'Cholangiocytes') expresses markers like `Spp1`, `Ttr`, and `Ambp`. While consistent with Cholangiocytes, the signature is not entirely specific, and this cluster warrants further investigation using canonical cholangiocyte markers.
+
+The annotation process should now focus on assigning these refined identities, particularly distinguishing Hepatocyte subtypes (e.g., neonatal vs. mature, zonation markers if possible), confirming LSEC identity, and verifying the Cholangiocyte annotation for Cluster 25. Existing annotations for ignored clusters [2, 4, 5, 14, 15, 17, 22, 24] (Macrophages, NK/T Cells, Dendritic Cells, Monocytes, HSCs) are assumed correct for now but should be revisited if downstream analysis reveals inconsistencies.
+1. List of cell types with their markers:
+
+[Hepatocytes]: Alb; Ttr; Fabp1  
+[Liver Sinusoidal Endothelial Cells (LSECs)]: Sepp1; Aqp1; Gpihbp1  
+[Kupffer Cells (Macrophages)]: C1qa; C1qb; Cd5l  
+[Neutrophils]: Lcn2; S100a8; Camp  
+[Erythroid Cells]: Hba; Hbb; Slc4a1  
+[B Cells]: Cd79a; Ighm; Igkc  
+[Cholangiocytes]: Krt19; Epcam; Sox9  
+[Hepatic Stellate Cells (HSCs)]: Pdgfrb; Des; Acta2  
+[Monocytes]: Fcgr3; Ly6c2; Cd14  
+[Dendritic Cells]: Itgax; Itgam; Clec9a  
+[NK Cells / T Cells (Cytotoxic/CD8+)]: Gzma; Gzmb; Nkg7  
+
+2. Python list of all marker genes:  
+MARKER_GENES = ['Alb', 'Ttr', 'Fabp1', 'Sepp1', 'Aqp1', 'Gpihbp1', 'C1qa', 'C1qb', 'Cd5l', 'Lcn2', 'S100a8', 'Camp', 'Hba', 'Hbb', 'Slc4a1', 'Cd79a', 'Ighm', 'Igkc', 'Krt19', 'Epcam', 'Sox9', 'Pdgfrb', 'Des', 'Acta2', 'Fcgr3', 'Ly6c2', 'Cd14', 'Itgax', 'Itgam', 'Clec9a', 'Gzma', 'Gzmb', 'Nkg7']
+105.56184005737305 seconds
+```json
+{
+  "1a": {
+    "description": "Genes highly expressed in specific clusters:",
+    "details": [
+      {"genes": ["Alb", "Ttr", "Fabp1"], "clusters": [3, 10, 16, 21, 27], "cell_type": "Hepatocytes"},
+      {"genes": ["Sepp1", "Aqp1", "Gpihbp1"], "clusters": [1, 18, 23], "cell_type": "LSECs"},
+      {"genes": ["C1qa", "C1qb", "Cd5l"], "clusters": [6], "cell_type": "Kupffer Cells"},
+      {"genes": ["Lcn2", "S100a8", "Camp"], "clusters": [2, 12, 13, 17, 26], "cell_type": "Neutrophils/Myeloid"},
+      {"genes": ["Slc4a1"], "clusters": [8, 9, 11, 26], "cell_type": "Erythroid/Mixed"},
+      {"genes": ["Cd79a", "Ighm", "Igkc"], "clusters": [0, 7, 14, 20], "cell_type": "B Cells"},
+      {"genes": ["Epcam", "Sox9"], "clusters": [25], "cell_type": "Cholangiocytes"},
+      {"genes": ["Fcgr3", "Ly6c2"], "clusters": [2, 6, 12, 13, 15, 26], "cell_type": "Monocytes/Myeloid"},
+      {"genes": ["Itgam"], "clusters": [2, 12, 13, 26], "cell_type": "Myeloid (Monocytes, Neutrophils, DCs)"},
+      {"genes": ["Gzma", "Gzmb", "Nkg7"], "clusters": [4, 5, 24], "cell_type": "NK/T Cells"}
+    ]
+  },
+  "1b": {
+    "description": "Yes, numerous genes show differential expression across clusters, which is fundamental for cell type annotation. Canonical markers clearly distinguish major cell types: for example, Alb, Ttr, and Fabp1 are high in Hepatocyte clusters (3, 10, 16, 21, 27) and low elsewhere; Gpihbp1, Aqp1, and Sepp1 are high in LSEC clusters (1, 18, 23); Cd79a, Ighm, and Igkc define B cell clusters (0, 7, 20); Nkg7, Gzma, and Gzmb mark NK/T cell clusters (4, 24). Differential expression also exists within related groups, helping distinguish potential subtypes or states, such as Cd79a and Igkc being higher in clusters 0/7 compared to cluster 14 (all B-cell related), and Gzmb being higher in cluster 4 than cluster 5 (both NK/T cell related)."
+  },
+  "1c": {
+    "description": "Based on the provided input 'failed to express in any clusters: []', none of the marker genes listed in the initial `MARKER_GENES` list were completely non-informative for annotation in this dataset. All listed marker genes were found to be highly expressed in at least some clusters, as indicated by the 'highly expressed genes' list."
+  },
+  "2a": {
+    "description": "Clusters lacking identified top genes based on the input data:",
+    "clusters": [19, 22]
+  },
+  "3a": {
+    "description": "Yes, the gene expression patterns clearly indicate the presence of distinct clusters that correspond to different known liver cell types. Clusters expressing canonical markers for Hepatocytes, LSECs, Kupffer Cells, B Cells, and NK/T Cells are readily identifiable. However, several clusters show expression patterns indicative of mixed identities (e.g., cluster 26) or represent less clearly defined states (e.g., clusters 8, 9, 11, 14), suggesting the need for further investigation, potentially involving doublet removal, subclustering, or the use of additional markers."
+  },
+  "3b": {
+    "description": "Preliminary cell type annotations based on marker gene expression:",
+    "annotations": [
+      {"cluster": 0, "cell_type": "B Cells"},
+      {"cluster": 1, "cell_type": "LSECs"},
+      {"cluster": 2, "cell_type": "Neutrophils"},
+      {"cluster": 3, "cell_type": "Hepatocytes"},
+      {"cluster": 4, "cell_type": "NK/T Cells"},
+      {"cluster": 5, "cell_type": "NK/T Cells"},
+      {"cluster": 6, "cell_type": "Kupffer Cells"},
+      {"cluster": 7, "cell_type": "B Cells"},
+      {"cluster": 8, "cell_type": "Erythroid Cells"},
+      {"cluster": 9, "cell_type": "Erythroid Cells"},
+      {"cluster": 10, "cell_type": "Hepatocytes"},
+      {"cluster": 11, "cell_type": "Erythroid Cells"},
+      {"cluster": 12, "cell_type": "Neutrophils"},
+      {"cluster": 13, "cell_type": "Neutrophils"},
+      {"cluster": 14, "cell_type": "B Cells"},
+      {"cluster": 15, "cell_type": "Monocytes"},
+      {"cluster": 16, "cell_type": "Hepatocytes"},
+      {"cluster": 17, "cell_type": "Neutrophils"},
+      {"cluster": 18, "cell_type": "LSECs"},
+      {"cluster": 19, "cell_type": "Unannotated"},
+      {"cluster": 20, "cell_type": "B Cells"},
+      {"cluster": 21, "cell_type": "Hepatocytes"},
+      {"cluster": 22, "cell_type": "Unannotated"},
+      {"cluster": 23, "cell_type": "LSECs"},
+      {"cluster": 24, "cell_type": "NK/T Cells"},
+      {"cluster": 25, "cell_type": "Cholangiocytes"},
+      {"cluster": 26, "cell_type": "Monocytes"},
+      {"cluster": 27, "cell_type": "Hepatocytes"}
+    ]
+  },
+  "3c": {
+    "description": "Recommended additional cell types/markers for refinement:",
+    "recommendations": [
+      "Hepatic Stellate Cells (HSCs): Although Pdgfrb, Des, Acta2 were detected, they weren't top markers defining a cluster. Consider additional HSC markers like Reln, Lrat, Pdgfra.",
+      "Dendritic Cells (DCs): Itgax, Itgam, Clec9a were detected but didn't isolate a pure DC cluster. Add markers like Flt3, Ccr7, Lamp3.",
+      "T Cell Subtypes: Distinguish CD4+ T helper cells (Cd4, Il7r), Cytotoxic T cells (Cd8a, Cd8b - extending NK/T), and Regulatory T cells (Foxp3, Ikzf2).",
+      "Plasma Cells: Evaluate markers like Sdc1 (CD138), Xbp1, Jchain to potentially separate from B cells (especially cluster 14).",
+      "Refine existing types: Incorporate markers for Hepatocyte zonation (e.g., Glul, Cyp2e1, Ass1), LSEC subtypes/zonation (e.g., Cd36, Stab2), and Kupffer cell activation states."
+    ]
+  },
+  "3d": {
+    "description": "Clusters recommended for subgrouping/further investigation:",
+    "recommendations": [
+      {"clusters": [3, 10, 16, 21, 27], "reason": "Large Hepatocyte population, likely contains zonated subpopulations."},
+      {"clusters": [1, 18, 23], "reason": "LSEC population, may contain subtypes or represent different functional states."},
+      {"clusters": [0, 7, 14, 20], "reason": "B cell group, likely represents different maturation stages (e.g., cluster 14 vs others) or subtypes."},
+      {"clusters": [4, 5, 24], "reason": "NK/T cell group, could be subclustered to separate NK cells from different T cell subtypes (e.g., cluster 5 seems weaker)."},
+      {"clusters": [2, 12, 13, 15, 17, 26], "reason": "Myeloid compartment (Monocytes, Neutrophils). These clusters show overlapping markers and varying profiles (esp. 2, 12, 13, 26). Subclustering is needed to better define Monocytes, Neutrophils, potentially DCs, and resolve mixed/ambiguous signatures."},
+      {"clusters": [8, 9, 11], "reason": "Express Erythroid marker Slc4a1 along with other markers (S100a8, Aqp1). Needs investigation to confirm identity (true Erythroid cells vs. potential ambient RNA/technical artifact or specific myeloid state)."},
+      {"clusters": [6], "reason": "Clearly Kupffer cells, but could be subclustered to explore functional states."},
+      {"clusters": [19, 22], "reason": "Currently unannotated. Investigate QC metrics, potential doublets, or expression of alternative marker sets."}
+    ]
+  },
+  "4a": {
+    "description": "Confidence assessment of annotations:",
+    "confidence_scores": [
+       {"cluster": 0, "cell_type": "B Cells", "score": 0.85},
+       {"cluster": 1, "cell_type": "LSECs", "score": 0.90},
+       {"cluster": 2, "cell_type": "Neutrophils", "score": 0.35},
+       {"cluster": 3, "cell_type": "Hepatocytes", "score": 0.95},
+       {"cluster": 4, "cell_type": "NK/T Cells", "score": 0.80},
+       {"cluster": 5, "cell_type": "NK/T Cells", "score": 0.50},
+       {"cluster": 6, "cell_type": "Kupffer Cells", "score": 0.90},
+       {"cluster": 7, "cell_type": "B Cells", "score": 0.85},
+       {"cluster": 8, "cell_type": "Erythroid Cells", "score": 0.30},
+       {"cluster": 9, "cell_type": "Erythroid Cells", "score": 0.30},
+       {"cluster": 10, "cell_type": "Hepatocytes", "score": 0.95},
+       {"cluster": 11, "cell_type": "Erythroid Cells", "score": 0.30},
+       {"cluster": 12, "cell_type": "Neutrophils", "score": 0.35},
+       {"cluster": 13, "cell_type": "Neutrophils", "score": 0.45},
+       {"cluster": 14, "cell_type": "B Cells", "score": 0.40},
+       {"cluster": 15, "cell_type": "Monocytes", "score": 0.75},
+       {"cluster": 16, "cell_type": "Hepatocytes", "score": 0.95},
+       {"cluster": 17, "cell_type": "Neutrophils", "score": 0.70},
+       {"cluster": 18, "cell_type": "LSECs", "score": 0.90},
+       {"cluster": 19, "cell_type": "Unannotated", "score": 0.00},
+       {"cluster": 20, "cell_type": "B Cells", "score": 0.85},
+       {"cluster": 21, "cell_type": "Hepatocytes", "score": 0.95},
+       {"cluster": 22, "cell_type": "Unannotated", "score": 0.00},
+       {"cluster": 23, "cell_type": "LSECs", "score": 0.90},
+       {"cluster": 24, "cell_type": "NK/T Cells", "score": 0.80},
+       {"cluster": 25, "cell_type": "Cholangiocytes", "score": 0.70},
+       {"cluster": 26, "cell_type": "Monocytes", "score": 0.20},
+       {"cluster": 27, "cell_type": "Hepatocytes", "score": 0.95}
+     ]
+  },
+  "4b": {
+    "description": "Annotations to stabilize for the next iteration (Confidence Score >= 0.50, representing roughly top 2/3 confidence):",
+    "stabilized_annotations": [
+      {"cluster": 0, "cell_type": "B Cells", "score": 0.85},
+      {"cluster": 1, "cell_type": "LSECs", "score": 0.90},
+      {"cluster": 3, "cell_type": "Hepatocytes", "score": 0.95},
+      {"cluster": 4, "cell_type": "NK/T Cells", "score": 0.80},
+      {"cluster": 5, "cell_type": "NK/T Cells", "score": 0.50},
+      {"cluster": 6, "cell_type": "Kupffer Cells", "score": 0.90},
+      {"cluster": 7, "cell_type": "B Cells", "score": 0.85},
+      {"cluster": 10, "cell_type": "Hepatocytes", "score": 0.95},
+      {"cluster": 15, "cell_type": "Monocytes", "score": 0.75},
+      {"cluster": 16, "cell_type": "Hepatocytes", "score": 0.95},
+      {"cluster": 17, "cell_type": "Neutrophils", "score": 0.70},
+      {"cluster": 18, "cell_type": "LSECs", "score": 0.90},
+      {"cluster": 20, "cell_type": "B Cells", "score": 0.85},
+      {"cluster": 21, "cell_type": "Hepatocytes", "score": 0.95},
+      {"cluster": 23, "cell_type": "LSECs", "score": 0.90},
+      {"cluster": 24, "cell_type": "NK/T Cells", "score": 0.80},
+      {"cluster": 25, "cell_type": "Cholangiocytes", "score": 0.70},
+      {"cluster": 27, "cell_type": "Hepatocytes", "score": 0.95}
+    ],
+    "clusters_to_refine": [
+      {"cluster": 2, "reason": "Low confidence Neutrophil annotation, mixed markers."},
+      {"cluster": 8, "reason": "Low confidence Erythroid annotation, mixed markers."},
+      {"cluster": 9, "reason": "Low confidence Erythroid annotation, mixed markers."},
+      {"cluster": 11, "reason": "Low confidence Erythroid annotation, mixed markers."},
+      {"cluster": 12, "reason": "Low confidence Neutrophil annotation, mixed markers."},
+      {"cluster": 13, "reason": "Low-medium confidence Neutrophil annotation, mixed markers."},
+      {"cluster": 14, "reason": "Low-medium confidence B Cell annotation, potentially different subtype/state."},
+      {"cluster": 19, "reason": "Unannotated."},
+      {"cluster": 22, "reason": "Unannotated."},
+      {"cluster": 26, "reason": "Very low confidence Monocyte annotation, highly mixed markers."}
+    ]
+  }
+}
+```

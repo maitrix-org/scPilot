@@ -1,0 +1,20 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+off-bipolar cell,off-bipolar cell,OFF-bipolar cell,CL:0000750,0.0,CL:0000749
+bipolar cell (on/off intermediate),bipolar cell (on/off intermediate),OFF-bipolar cell,CL:0000750,0.0,CL:0000749
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+rod,rod,retinal rod cell,CL:0000604,1.0,CL:0000604
+müller glia,müller glia,Mueller cell,CL:0000636,0.5,"CL:0000561, CL:0000636"
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+müller glia,müller glia,Mueller cell,CL:0000636,1.0,CL:0000636
+off-bipolar/cone photoreceptor,off-bipolar/cone photoreceptor,OFF-bipolar cell,CL:0000750,0.0,CL:0000573
+rod,rod,retinal rod cell,CL:0000604,0.0,CL:0000740
+16,16,brown preadipocyte,CL:0002335,0.0,"CL:0000129, CL:0000115"
+off-bipolar cell,off-bipolar cell,OFF-bipolar cell,CL:0000750,0.0,CL:0000745
+off-bipolar cell,off-bipolar cell,OFF-bipolar cell,CL:0000750,0.0,"CL:0000561, CL:0000749"
+off-bipolar cell,off-bipolar cell,OFF-bipolar cell,CL:0000750,0.0,"CL:0000561, CL:0000749"

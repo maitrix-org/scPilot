@@ -1,0 +1,29 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+b cell,b cell,B cell,CL:0000236,0.5,"CL:0000954, CL:0000826, CL:0000819"
+endothelial cell,endothelial cell,endothelial cell,CL:0000115,1.0,CL:0000115
+macrophage,macrophage,macrophage,CL:0000235,0.0,"CL:0000775, CL:0000096"
+hepatocyte,hepatocyte,hepatocyte,CL:0000182,1.0,CL:0000182
+nk/t cell,nk/t cell,mature NK T cell,CL:0000814,0.5,"CL:0000825, CL:0000084"
+nk/t cell,nk/t cell,mature NK T cell,CL:0000814,0.5,"CL:0000825, CL:0000084"
+kupffer cell,kupffer cell,Kupffer cell,CL:0000091,1.0,CL:0000091
+b cell,b cell,B cell,CL:0000236,0.5,"CL:0000954, CL:0000826, CL:0000819, CL:0000765, CL:0000957"
+erythrocyte cell,erythrocyte cell,erythrocyte,CL:0000232,0.5,"CL:0000232, CL:0000765"
+erythrocyte cell,erythrocyte cell,erythrocyte,CL:0000232,0.0,"CL:0000765, CL:0000765"
+hepatocyte,hepatocyte,hepatocyte,CL:0000182,1.0,CL:0000182
+erythrocyte cell,erythrocyte cell,erythrocyte,CL:0000232,0.0,"CL:0000765, CL:0000765"
+macrophage,macrophage,macrophage,CL:0000235,0.0,"CL:0000775, CL:0000776"
+macrophage,macrophage,macrophage,CL:0000235,0.0,CL:0000775
+dendritic cell,dendritic cell,dendritic cell,CL:0000451,0.5,"CL:0000451, CL:0000451, CL:0000451, CL:0000784, CL:0000557"
+monocyte,monocyte,monocyte,CL:0000576,0.5,"CL:0000767, CL:0000451, CL:0000576"
+hepatocyte,hepatocyte,hepatocyte,CL:0000182,0.0,CL:0005026
+neutrophil,neutrophil,neutrophil,CL:0000775,0.5,"CL:0000775, CL:0000767, CL:0000776, CL:0000576, CL:0000837, CL:0000115, CL:0000556, CL:0000557, CL:0000765"
+endothelial cell,endothelial cell,endothelial cell,CL:0000115,0.5,"CL:0000784, CL:0000091, CL:0000115, CL:1001603"
+erythrocyte cell,erythrocyte cell,erythrocyte,CL:0000232,0.0,"CL:0000765, CL:0000765"
+b cell,b cell,B cell,CL:0000236,0.5,CL:0000819
+hepatocyte,hepatocyte,hepatocyte,CL:0000182,0.5,"CL:0000784, CL:0000115, CL:0000182"
+hepatic stellate cell (hscs),hepatic stellate cell (hscs),hepatic stellate cell,CL:0000632,0.5,"CL:0000632, CL:0000057, CL:0000077"
+endothelial cell,endothelial cell,endothelial cell,CL:0000115,0.5,"CL:0000084, CL:0000115"
+nk/t cell,nk/t cell,mature NK T cell,CL:0000814,0.5,"CL:0000825, CL:0000084"
+cholangiocyte,cholangiocyte,cholangiocyte,CL:1000488,0.5,"CL:0000115, CL:0005026, CL:1000488, CL:0000765"
+erythrocyte cell,erythrocyte cell,erythrocyte,CL:0000232,0.0,"CL:0000775, CL:0000096, CL:0000765"
+hepatocyte,hepatocyte,hepatocyte,CL:0000182,1.0,CL:0000182

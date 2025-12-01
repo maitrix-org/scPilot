@@ -1,0 +1,29 @@
+Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
+"small pre-b, b, pro-b","small pre-b, pro-b, b","small pre-B-II cell, pro-B cell, B-1 B cell","CL:0000954, CL:0000826, CL:0000819",1.0,"CL:0000954, CL:0000826, CL:0000819"
+endothelial cell,endothelial cell,endothelial cell,CL:0000115,1.0,CL:0000115
+"intermediate neutrophil, mature neutrophil","intermediate neutrophil, mature neutrophil","neutrophil, mature neutrophil","CL:0000775, CL:0000096",1.0,"CL:0000775, CL:0000096"
+hepatocyte,hepatocyte,hepatocyte,CL:0000182,1.0,CL:0000182
+"t, nk","t, nk","T cell, pro-NK cell","CL:0000084, CL:0000825",1.0,"CL:0000084, CL:0000825"
+"t, nk","t, nk","T cell, pro-NK cell","CL:0000084, CL:0000825",1.0,"CL:0000084, CL:0000825"
+kupffer,kupffer,Kupffer cell,CL:0000091,1.0,CL:0000091
+"large pre-b, pro-b, b, small pre-b, pro-erythroblast","small pre-b, pro-b, b, large pre-b, pro-erythroblast","small pre-B-II cell, pro-B cell, B-1 B cell, large pre-B-II cell, erythroblast","CL:0000954, CL:0000826, CL:0000819, CL:0000957, CL:0000765",1.0,"CL:0000954, CL:0000826, CL:0000819, CL:0000957, CL:0000765"
+"erythrocyte, erythroblast","erythrocyte, erythroblast","erythrocyte, erythroblast","CL:0000232, CL:0000765",1.0,"CL:0000232, CL:0000765"
+"erythroblast, pro-erythroblast","pro-erythroblast, erythroblast","erythroblast, erythroblast","CL:0000765, CL:0000765",1.0,"CL:0000765, CL:0000765"
+hepatocyte,hepatocyte,hepatocyte,CL:0000182,1.0,CL:0000182
+"erythroblast, pro-erythroblast","pro-erythroblast, erythroblast","erythroblast, erythroblast","CL:0000765, CL:0000765",1.0,"CL:0000765, CL:0000765"
+"intermediate neutrophil, immature neutrophil","immature neutrophil, intermediate neutrophil","immature neutrophil, neutrophil","CL:0000776, CL:0000775",1.0,"CL:0000776, CL:0000775"
+intermediate neutrophil,intermediate neutrophil,neutrophil,CL:0000775,1.0,CL:0000775
+"classical dendritic cell 1, plasmacytoid dendritic cell, classical dendritic cell 2, activating dendritic cell, granulocyte-monocyte progenitor","granulocyte-monocyte progenitor, classical dendritic cell 2, activating dendritic cell, classical dendritic cell 1, plasmacytoid dendritic cell","granulocyte monocyte progenitor cell, dendritic cell, dendritic cell, dendritic cell, plasmacytoid dendritic cell","CL:0000557, CL:0000451, CL:0000451, CL:0000451, CL:0000784",1.0,"CL:0000557, CL:0000451, CL:0000451, CL:0000451, CL:0000784"
+"monocyte, classical dendritic cell 2, basophil","monocyte, classical dendritic cell 2, basophil","monocyte, dendritic cell, basophil","CL:0000576, CL:0000451, CL:0000767",1.0,"CL:0000576, CL:0000451, CL:0000767"
+hepatoblast,hepatoblast,hepatoblast,CL:0005026,1.0,CL:0005026
+"immature neutrophil, intermediate neutrophil, hematopoietic progenitor cell, monocyte, megakaryocyte, pro-erythroblast, basophil, granulocyte-monocyte progenitor, endothelial cell","endothelial cell, monocyte, granulocyte-monocyte progenitor, megakaryocyte, immature neutrophil, intermediate neutrophil, basophil, pro-erythroblast, hematopoietic progenitor cell","endothelial cell, monocyte, granulocyte monocyte progenitor cell, megakaryocyte, immature neutrophil, neutrophil, basophil, erythroblast, hematopoietic multipotent progenitor cell","CL:0000115, CL:0000576, CL:0000557, CL:0000556, CL:0000776, CL:0000775, CL:0000767, CL:0000765, CL:0000837",1.0,"CL:0000115, CL:0000576, CL:0000557, CL:0000556, CL:0000776, CL:0000775, CL:0000767, CL:0000765, CL:0000837"
+"endothelial cell, kupffer, dcn+ macrophages, plasmacytoid dendritic cell","endothelial cell, kupffer, dcn+ macrophages, plasmacytoid dendritic cell","endothelial cell, Kupffer cell, lung macrophage, plasmacytoid dendritic cell","CL:0000115, CL:0000091, CL:1001603, CL:0000784",1.0,"CL:0000115, CL:0000091, CL:1001603, CL:0000784"
+"pro-erythroblast, erythroblast","pro-erythroblast, erythroblast","erythroblast, erythroblast","CL:0000765, CL:0000765",1.0,"CL:0000765, CL:0000765"
+b,b,B-1 B cell,CL:0000819,1.0,CL:0000819
+"hepatocyte, endothelial cell, plasmacytoid dendritic cell","endothelial cell, hepatocyte, plasmacytoid dendritic cell","endothelial cell, hepatocyte, plasmacytoid dendritic cell","CL:0000115, CL:0000182, CL:0000784",1.0,"CL:0000115, CL:0000182, CL:0000784"
+"fibroblast, hepatic stellate cell, mesothelial cell","hepatic stellate cell, mesothelial cell, fibroblast","hepatic stellate cell, mesothelial cell, fibroblast","CL:0000632, CL:0000077, CL:0000057",1.0,"CL:0000632, CL:0000077, CL:0000057"
+"endothelial cell, t","endothelial cell, t","endothelial cell, T cell","CL:0000115, CL:0000084",1.0,"CL:0000115, CL:0000084"
+"nk, t","t, nk","T cell, pro-NK cell","CL:0000084, CL:0000825",1.0,"CL:0000084, CL:0000825"
+"cholangiocyte, endothelial cell, pro-erythroblast, hepatoblast","endothelial cell, hepatoblast, cholangiocyte, pro-erythroblast","endothelial cell, hepatoblast, cholangiocyte, erythroblast","CL:0000115, CL:0005026, CL:1000488, CL:0000765",1.0,"CL:0000115, CL:0005026, CL:1000488, CL:0000765"
+"intermediate neutrophil, mature neutrophil, erythroblast","intermediate neutrophil, mature neutrophil, erythroblast","neutrophil, mature neutrophil, erythroblast","CL:0000775, CL:0000096, CL:0000765",1.0,"CL:0000775, CL:0000096, CL:0000765"
+hepatocyte,hepatocyte,hepatocyte,CL:0000182,1.0,CL:0000182
