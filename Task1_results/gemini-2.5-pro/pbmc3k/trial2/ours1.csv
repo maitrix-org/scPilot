@@ -1,9 +1,0 @@
-Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
-cd4+ t cell,cd4+ t cell,CD4-positive helper T cell,CL:0000492,1.0,CL:0000492
-b cell,b cell,B cell,CL:0000236,1.0,CL:0000236
-cd16+ monocyte,cd16+ monocyte,"CD14-low, CD16-positive monocyte",CL:0002396,0.5,CL:0000875
-nk cell,nk cell,natural killer cell,CL:0000623,1.0,CL:0000623
-cd8+ t cell / ctl,cd8+ t cell / ctl,granzyme K-associated CD8 T cell,CL:4052021,1.0,CL:4052021
-cd14+ monocyte,cd14+ monocyte,CD14-positive monocyte,CL:0001054,0.0,CL:0000860
-conventional dendritic cell (cdc),conventional dendritic cell (cdc),conventional dendritic cell,CL:0000990,0.5,CL:0000451
-platelet,platelet,platelet,CL:0000233,0.0,CL:0000556

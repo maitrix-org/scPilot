@@ -1,9 +1,0 @@
-Annotation,cell_type,broadtype,CLID,agreement_score,correct_CLID
-cd4+ t cell,cd4+ t cell,CD4-positive helper T cell,CL:0000492,1.0,CL:0000492
-b cell,b cell,B cell,CL:0000236,1.0,CL:0000236
-monocytes (non-classical),monocytes (non-classical),non-classical monocyte,CL:0000875,1.0,CL:0000875
-nk cell,nk cell,natural killer cell,CL:0000623,1.0,CL:0000623
-cd8+ t cell,cd8+ t cell,granzyme K-associated CD8 T cell,CL:4052021,1.0,CL:4052021
-monocytes (classical),monocytes (classical),classical monocyte,CL:0000860,1.0,CL:0000860
-dendritic cell,dendritic cell,dendritic cell,CL:0000451,1.0,CL:0000451
-7,7,type-7 epithelial cell of thymus,CL:0002300,0.0,CL:0000556
