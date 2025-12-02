@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://path-to-your-figure-1-or-2.png" alt="scPilot Framework" width="800"/>
+<img src="FrontPage.png" width="800"/>
 
 # scPilot: Large Language Model Reasoning for Automated Single-Cell Analysis
 
